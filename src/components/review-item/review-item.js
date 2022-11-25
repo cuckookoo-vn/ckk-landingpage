@@ -8,8 +8,8 @@ const ReviewItem = ({element}) =>{
     const [assessStart,setAssessStart] = useState([]);
 
     const images = {
-        star: "https://ckksite.s3.ap-northeast-2.amazonaws.com/technology/ckksite-about-star.png",
-        starFull: "https://ckksite.s3.ap-northeast-2.amazonaws.com/technology/ckksite-about-star-full.png"
+        star: "https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-about-star.png",
+        starFull: "https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-about-star-full.png"
     }
 
     useEffect(()=>{

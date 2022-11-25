@@ -7,19 +7,19 @@ import {useTranslation} from "react-i18next";
 const Partners = ({windowDimensions}) =>{
     const ourPatners = [
         {
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-us-chainos.png",
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png",
         },
         {
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-us-chainos.png",
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png",
         },
         {
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-us-chainos.png",
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png",
         },
         {
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-us-chainos.png",
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png",
         },
         {
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-us-chainos.png",
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png",
         },
     ]
 
@@ -29,28 +29,28 @@ const Partners = ({windowDimensions}) =>{
             countStar: 4,
             position: "(CEO of Chainos globle)",
             content: "Review content",
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-review1.png"
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png"
         },
         {
             name: "Mr.Lee",
             countStar: 5,
             position: "(PM from Ludena Protocol)",
             content: "Review content",
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-review2.png"
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png"
         },
         {
             name: "Mr.Tony",
             countStar: 4,
             position: "(CEO of Chainos globle)",
             content: "Review content",
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-review1.png"
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png"
         },
         {
             name: "Mr.Lee",
             countStar: 5,
             position: "(PM from Ludena Protocol)",
             content: "Review content",
-            image: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-review2.png"
+            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png"
         }
     ]
 
@@ -66,7 +66,7 @@ const Partners = ({windowDimensions}) =>{
                         spaceBetween={30}
                         slidesPerGroup={1}
                         autoplay={{
-                            delay: 8000,
+                            delay: 2500,
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true
                         }}
@@ -97,7 +97,7 @@ const Partners = ({windowDimensions}) =>{
                         spaceBetween={30}
                         slidesPerGroup={1}
                         autoplay={{
-                            delay: 8000,
+                            delay: 3000,
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true
                         }}

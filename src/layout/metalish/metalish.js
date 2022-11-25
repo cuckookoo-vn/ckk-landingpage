@@ -3,10 +3,10 @@ import {useTranslation} from "react-i18next";
 
 const Metalish = ({windowDimensions}) =>{
     const images = {
-        logoMetalish: "https://ckksite.s3.ap-northeast-2.amazonaws.com/home/ckksite-metalish-logo.png",
-        room1Metalish: "https://ckksite.s3.ap-northeast-2.amazonaws.com/home/ckksite-metalish-room1.png",
-        room2Metalish: "https://ckksite.s3.ap-northeast-2.amazonaws.com/home/ckksite-metalish-room2.png",
-        room3Metalish: "https://ckksite.s3.ap-northeast-2.amazonaws.com/home/ckksite-metalish-room3.png"
+        logoMetalish: "https://d2lonqwqrbh3kq.cloudfront.net/home/ckksite-metalish-logo.png",
+        room1Metalish: "https://d2lonqwqrbh3kq.cloudfront.net/home/ckksite-metalish-room1.png",
+        room2Metalish: "https://d2lonqwqrbh3kq.cloudfront.net/home/ckksite-metalish-room2.png",
+        room3Metalish: "https://d2lonqwqrbh3kq.cloudfront.net/home/ckksite-metalish-room3.png"
     }
 
     const {t} = useTranslation();

@@ -108,12 +108,21 @@
         .custom-file-upload{
           position: absolute;
           right: 10px;
-          top: 50%;
+          top: 52%;
           transform: translateY(-50%);
           img{
             cursor: pointer;
             width: 30px;
           }
+        }
+
+        .support-close-file{
+          position: absolute;
+          right: 50px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 25px;
+          color: #9AC3B7;
         }
       }
 

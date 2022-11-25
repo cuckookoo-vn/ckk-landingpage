@@ -55,7 +55,7 @@ const ko ={
             technologyUse:{
                 title1: "TECHNOLOGY",
                 title2: "we are",
-                title3: "USING",
+                title3: "USING for our",
                 title4: "VALUED PARTNERS"
             },
         },
