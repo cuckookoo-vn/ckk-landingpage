@@ -1,0 +1,55 @@
+#partners{
+  width: 100%;
+  padding: 150px 0;
+  overflow-x: hidden;
+  .our-partners{
+    width: 100%;
+    .title-main{
+      width: 100%;
+      text-align: center;
+      display: block;
+      font-size: 40px;
+      margin-bottom: 100px;
+    }
+
+    .box-slide{
+      width: 100%;
+    }
+
+    img{
+      margin: auto;
+      width: 150px;
+    }
+  }
+
+  .review{
+    width: 100%;
+    margin-top: 200px;
+    .title-main{
+      width: 100%;
+      text-align: center;
+      display: block;
+      font-size: 40px;
+      margin-bottom: 100px;
+    }
+
+    .box-slide{
+      width: 100%;
+    }
+  }
+}
+
+#root{
+  #partners{
+    .swiper{
+      position: initial;
+      .swiper-pagination-bullet{
+        background: #00FFD1;
+      }
+      .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+      .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+        bottom: -60px;
+      }
+    }
+  }
+}

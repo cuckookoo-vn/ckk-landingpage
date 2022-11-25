@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="" />
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: pc 70%">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HWW0aRykaRXGmUHqIIZPp3UW6S" />
   <component name="ProjectViewState">
@@ -20,10 +34,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/src/ckk-ladingpage",
+    "last_opened_file_path": "D:/src/metalish",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src\components" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src\styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src\redux" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -33,7 +64,38 @@
       <option name="presentableId" value="Default" />
       <updated>1668401097968</updated>
       <workItem from="1668401099156" duration="17000" />
+      <workItem from="1668401146950" duration="199000" />
+      <workItem from="1668482265409" duration="940000" />
+      <workItem from="1668500717409" duration="4443000" />
+      <workItem from="1668507217316" duration="2882000" />
+      <workItem from="1668564955045" duration="575000" />
+      <workItem from="1668565557922" duration="3176000" />
+      <workItem from="1668569195026" duration="22162000" />
+      <workItem from="1668650505599" duration="25912000" />
+      <workItem from="1668736667905" duration="23349000" />
+      <workItem from="1668996377508" duration="21598000" />
+      <workItem from="1669081176838" duration="7657000" />
+      <workItem from="1669089784805" duration="17484000" />
+      <workItem from="1669167613969" duration="24565000" />
+      <workItem from="1669201598657" duration="250000" />
+      <workItem from="1669255012365" duration="24863000" />
+      <workItem from="1669342091210" duration="9378000" />
     </task>
+    <task id="LOCAL-00001" summary="roots: start source">
+      <created>1668401289760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668401289760</updated>
+    </task>
+    <task id="LOCAL-00002" summary="roots: pc 70%">
+      <created>1669352330667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669352330667</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -49,5 +111,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="roots: start source" />
+    <MESSAGE value="roots: pc 70%" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: pc 70%" />
   </component>
 </project>

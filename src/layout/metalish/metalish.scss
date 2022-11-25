@@ -1,0 +1,62 @@
+@import "src/styles/variables";
+
+#metalish{
+  width: 100%;
+  display: flex;
+  padding: 130px 0 0 0;
+  overflow-x: hidden;
+  .metalish{
+    flex-direction: row;
+    .title-box{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 50%;
+      img{
+        width: 40%;
+        margin: 0 auto 0 auto;
+        @media #{$info-table-1068} {
+          width: 45%;
+        }
+      }
+
+      .content-title{
+        margin: 15px auto 0 auto;
+        width: 56%;
+        display: flex;
+        flex-direction: column;
+        .title{
+          margin-top: 10px;
+          padding: 0 5px;
+        }
+
+        .learn-more{
+          margin: 15px auto 0 auto;
+        }
+      }
+    }
+
+    .image-box{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      img{
+        margin: auto;
+        display: block;
+        &.metalish-room1{
+          width: 50%;
+        }
+
+        &.metalish-room2{
+          width: 75%;
+          margin-top: -12%;
+        }
+
+        &.metalish-room3{
+          width: 90%;
+          margin-top: -19%;
+        }
+      }
+    }
+  }
+}
