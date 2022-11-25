@@ -4,52 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: start source">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.qc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.uat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/development-team-member/development-team-member.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/development-team-member/development-team-member.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/review-item/review-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/review-item/review-item.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/careers/careers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/careers/careers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/footer/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/footer/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/header/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/header/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/partners/partners.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/partners/partners.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/products/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/products/products.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/support/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/support/support.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/technology/technology.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/technology/technology.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locale/language/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locale/language/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locale/language/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/locale/locale.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mixins/window-dimensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: pc 70%">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +79,7 @@
       <workItem from="1669167613969" duration="24565000" />
       <workItem from="1669201598657" duration="250000" />
       <workItem from="1669255012365" duration="24863000" />
-      <workItem from="1669342091210" duration="8718000" />
+      <workItem from="1669342091210" duration="9378000" />
     </task>
     <task id="LOCAL-00001" summary="roots: start source">
       <created>1668401289760</created>
@@ -131,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668401289760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="roots: pc 70%">
+      <created>1669352330667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669352330667</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="roots: start source" />
-    <option name="LAST_COMMIT_MESSAGE" value="roots: start source" />
+    <MESSAGE value="roots: pc 70%" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: pc 70%" />
   </component>
 </project>
