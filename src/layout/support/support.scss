@@ -1,0 +1,135 @@
+@import "src/styles/variables";
+
+#support{
+  width: 100%;
+  overflow-x: hidden;
+  padding: 140px 0;
+  background: #000000;
+  .container-child{
+    flex-direction: column;
+    .title-main{
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .contract-form{
+      display: block;
+      position: relative;
+      width: 1100px;
+      max-width: 100%;
+      height: fit-content;
+      padding: 60px 0 30px 0;
+      margin:90px auto 0 auto;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .form-input{
+        width: calc(100% - 170px);
+        margin: 25px 0 0  60px;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        @media #{$info-table-1068} {
+          width: calc(100% - 140px);
+          margin: 25px 0 0  60px;
+        }
+
+        .title-input{
+          width: max-content;
+          display: flex;
+          margin-top: 12px;
+          white-space: nowrap;
+          flex-direction: row;
+          font-weight: bold;
+          font-size: 18px;
+          @media #{$info-table-1068} {
+            margin-top: 10px;
+            font-size: 16px;
+          }
+          span{
+            color:#ab0101 ;
+          }
+        }
+
+        .input-form{
+          width: calc(100% - 320px);
+          border-radius: 10px;
+          background: rgba(0, 3, 28, 0.6);
+          border: none;
+          padding: 15px 20px;
+          font-size: 18px;
+          @media #{$info-table-1068} {
+            width: calc(100% - 280px);
+            border-radius: 6px;
+            font-size: 14px;
+          }
+        }
+        input[type="file"]{
+          &::-webkit-file-upload-button {
+            display: none;
+          }
+          &::file-selector-button {
+            display: none;
+          }
+          pointer-events: none;
+          color: transparent;
+        }
+
+        textarea{
+          &.input-form{
+            height: 100px;
+            max-height: 100px;
+          }
+        }
+
+        .count-text{
+          position: absolute;
+          bottom: -25px;
+          right: 0;
+          @media #{$info-table-1068} {
+            bottom: -20px;
+          }
+        }
+
+        .text-error{
+          position: absolute;
+          left: 290px;
+          bottom: -32px;
+          font-size: 13px;
+          color: #ab0101;
+          @media #{$info-table-1068} {
+            left: 245px;
+            font-size: 11px;
+            bottom: -30px;
+          }
+        }
+
+        .custom-file-upload{
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          img{
+            cursor: pointer;
+            width: 30px;
+          }
+        }
+      }
+
+      button{
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: rgba(0,0,0,0);
+        width: 190px;
+        height: 55.5px;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 50px auto 0 auto;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}
