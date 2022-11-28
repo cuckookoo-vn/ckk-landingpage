@@ -114,6 +114,7 @@ const AboutUs = ({windowDimensions}) =>{
                                 disableOnInteraction: false,
                                 pauseOnMouseEnter: true
                             }}
+                            speed={1000}
                             preventClicks={true}
                             loop={true}
                             loopFillGroupWithBlank={false}

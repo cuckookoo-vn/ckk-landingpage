@@ -4,30 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: change name website">
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-flag-eng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-flag-ja.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-flag-ko.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-icon-chevron-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-icon-close-popup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-logo-header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-magnifying-glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/technology/ckksite-technology-ai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/technology/ckksite-technology-html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/technology/ckksite-technology-java.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/technology/ckksite-technology-my-sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/technology/ckksite-technology-unity.png" afterDir="false" />
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: pc 70%">
+      <change afterPath="$PROJECT_DIR$/public/images/ckksite-scroll-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-header-botton-popup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-header-close-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partners/ckksite-partners-frame-review.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/development-team-member/development-team-member.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/development-team-member/development-team-member.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/review-item/review-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/review-item/review-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/review-item/review-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/review-item/review-item.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/metalish/metalish.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/products/products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/support/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/support/support.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.scss" afterDir="false" />
@@ -64,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/src/ckk-ladingpage/ckk-landingpage/public/image/header",
+    "last_opened_file_path": "D:/src/ckk-ladingpage/ckk-landingpage/public/images/header",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,18 +66,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\header" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\image\header" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\image\technology" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src\components" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src" />
-      <recent name="D:\src\ckk-ladingpage\ckk-landingpage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\technology" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\header" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\partners" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\technology" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\image\header" />
-      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src\redux" />
-      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -113,7 +104,8 @@
       <workItem from="1669167613969" duration="24565000" />
       <workItem from="1669201598657" duration="250000" />
       <workItem from="1669255012365" duration="24863000" />
-      <workItem from="1669342091210" duration="20966000" />
+      <workItem from="1669342091210" duration="21083000" />
+      <workItem from="1669599128974" duration="25160000" />
     </task>
     <task id="LOCAL-00001" summary="roots: start source">
       <created>1668401289760</created>
@@ -136,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669352927635</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="roots: pc 70%">
+      <created>1669374665247</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669374665247</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,8 +154,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="roots: start source" />
-    <MESSAGE value="roots: pc 70%" />
     <MESSAGE value="roots: change name website" />
-    <option name="LAST_COMMIT_MESSAGE" value="roots: change name website" />
+    <MESSAGE value="roots: pc 70%" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: pc 70%" />
   </component>
 </project>

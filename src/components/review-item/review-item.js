@@ -9,7 +9,8 @@ const ReviewItem = ({element}) =>{
 
     const images = {
         star: "https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-about-star.png",
-        starFull: "https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-about-star-full.png"
+        starFull: "https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-about-star-full.png",
+        partnersFrame:  process.env.PUBLIC_URL + '/images/partners/ckksite-partners-frame-review.png'
     }
 
     useEffect(()=>{
@@ -37,7 +38,11 @@ const ReviewItem = ({element}) =>{
 
     return(
         <div className="review-item">
-            <img src={element.image} alt="image-item" />
+            <div className="box-image">
+                <img className="review-item-frame" src={images.partnersFrame} alt="partners-frame"/>
+                <img className="review-item" src={element.image} alt="image-item" />
+            </div>
+
             <div className="title-box">
                 <div className="assess-box">
                     <div className="assess-name">

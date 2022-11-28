@@ -14,8 +14,9 @@ const Header = ({windowDimensions}) =>{
         flagEng: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-eng.png",
         flagKo: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-ko.png",
         flagJa: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-ja.png",
-        iconClosePopup: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-icon-close-popup.png"
-
+        iconClosePopup: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-icon-close-popup.png",
+        iconCloseWhite:  process.env.PUBLIC_URL + "/images/header/ckksite-header-close-white.png",
+        bgPopupButtonHeader:  process.env.PUBLIC_URL + "/images/header/ckksite-header-botton-popup.png",
     }
 
     // translation
@@ -453,22 +454,36 @@ const Header = ({windowDimensions}) =>{
                                          alt="logo-chevron-down"/>
 
                                     <input className="input-search-popup"
-                                           placeholder="search..."/>
+                                           placeholder="Search Cuckookoo.com"/>
 
                                     <img className="icon-close-popup"
                                          onClick={()=>setPopupSearch(false)}
-                                         src={images.iconClosePopup}
+                                         src={images.iconCloseWhite}
                                          alt="icon-close-popup"/>
                                 </div>
                             </div>
 
                             <div className="content-box-popup">
                                 <div className="suggestions-box">
-                                    <button>Metaverse</button>
-                                    <button>English</button>
-                                    <button>3D advertising</button>
-                                    <button>Traveling</button>
-                                    <button>AI</button>
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        Metaverse
+                                    </button>
+
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        English
+                                    </button>
+
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        3D advertising
+                                    </button>
+
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        Traveling
+                                    </button>
+
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        AI
+                                    </button>
                                 </div>
                             </div>
                         </div>

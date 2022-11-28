@@ -55,6 +55,7 @@ const Support = ({windowDimensions}) =>{
         <div id="support">
             <div className="container-child">
                 <span className="title-main">{t("support.titleMain")}</span>
+                <span className="description">{t("support.description")}</span>
                 <form className="contract-form"
                       style={{backgroundImage:`url(${images.bgForm})`}}
                       data-aos-anchor-placement="bottom-bottom"

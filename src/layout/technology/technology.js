@@ -29,51 +29,50 @@ const Technology = ({windowDimensions}) =>{
             <div className="technology-use">
                 <div className="overlay-top"></div>
 
-                <div className="container">
-                    <div className="container-child">
-                        <div className="box-image">
-                            <div className="top-title">
-                                <span className="title1">{t("technology.technologyUse.title1")}</span>
+                <img src={images.lap} alt="lap" className="lap"/>
 
-                                <span className="title2">{t("technology.technologyUse.title2")}</span>
+                <div className="container-child">
+                    <div className="box-image">
+                        <div className="top-title">
+                            <span className="title1">{t("technology.technologyUse.title1")}</span>
 
-                                <span className="title3">{t("technology.technologyUse.title3")}</span>
-                            </div>
+                            <span className="title2">{t("technology.technologyUse.title2")}</span>
 
-                            <img src={images.lap} alt="lap"/>
+                            <span className="title3">{t("technology.technologyUse.title3")}</span>
+                        </div>
+                        <div className="box-slide">
+                            <Swiper
+                                slidesPerView={3}
+                                spaceBetween={30}
+                                slidesPerGroup={1}
+                                autoplay={{
+                                    delay: 3000,
+                                    disableOnInteraction: false,
+                                    pauseOnMouseEnter: true
+                                }}
+                                speed={1000}
+                                loop={true}
+                                loopFillGroupWithBlank={true}
+                                pagination={{
+                                    clickable: true,
+                                    dynamicBullets: true,
+                                }}
+                                modules={[Pagination, Navigation]}
+                            >
+                                {imageTechnology.map((element, index)=>
+                                    <SwiperSlide key={index}>
+                                        <img src={element.image} alt="technology" />
+                                    </SwiperSlide>
+                                )}
+                            </Swiper>
+                        </div>
 
-                            <div className="box-slide">
-                                <Swiper
-                                    slidesPerView={3}
-                                    spaceBetween={30}
-                                    slidesPerGroup={1}
-                                    autoplay={{
-                                        delay: 3000,
-                                        disableOnInteraction: false,
-                                        pauseOnMouseEnter: true
-                                    }}
-                                    loop={true}
-                                    loopFillGroupWithBlank={true}
-                                    pagination={{
-                                        clickable: true,
-                                        dynamicBullets: true,
-                                    }}
-                                    modules={[Pagination, Navigation]}
-                                >
-                                    {imageTechnology.map((element, index)=>
-                                        <SwiperSlide key={index}>
-                                            <img src={element.image} alt="technology" />
-                                        </SwiperSlide>
-                                    )}
-                                </Swiper>
-                            </div>
-
-                            <div className="bottom-title">
-                                <span className="title4">{t("technology.technologyUse.title4")}</span>
-                            </div>
+                        <div className="bottom-title">
+                            <span className="title4">{t("technology.technologyUse.title4")}</span>
                         </div>
                     </div>
                 </div>
+
                 <div className="overlay-bottom"></div>
             </div>
         </div>
