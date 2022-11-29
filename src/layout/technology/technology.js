@@ -1,7 +1,7 @@
 import './technology.scss';
 import {useTranslation} from "react-i18next";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination} from "swiper";
+import {EffectCoverflow, Navigation, Pagination} from "swiper";
 
 const Technology = ({windowDimensions}) =>{
     const images = {
@@ -45,10 +45,18 @@ const Technology = ({windowDimensions}) =>{
                                 slidesPerView={3}
                                 spaceBetween={30}
                                 slidesPerGroup={1}
-                                autoplay={{
-                                    delay: 3000,
-                                    disableOnInteraction: false,
-                                    pauseOnMouseEnter: true
+                                effect={"coverflow"}
+                                // autoplay={{
+                                //     delay: 3000,
+                                //     disableOnInteraction: false,
+                                //     pauseOnMouseEnter: true
+                                // }}
+                                coverflowEffect={{
+                                    rotate: 50,
+                                    stretch: 0,
+                                    depth: 100,
+                                    modifier: 1,
+                                    slideShadows: true,
                                 }}
                                 speed={1000}
                                 loop={true}
@@ -57,11 +65,11 @@ const Technology = ({windowDimensions}) =>{
                                     clickable: true,
                                     dynamicBullets: true,
                                 }}
-                                modules={[Pagination, Navigation]}
+                                modules={[EffectCoverflow, Pagination, Navigation]}
                             >
                                 {imageTechnology.map((element, index)=>
                                     <SwiperSlide key={index}>
-                                        <img src={element.image} alt="technology" />
+                                        <img key={index} src={element.image} alt="technology" />
                                     </SwiperSlide>
                                 )}
                             </Swiper>
