@@ -46,11 +46,11 @@ const Technology = ({windowDimensions}) =>{
                                 spaceBetween={30}
                                 slidesPerGroup={1}
                                 effect={"coverflow"}
-                                // autoplay={{
-                                //     delay: 3000,
-                                //     disableOnInteraction: false,
-                                //     pauseOnMouseEnter: true
-                                // }}
+                                autoplay={{
+                                    delay: 3000,
+                                    disableOnInteraction: false,
+                                    pauseOnMouseEnter: true
+                                }}
                                 coverflowEffect={{
                                     rotate: 50,
                                     stretch: 0,

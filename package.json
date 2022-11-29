@@ -25,7 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "HTTPS=true SSL_CRT_FILE=./.cert/cert.pem SSL_KEY_FILE=./.cert/key.pem react-scripts start",
+    "start:windows": "set HTTPS=true&&set SSL_CRT_FILE=./.cert/cert.pem&&set SSL_KEY_FILE=./.cert/key.pem&&react-scripts start",
     "start:development": "env-cmd -f .env.development react-scripts start",
     "start:prod": "env-cmd -f .env.prod react-scripts start",
     "start:qc": "env-cmd -f .env.qc react-scripts start",

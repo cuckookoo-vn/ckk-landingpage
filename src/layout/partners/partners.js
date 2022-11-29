@@ -164,11 +164,11 @@ const Partners = ({windowDimensions}) =>{
                         spaceBetween={30}
                         slidesPerGroup={1}
                         mousewheel={true}
-                        // autoplay={{
-                        //     delay: 3000,
-                        //     disableOnInteraction: false,
-                        //     pauseOnMouseEnter: true,
-                        // }}
+                        autoplay={{
+                            delay: 6000,
+                            disableOnInteraction: false,
+                            pauseOnMouseEnter: true,
+                        }}
                         speed={1800}
                         loop={true}
                         loopFillGroupWithBlank={true}
@@ -182,7 +182,13 @@ const Partners = ({windowDimensions}) =>{
                             {review.map((element, index)=>
                                 <SwiperSlide key={index}>
                                     <ReviewItem element={element[0]} />
-                                    <ReviewItem element={element[1]} />
+                                    {
+                                        element[1] ?
+                                            <ReviewItem element={element[1]} />
+                                            :
+                                            null
+                                    }
+
                                 </SwiperSlide>
                             )}
                         </div>
