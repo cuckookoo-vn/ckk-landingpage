@@ -1,29 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="" />
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: add scroll top and change like design">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="CKKS-13-init-project" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HWW0aRykaRXGmUHqIIZPp3UW6S" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/src/ckk-ladingpage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/src/ckk-ladingpage/ckk-landingpage/public/images/header&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\header" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\image\header" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\image\technology" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src\components" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\header" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\partners" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\technology" />
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\image\header" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -33,7 +70,61 @@
       <option name="presentableId" value="Default" />
       <updated>1668401097968</updated>
       <workItem from="1668401099156" duration="17000" />
+      <workItem from="1668401146950" duration="199000" />
+      <workItem from="1668482265409" duration="940000" />
+      <workItem from="1668500717409" duration="4443000" />
+      <workItem from="1668507217316" duration="2882000" />
+      <workItem from="1668564955045" duration="575000" />
+      <workItem from="1668565557922" duration="3176000" />
+      <workItem from="1668569195026" duration="22162000" />
+      <workItem from="1668650505599" duration="25912000" />
+      <workItem from="1668736667905" duration="23349000" />
+      <workItem from="1668996377508" duration="21598000" />
+      <workItem from="1669081176838" duration="7657000" />
+      <workItem from="1669089784805" duration="17484000" />
+      <workItem from="1669167613969" duration="24565000" />
+      <workItem from="1669201598657" duration="250000" />
+      <workItem from="1669255012365" duration="24863000" />
+      <workItem from="1669342091210" duration="21083000" />
+      <workItem from="1669599128974" duration="26732000" />
+      <workItem from="1669685565243" duration="895000" />
     </task>
+    <task id="LOCAL-00001" summary="roots: start source">
+      <created>1668401289760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668401289760</updated>
+    </task>
+    <task id="LOCAL-00002" summary="roots: pc 70%">
+      <created>1669352330667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669352330667</updated>
+    </task>
+    <task id="LOCAL-00003" summary="roots: change name website">
+      <created>1669352927635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669352927635</updated>
+    </task>
+    <task id="LOCAL-00004" summary="roots: pc 70%">
+      <created>1669374665247</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669374665247</updated>
+    </task>
+    <task id="LOCAL-00005" summary="roots: add scroll top and change like design">
+      <created>1669631957488</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669631957488</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -49,5 +140,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="roots: start source" />
+    <MESSAGE value="roots: change name website" />
+    <MESSAGE value="roots: pc 70%" />
+    <MESSAGE value="roots: add scroll top and change like design" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: add scroll top and change like design" />
   </component>
 </project>

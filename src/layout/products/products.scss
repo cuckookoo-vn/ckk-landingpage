@@ -1,0 +1,103 @@
+@import "src/styles/variables";
+
+#products{
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  .container-child{
+    padding: 150px 0 200px 0;
+    flex-direction: row;
+    .products-box{
+      width: 50%;
+      @media #{$info-table-1400} {
+        width: 100%;
+      }
+
+      .frame-box{
+        position: relative;
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+        @media #{$info-table-1068} {
+          width: 90%;
+        }
+        img{
+          width: 100%;
+        }
+
+        .title-main{
+          font-size: 30px;
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .description{
+          width: 100%;
+          display: block;
+          height: 140px;
+          margin:10px auto 0 auto;
+          @media #{$info-table-1400} {
+            height: 10vw;
+          }
+
+          @media #{$info-table-1068} {
+            height: 8vw;
+          }
+        }
+
+        .learn-more{
+          margin-top: 20px;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .technology{
+    width: 100%;
+    padding: 120px 0 160px 0;
+    background: #000000;
+    .container-child{
+      flex-direction: column;
+      .technology-box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        &.top,&.bottom{
+          justify-content: space-around;
+        }
+
+        &.center{
+          justify-content: center;
+          padding: 30px 0;
+        }
+
+        .technology-item{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          img{
+            height: 300px;
+            width: fit-content;
+            margin: auto;
+            @media #{$info-table-1400} {
+              height: 22vw;
+            }
+          }
+
+          .technology-title{
+            margin-top: 10px;
+            width: 100%;
+            color: #FFFFFF;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

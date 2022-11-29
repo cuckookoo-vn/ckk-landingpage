@@ -1,0 +1,50 @@
+.review-item{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  .title-box{
+    margin-left: 30px;
+    .assess-name{
+      .name{
+        margin-right: 10px;
+      }
+
+      .assess-start{
+        width: 15px;
+        margin-right: 5px;
+      }
+    }
+
+    .position{
+      display: block;
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .content-review{
+      margin-top: 12px;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .box-image{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    .review-item-frame{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 150px;
+    }
+    .review-item{
+      position: absolute;
+      width: 115px;
+      left: 50%;
+      top: 51%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
