@@ -27,4 +27,24 @@
       width: 100%;
     }
   }
+
+  .box-image{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    .review-item-frame{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 150px;
+    }
+    .review-item{
+      position: absolute;
+      width: 115px;
+      left: 50%;
+      top: 51%;
+      transform: translate(-50%,-50%);
+    }
+  }
 }

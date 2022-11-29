@@ -8,13 +8,15 @@ import {useState} from "react";
 const Header = ({windowDimensions}) =>{
     // list images
     const images = {
-        logoCuckookoo: "https://ckksite.s3.ap-northeast-2.amazonaws.com/header/ckksite-logo-header.png",
-        logoChevronDown: "https://ckksite.s3.ap-northeast-2.amazonaws.com/header/ckksite-icon-chevron-down.png",
-        logoMagnifyingGlass: "https://ckksite.s3.ap-northeast-2.amazonaws.com/header/ckksite-magnifying-glass.png",
-        flagEng: "https://ckksite.s3.ap-northeast-2.amazonaws.com/header/ckksite-flag-eng.png",
-        flagKo: "https://ckksite.s3.ap-northeast-2.amazonaws.com/header/ckksite-flag-ko.png",
-        flagJa: "https://ckksite.s3.ap-northeast-2.amazonaws.com/header/ckksite-flag-ja.png",
-        iconClosePopup: "https://ckksite.s3.ap-northeast-2.amazonaws.com/header/ckksite-icon-close-popup.png"
+        logoCuckookoo: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-logo-header.png",
+        logoChevronDown: process.env.PUBLIC_URL + "/images/header/ckksite-icon-chevron-down.png",
+        logoMagnifyingGlass: process.env.PUBLIC_URL + "/images/header/ckksite-magnifying-glass.png",
+        flagEng: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-eng.png",
+        flagKo: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-ko.png",
+        flagJa: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-ja.png",
+        iconClosePopup: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-icon-close-popup.png",
+        iconCloseWhite:  process.env.PUBLIC_URL + "/images/header/ckksite-header-close-white.png",
+        bgPopupButtonHeader:  process.env.PUBLIC_URL + "/images/header/ckksite-header-botton-popup.png",
     }
 
     // translation
@@ -151,7 +153,6 @@ const Header = ({windowDimensions}) =>{
     const [statusMenuMobile, setStatusMenuMobile] = useState(false);
 
     const [statusLangMobile, setStatusLangMobile] = useState(false);
-
 
     const showMenuMobile = () =>{
         let headerMenuMobile = document.getElementById("header-menu-mobile");
@@ -453,22 +454,36 @@ const Header = ({windowDimensions}) =>{
                                          alt="logo-chevron-down"/>
 
                                     <input className="input-search-popup"
-                                           placeholder="search..."/>
+                                           placeholder="Search Cuckookoo.com"/>
 
                                     <img className="icon-close-popup"
                                          onClick={()=>setPopupSearch(false)}
-                                         src={images.iconClosePopup}
+                                         src={images.iconCloseWhite}
                                          alt="icon-close-popup"/>
                                 </div>
                             </div>
 
                             <div className="content-box-popup">
                                 <div className="suggestions-box">
-                                    <button>Metaverse</button>
-                                    <button>English</button>
-                                    <button>3D advertising</button>
-                                    <button>Traveling</button>
-                                    <button>AI</button>
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        Metaverse
+                                    </button>
+
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        English
+                                    </button>
+
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        3D advertising
+                                    </button>
+
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        Traveling
+                                    </button>
+
+                                    <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
+                                        AI
+                                    </button>
                                 </div>
                             </div>
                         </div>

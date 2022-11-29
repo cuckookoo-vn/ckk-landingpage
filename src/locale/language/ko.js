@@ -55,19 +55,25 @@ const ko ={
             technologyUse:{
                 title1: "TECHNOLOGY",
                 title2: "we are",
-                title3: "USING",
+                title3: "USING for our",
                 title4: "VALUED PARTNERS"
             },
         },
 
         aboutUs: {
             ourPartners: {
-                titleMain: "Our partners"
+                titleMain1: "OUR",
+                titleMain2: "PARTNERS"
+            },
+            review: {
+                titleMain: "What partners say about Cuckookoo?"
             }
         },
 
         support: {
-            titleMain: "Leave us a message by filling out our form below and we will get back to you very soon!",
+            titleMain: "SUPPORT",
+
+            description: "Leave us a message by filling out our form below and we will get back to you very soon!",
 
             email: {
                 titleEmail: "Your email address",

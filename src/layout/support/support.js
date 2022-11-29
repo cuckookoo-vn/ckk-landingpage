@@ -2,12 +2,14 @@ import './support.scss';
 import {useState} from "react";
 import {useForm} from "react-hook-form";
 import {useTranslation} from "react-i18next";
+import {faCircleXmark} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Support = ({windowDimensions}) =>{
     const images = {
-        bgForm: "https://ckksite.s3.ap-northeast-2.amazonaws.com/support/ckksite-support-bg-form.png",
-        bgButton: "https://ckksite.s3.ap-northeast-2.amazonaws.com/support/ckksite-support-bg-button.png",
-        iconUpload: "https://ckksite.s3.ap-northeast-2.amazonaws.com/support/ckksite-support-upload-file.png"
+        bgForm: "https://d2lonqwqrbh3kq.cloudfront.net/support/ckksite-support-bg-form.png",
+        bgButton: "https://d2lonqwqrbh3kq.cloudfront.net/support/ckksite-support-bg-button.png",
+        iconUpload: "https://d2lonqwqrbh3kq.cloudfront.net/support/ckksite-support-upload-file.png"
     }
 
     const [valueTextarea, setValueTextarea] = useState('');
@@ -37,6 +39,12 @@ const Support = ({windowDimensions}) =>{
         }
     }
 
+    const closeFile = () =>{
+        let inputFile = document.getElementById("support-file-upload");
+        inputFile.style.color = "transparent";
+        inputFile.value = null;
+    }
+
     const onSubmit = (data) => {
         alert("email đã được gửi");
     };
@@ -47,6 +55,7 @@ const Support = ({windowDimensions}) =>{
         <div id="support">
             <div className="container-child">
                 <span className="title-main">{t("support.titleMain")}</span>
+                <span className="description">{t("support.description")}</span>
                 <form className="contract-form"
                       style={{backgroundImage:`url(${images.bgForm})`}}
                       data-aos-anchor-placement="bottom-bottom"
@@ -82,6 +91,11 @@ const Support = ({windowDimensions}) =>{
                         <label htmlFor="support-file-upload" className="custom-file-upload">
                             <img src={images.iconUpload} alt="icon-upload"/>
                         </label>
+
+                        <FontAwesomeIcon icon={faCircleXmark}
+                                         onClick={()=> closeFile()}
+                                         className="support-close-file"/>
+
                         {
                             statusSize === false ?
                             <p className="text-error">{t("support.file.maxSize")}</p> :

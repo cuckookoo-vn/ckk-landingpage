@@ -6,7 +6,7 @@ import {useEffect,useRef, useState} from "react";
 import DevelopmentTeamMember from "../../components/development-team-member/development-team-member";
 
 const AboutUs = ({windowDimensions}) =>{
-    const urlImage = "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-us-team-";
+    const urlImage = "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-team-";
 
     const memberTeam = [
         {
@@ -73,15 +73,15 @@ const AboutUs = ({windowDimensions}) =>{
         if(windowDimensions.width > 1399.5){
             slideDataTemp.slidesPerView = 4;
             slideDataTemp.spaceBetween = 30;
-            slideDataTemp.slidesPerGroup = 4;
+            slideDataTemp.slidesPerGroup = 1;
         }else if(windowDimensions.width > 991.5){
             slideDataTemp.slidesPerView = 3;
             slideDataTemp.spaceBetween = 15;
-            slideDataTemp.slidesPerGroup = 3;
+            slideDataTemp.slidesPerGroup = 1;
         }else{
             slideDataTemp.slidesPerView = 2;
             slideDataTemp.spaceBetween = 15;
-            slideDataTemp.slidesPerGroup = 2;
+            slideDataTemp.slidesPerGroup = 1;
         }
         return slideDataTemp;
     };
@@ -109,11 +109,12 @@ const AboutUs = ({windowDimensions}) =>{
                             slidesPerView={slideData.slidesPerView}
                             spaceBetween={slideData.spaceBetween}
                             slidesPerGroup={slideData.slidesPerGroup}
-                            // autoplay={{
-                            //     delay: 6000,
-                            //     disableOnInteraction: false,
-                            //     pauseOnMouseEnter: true
-                            // }}
+                            autoplay={{
+                                delay: 3000,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true
+                            }}
+                            speed={1000}
                             preventClicks={true}
                             loop={true}
                             loopFillGroupWithBlank={false}

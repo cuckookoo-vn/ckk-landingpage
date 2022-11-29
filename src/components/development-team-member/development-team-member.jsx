@@ -2,7 +2,7 @@ import './development-team-member.scss'
 
 const DevelopmentTeamMember = ({image, name ,position}) =>{
     const images = {
-        boxMember: "https://ckksite.s3.ap-northeast-2.amazonaws.com/about-us/ckksite-about-us-team-frame.png",
+        boxMember: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-team-frame.png",
     }
     return(
         <div className="development-team-member">
