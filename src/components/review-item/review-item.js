@@ -19,6 +19,7 @@ const ReviewItem = ({element}) =>{
         for (let i = 0; i < element.countStar; i++){
             startRegular.push(
                 <img src={images.starFull}
+                     key={i+"starFull"}
                      alt="start-full"
                      className="assess-start"/>
             )
@@ -27,6 +28,7 @@ const ReviewItem = ({element}) =>{
         for (let i = 0; i < const_start - element.countStar; i++){
             start.push(
                 <img src={images.star}
+                     key={i+"star"}
                      alt="start"
                      className="assess-start"/>
             )

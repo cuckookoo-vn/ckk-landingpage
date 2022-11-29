@@ -2,7 +2,7 @@ import './about-us.scss';
 import {Navigation, Pagination} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {useTranslation} from "react-i18next";
-import {useEffect,useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import DevelopmentTeamMember from "../../components/development-team-member/development-team-member";
 
 const AboutUs = ({windowDimensions}) =>{
@@ -86,7 +86,7 @@ const AboutUs = ({windowDimensions}) =>{
         return slideDataTemp;
     };
 
-    const [slideData, setSlideData] = useState(checkWidthWindowSetSlideData)
+    const [slideData, setSlideData] = useState(checkWidthWindowSetSlideData);
 
     useEffect(()=>{
         setSlideData(checkWidthWindowSetSlideData)
