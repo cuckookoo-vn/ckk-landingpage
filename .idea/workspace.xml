@@ -4,30 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: pc 70%">
-      <change afterPath="$PROJECT_DIR$/public/images/ckksite-scroll-top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-header-botton-popup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/header/ckksite-header-close-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/partners/ckksite-partners-frame-review.png" afterDir="false" />
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: add scroll top and change like design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/review-item/review-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/review-item/review-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/review-item/review-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/review-item/review-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/products/products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/support/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/support/support.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/technology/technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/technology/technology.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/technology/technology.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/technology/technology.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +31,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/src/ckk-ladingpage/ckk-landingpage/public/images/header",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/src/ckk-ladingpage/ckk-landingpage/public/images/header&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\header" />
@@ -105,7 +86,8 @@
       <workItem from="1669201598657" duration="250000" />
       <workItem from="1669255012365" duration="24863000" />
       <workItem from="1669342091210" duration="21083000" />
-      <workItem from="1669599128974" duration="25160000" />
+      <workItem from="1669599128974" duration="26732000" />
+      <workItem from="1669685565243" duration="895000" />
     </task>
     <task id="LOCAL-00001" summary="roots: start source">
       <created>1668401289760</created>
@@ -135,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669374665247</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="roots: add scroll top and change like design">
+      <created>1669631957488</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669631957488</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +145,7 @@
     <MESSAGE value="roots: start source" />
     <MESSAGE value="roots: change name website" />
     <MESSAGE value="roots: pc 70%" />
-    <option name="LAST_COMMIT_MESSAGE" value="roots: pc 70%" />
+    <MESSAGE value="roots: add scroll top and change like design" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: add scroll top and change like design" />
   </component>
 </project>

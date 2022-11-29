@@ -1,6 +1,6 @@
 import './partners.scss';
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination} from "swiper";
+import {Mousewheel, Navigation, Pagination} from "swiper";
 import ReviewItem from "../../components/review-item/review-item";
 import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
@@ -139,22 +139,24 @@ const Partners = ({windowDimensions}) =>{
                 <div className="review">
                     <span className="title-main">{t("aboutUs.review.titleMain")}</span>
                     <Swiper
-                        slidesPerView={2}
+                        slidesPerView={1}
                         spaceBetween={30}
                         slidesPerGroup={1}
+                        direction={"vertical"}
                         autoplay={{
                             delay: 3000,
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true,
                         }}
                         speed={1800}
+                        mousewheel={true}
                         loop={true}
                         loopFillGroupWithBlank={true}
                         pagination={{
                             clickable: true,
                             dynamicBullets: true,
                         }}
-                        modules={[Pagination, Navigation]}
+                        modules={[Mousewheel,Pagination, Navigation]}
                     >
                         <div className="box-slide">
                             {review.map((element, index)=>
