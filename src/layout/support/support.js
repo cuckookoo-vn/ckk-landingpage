@@ -15,6 +15,7 @@ const Support = ({windowDimensions}) =>{
     const [valueTextarea, setValueTextarea] = useState('');
 
     const [statusSize, setStatusSize] = useState(true);
+    const [statusClose, setStatusClose] = useState(false);
 
     const lengthTextarea = 350;
 
@@ -32,10 +33,12 @@ const Support = ({windowDimensions}) =>{
         if(event.target.files[0].size/1024/1024 > 25){
             event.target.value = null;
             setStatusSize(false);
+            setStatusClose(false);
             event.target.style.color = "transparent";
         }else {
             event.target.style.color = "#0D0C0C";
             setStatusSize(true);
+            setStatusClose(true);
         }
     }
 
@@ -43,6 +46,7 @@ const Support = ({windowDimensions}) =>{
         let inputFile = document.getElementById("support-file-upload");
         inputFile.style.color = "transparent";
         inputFile.value = null;
+        setStatusClose(false);
     }
 
     const onSubmit = (data) => {
@@ -92,9 +96,11 @@ const Support = ({windowDimensions}) =>{
                             <img src={images.iconUpload} alt="icon-upload"/>
                         </label>
 
+
                         <FontAwesomeIcon icon={faCircleXmark}
                                          onClick={()=> closeFile()}
-                                         className="support-close-file"/>
+                                         className={"support-close-file" + (statusClose ? " open" : "")}/>
+
 
                         {
                             statusSize === false ?

@@ -25,34 +25,54 @@ const Partners = ({windowDimensions}) =>{
     ]
 
     const review = [
-        {
-            name: "Mr.Tony",
-            countStar: 4,
-            position: "(CEO of Chainos globle)",
-            content: "Review content",
-            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png"
-        },
-        {
-            name: "Mr.Lee",
-            countStar: 5,
-            position: "(PM from Ludena Protocol)",
-            content: "Review content",
-            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png"
-        },
-        {
-            name: "Mr.Tony",
-            countStar: 4,
-            position: "(CEO of Chainos globle)",
-            content: "Review content",
-            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png"
-        },
-        {
-            name: "Mr.Lee",
-            countStar: 5,
-            position: "(PM from Ludena Protocol)",
-            content: "Review content",
-            image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png"
-        }
+        [
+            {
+                name: "Mr.Tony",
+                countStar: 4,
+                position: "(CEO of Chainos globle)",
+                content: "Review content",
+                image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png"
+            },
+            {
+                name: "Mr.Lee",
+                countStar: 5,
+                position: "(PM from Ludena Protocol)",
+                content: "Review content",
+                image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png"
+            }
+        ],
+        [
+            {
+                name: "Mr.Tony",
+                countStar: 4,
+                position: "(CEO of Chainos globle)",
+                content: "Review content",
+                image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png"
+            },
+            {
+                name: "Mr.Lee",
+                countStar: 5,
+                position: "(PM from Ludena Protocol)",
+                content: "Review content",
+                image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png"
+            }
+        ],
+        [
+            {
+                name: "Mr.Tony",
+                countStar: 4,
+                position: "(CEO of Chainos globle)",
+                content: "Review content",
+                image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png"
+            },
+            {
+                name: "Mr.Lee",
+                countStar: 5,
+                position: "(PM from Ludena Protocol)",
+                content: "Review content",
+                image: "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png"
+            }
+        ]
     ]
 
     // check width set data slide
@@ -139,17 +159,17 @@ const Partners = ({windowDimensions}) =>{
                 <div className="review">
                     <span className="title-main">{t("aboutUs.review.titleMain")}</span>
                     <Swiper
+                        direction={"vertical"}
                         slidesPerView={1}
                         spaceBetween={30}
                         slidesPerGroup={1}
-                        direction={"vertical"}
+                        mousewheel={true}
                         autoplay={{
-                            delay: 3000,
+                            delay: 6000,
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true,
                         }}
                         speed={1800}
-                        mousewheel={true}
                         loop={true}
                         loopFillGroupWithBlank={true}
                         pagination={{
@@ -161,7 +181,14 @@ const Partners = ({windowDimensions}) =>{
                         <div className="box-slide">
                             {review.map((element, index)=>
                                 <SwiperSlide key={index}>
-                                    <ReviewItem element={element} />
+                                    <ReviewItem element={element[0]} />
+                                    {
+                                        element[1] ?
+                                            <ReviewItem element={element[1]} />
+                                            :
+                                            null
+                                    }
+
                                 </SwiperSlide>
                             )}
                         </div>

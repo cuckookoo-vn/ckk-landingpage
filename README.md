@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### start on window
+
+This section has moved here: [https://create-react-app.dev/docs/using-https-in-development/](https://create-react-app.dev/docs/using-https-in-development/)
+
+### `set HTTPS=true&&npm start`
+
+**Note: - start by Command Prompt in Terminal
+        - without start source, all start:env .... run npm run start:env-name
+        - when start env start and start:windows to set HTTPS=true when you want run this terminal run set HTTPS=false 
+        
+
