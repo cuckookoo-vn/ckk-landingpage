@@ -5,9 +5,16 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  padding-top: 240px;
+  background: #F0F0F0;
+  @media #{$info-phone} {
+    padding-top: 140px;
+  }
   .container-child{
-    padding: 150px 0 200px 0;
     flex-direction: row;
+    @media #{$info-phone} {
+      flex-direction: column;
+    }
     .products-box{
       width: 50%;
       @media #{$info-table-1400} {
@@ -22,6 +29,10 @@
         @media #{$info-table-1068} {
           width: 90%;
         }
+        &.left{
+          margin-bottom: 100px;
+        }
+
         img{
           width: 100%;
         }
@@ -38,13 +49,19 @@
           width: 100%;
           display: block;
           height: 140px;
-          margin:10px auto 0 auto;
+          margin: 10px auto 0 auto;
           @media #{$info-table-1400} {
-            height: 10vw;
+            font-size: 2vw;
+            height: 12vw;
           }
 
           @media #{$info-table-1068} {
-            height: 8vw;
+            height: 12vw;
+          }
+
+          @media #{$info-phone} {
+            height: fit-content;
+            font-size: 17px;
           }
         }
 
@@ -60,14 +77,21 @@
 
   .technology{
     width: 100%;
-    padding: 120px 0 160px 0;
+    padding: 220px 0;
+    margin-top: 150px;
     background: #000000;
+    @media #{$info-phone} {
+      padding: 100px 0;
+    }
     .container-child{
       flex-direction: column;
       .technology-box{
         width: 100%;
         display: flex;
         flex-direction: row;
+        @media #{$info-phone} {
+          flex-wrap: wrap;
+        }
         &.top,&.bottom{
           justify-content: space-around;
         }
@@ -75,12 +99,20 @@
         &.center{
           justify-content: center;
           padding: 30px 0;
+          @media #{$info-phone} {
+            padding: 0;
+          }
         }
 
         .technology-item{
           display: flex;
           flex-direction: column;
           justify-content: center;
+          @media #{$info-phone} {
+            padding: 0 20px;
+            margin-bottom: 40px;
+          }
+
           img{
             height: 300px;
             width: fit-content;

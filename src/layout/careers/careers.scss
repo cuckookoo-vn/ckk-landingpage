@@ -1,4 +1,113 @@
+@import "src/styles/variables";
 #careers{
   width: 100%;
   display: flex;
+  padding: 240px 0;
+  background-color: #000000;
+  .container-child{
+    display: block;
+    .title-box{
+      position: absolute;
+      left: 140px;
+      @media #{$info-table-1400} {
+        left: 12vw;
+        top: -1.7vw;
+      }
+      .title{
+        color: #FFFFFF;
+        font-weight: bold;
+        display: block;
+        width: 410px;
+
+
+        &.title1{
+          font-size: 40px;
+          line-height: 38px;
+          @media #{$info-table-1400} {
+            font-size: 3.05vw;
+            line-height: 2.9vw;
+          }
+        }
+
+        &.title2{
+          line-height: 84px;
+          font-size: 90px;
+          width: 80px;
+          @media #{$info-table-1400} {
+            width: 32vw;
+            font-size: 6.86vw;
+            line-height: 6.3vw;
+          }
+        }
+      }
+
+    }
+
+    .slider-box{
+      display: block;
+      width: fit-content;
+      margin: auto;
+      .career-slides{
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        justify-content: space-around;
+        width: 750px;
+        height: 145px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media #{$info-table-1400} {
+          width: 47vw;
+          height: 8.8vw;
+        }
+        &:nth-child(1){
+          transform: translateX(230px);
+          @media #{$info-table-1400} {
+            transform: translateX(18vw);
+          }
+        }
+        &:nth-child(3){
+          transform: translateX(230px);
+          @media #{$info-table-1400} {
+            transform: translateX(18vw);
+          }
+        }
+
+        .title{
+          font-size: 27px;
+          color: #FFFFFF;
+          font-weight: bold;
+          @media #{$info-table-1400} {
+            font-size: 1.5vw;
+          }
+        }
+
+        .title-time{
+          font-size: 15px;
+          color: #FFFFFF;
+          @media #{$info-table-1400} {
+            font-size: .7vw;
+          }
+        }
+
+        .button-apply{
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          background-color: rgba(0,0,0,0);
+          width: 180px;
+          height: 47px;
+          font-size: 1vw;
+          font-weight: bold;
+          border: none;
+          @media #{$info-table-1400} {
+            width: 10vw;
+            height: 3vw;
+            font-size: 1vw;
+          }
+        }
+      }
+    }
+  }
 }

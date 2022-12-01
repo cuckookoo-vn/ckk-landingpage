@@ -17,37 +17,34 @@ const Products = ({windowDimensions}) =>{
 
     return(
         <div className="products" id="products">
-            <div className="container">
-                <div className="container-child">
-                    <div className="products-box">
-                        <div className="frame-box left">
-                            <img src={images.artw} alt="artw-image"/>
+            <div className="container-child">
+                <div className="products-box">
+                    <div className="frame-box left">
+                        <img src={images.artw} alt="artw-image"/>
 
-                            <span className="title-main">{t("products.artw.titleMain")}</span>
+                        <span className="title-main">{t("products.artw.titleMain")}</span>
 
-                            <span className="description">{t("products.artw.description")}</span>
+                        <span className="description">{t("products.artw.description")}</span>
 
-                            <a href="#" className="learn-more">{t("products.artw.learnMore")}</a>
-                        </div>
+                        <a href="#" className="learn-more">{t("products.artw.learnMore")}</a>
                     </div>
+                </div>
 
-                    <div className="products-box">
-                        <div className="frame-box right">
-                            <img src={images.metalish} alt="artw-image"/>
+                <div className="products-box">
+                    <div className="frame-box right">
+                        <img src={images.metalish} alt="artw-image"/>
 
-                            <span className="title-main">{t("products.metalish.titleMain")}</span>
+                        <span className="title-main">{t("products.metalish.titleMain")}</span>
 
-                            <span className="description">{t("products.metalish.description")}</span>
+                        <span className="description">{t("products.metalish.description")}</span>
 
-                            <a href="#" className="learn-more">{t("products.metalish.learnMore")}</a>
-                        </div>
+                        <a href="#" className="learn-more">{t("products.metalish.learnMore")}</a>
                     </div>
                 </div>
             </div>
 
             <div className="technology">
-                <div className="container">
-                    <div className="container-child">
+                <div className="container-child">
                         <div className="technology-box top">
                             <div className="technology-item">
                                 <img src={images.health} alt="health"/>
@@ -94,7 +91,6 @@ const Products = ({windowDimensions}) =>{
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     )
