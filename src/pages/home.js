@@ -9,6 +9,7 @@ import AboutUs from "../layout/about-us/about-us";
 import Support from "../layout/support/support";
 import Footer from "../layout/footer/footer";
 import Partners from "../layout/partners/partners";
+import Careers from "../layout/careers/careers";
 
 
 const Home = () =>{
@@ -33,7 +34,7 @@ const Home = () =>{
             <Technology windowDimensions={windowDimensions}/>
             <Partners windowDimensions={windowDimensions}/>
             <AboutUs windowDimensions={windowDimensions}/>
-
+            {/*<Careers windowDimensions={windowDimensions}/>*/}
             <Support windowDimensions={windowDimensions}/>
             <Footer windowDimensions={windowDimensions}/>
         </>

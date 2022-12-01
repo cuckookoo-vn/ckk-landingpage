@@ -74,12 +74,17 @@ const AboutUs = ({windowDimensions}) =>{
             slideDataTemp.slidesPerView = 4;
             slideDataTemp.spaceBetween = 30;
             slideDataTemp.slidesPerGroup = 1;
-        }else if(windowDimensions.width > 991.5){
+        }else if(windowDimensions.width > 900){
             slideDataTemp.slidesPerView = 3;
             slideDataTemp.spaceBetween = 15;
             slideDataTemp.slidesPerGroup = 1;
-        }else{
+        }else if(windowDimensions.width > 600){
             slideDataTemp.slidesPerView = 2;
+            slideDataTemp.spaceBetween = 15;
+            slideDataTemp.slidesPerGroup = 1;
+        }
+        else{
+            slideDataTemp.slidesPerView = 1;
             slideDataTemp.spaceBetween = 15;
             slideDataTemp.slidesPerGroup = 1;
         }
@@ -104,6 +109,7 @@ const AboutUs = ({windowDimensions}) =>{
             <div className="container-child">
                 <div className="core-team">
                     <span className="title-main">{t("aboutUs.cuckookooTeam.titleMain")}</span>
+                    <span className="description">{t("aboutUs.cuckookooTeam.description")}</span>
                     <div className="box-slide">
                         <Swiper
                             slidesPerView={slideData.slidesPerView}

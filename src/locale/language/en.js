@@ -19,6 +19,7 @@ const en = {
         },
 
         metalish: {
+            titleMain: "Metalish",
             title: "English Application for Student form grade 1 to grade 12 following the curriculum given by Ministry of Education.",
             learnMore: "Learn more"
         },
@@ -62,6 +63,14 @@ const en = {
         },
 
         aboutUs: {
+            cuckookooTeam: {
+                titleMain:"About us",
+                description: "Cuckookoo's orientation is to develop community application products in the " +
+                    "fields of: health, education, games, fashion in the direction of metaverse."
+            }
+        },
+
+        partners: {
             ourPartners: {
                 titleMain1: "OUR",
                 titleMain2: "PARTNERS"
@@ -70,11 +79,29 @@ const en = {
             review: {
                 titleMain: "What partners say about Cuckookoo?"
             },
+        },
 
-            cuckookooTeam: {
-                titleMain: "Cuckookoo's orientation is to develop community application products in the " +
-                    "fields of: health, education, games, fashion in the direction of metaverse."
-            }
+        careers:{
+            title1: "WE ARE",
+
+            title2: "LOOKING FOR",
+
+            job1: {
+                title: "1. Job’s title 1",
+                time: "29/11/2022"
+            },
+
+            job2: {
+                title: "2. Job’s title 2",
+                time: "29/12/2022"
+            },
+
+            job3: {
+                title: "3. Job’s title 3",
+                time: "20/11/2022"
+            },
+
+            buttonApply: "Apply"
         },
 
         support: {
