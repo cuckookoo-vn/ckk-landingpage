@@ -27,9 +27,11 @@ const Technology = ({windowDimensions}) =>{
         <div id="technology">
 
             <div className="technology-use">
-                <div className="overlay-top"></div>
+                {
+                    windowDimensions.width >767.5 &&
+                        <img src={images.lap} alt="lap" className="lap"/>
+                }
 
-                <img src={images.lap} alt="lap" className="lap"/>
 
                 <div className="container-child">
                     <div className="box-image">
@@ -42,21 +44,13 @@ const Technology = ({windowDimensions}) =>{
                         </div>
                         <div className="box-slide">
                             <Swiper
-                                slidesPerView={3}
+                                slidesPerView={ windowDimensions.width > 767.5 ? 3 : 1}
                                 spaceBetween={30}
                                 slidesPerGroup={1}
-                                effect={"coverflow"}
                                 autoplay={{
                                     delay: 3000,
                                     disableOnInteraction: false,
                                     pauseOnMouseEnter: true
-                                }}
-                                coverflowEffect={{
-                                    rotate: 50,
-                                    stretch: 0,
-                                    depth: 100,
-                                    modifier: 1,
-                                    slideShadows: true,
                                 }}
                                 speed={1000}
                                 loop={true}
@@ -65,7 +59,7 @@ const Technology = ({windowDimensions}) =>{
                                     clickable: true,
                                     dynamicBullets: true,
                                 }}
-                                modules={[EffectCoverflow, Pagination, Navigation]}
+                                modules={[Pagination, Navigation]}
                             >
                                 {imageTechnology.map((element, index)=>
                                     <SwiperSlide key={index}>
@@ -80,8 +74,6 @@ const Technology = ({windowDimensions}) =>{
                         </div>
                     </div>
                 </div>
-
-                <div className="overlay-bottom"></div>
             </div>
         </div>
     )

@@ -15,6 +15,13 @@ const Metalish = ({windowDimensions}) =>{
         <div id="metalish">
             <div className="container-child metalish">
                     <div className="title-box">
+                        {
+                            windowDimensions.width >767.5 ?
+                                null
+                                :
+                                <span className="title-main">{t("metalish.titleMain")}</span>
+                        }
+
                         <img src={images.logoMetalish}
                              alt="logo-metalish"/>
 

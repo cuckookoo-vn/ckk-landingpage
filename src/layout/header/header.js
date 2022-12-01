@@ -323,123 +323,121 @@ const Header = ({windowDimensions}) =>{
 
     return(
         <div id="header">
-            <div className="container">
-                {
-                    windowDimensions.width > 991.5 ?
+            {
+                windowDimensions.width > 991.5 ?
+                    <div className="header-box" id="header-box">
+                        <a className="logo-header" href="/#">
+                            <img src={images.logoCuckookoo} alt="logo-header"/>
+                        </a>
+
+                        <div className="box-menu">
+                            <a className="link"
+                               href="#products">
+                                {t("header.menu.products")}
+                            </a>
+
+                            <a className="link"
+                               href="#technology">
+                                {t("header.menu.technology")}
+                            </a>
+
+                            <a className="link"
+                               href="#partners">
+                                {t("header.menu.partners")}
+                            </a>
+
+                            <a className="link"
+                               href="#about-us">
+                                {t("header.menu.aboutUs")}
+                            </a>
+
+                            <a className="link"
+                               href="#careers">
+                                {t("header.menu.careers")}
+                            </a>
+
+                            <a className="link"
+                               href="#support">
+                                {t("header.menu.support")}
+                            </a>
+
+                            <div className={"button-lang" + (statusLangButton ? "" : " close")}
+                                 onClick={() => clickStatusLang()}>
+                        <span className="title-lang">
+                            {t("header.menu.lang")}
+                        </span>
+
+                                <img className={"icon-down" + (statusLang ? " open" : "")}
+                                     src={images.logoChevronDown}
+                                     alt="logo-chevron-down"/>
+
+                                <div className="drop-lang" id="drop-lang">
+                                    <div className="lang"
+                                         id="langEN"
+                                         onClick={() => clickStatusLang("en")}>
+                                        <img src={images.flagEng}
+                                             alt="flag-eng"/>
+                                        <span className="flag-title">
+                                    {t("header.language.english")}
+                                </span>
+                                    </div>
+
+                                    <div className="lang"
+                                         id="langKO"
+                                         onClick={() => clickStatusLang("ko")}>
+                                        <img src={images.flagKo}
+                                             alt="flag-eng"/>
+                                        <span className="flag-title">
+                                    {t("header.language.korean")}
+                                </span>
+                                    </div>
+
+                                    <div className="lang"
+                                         id="langJA"
+                                         onClick={() => clickStatusLang("ja")}>
+                                        <img src={images.flagJa}
+                                             alt="flag-eng"/>
+                                        <span className="flag-title">
+                                    {t("header.language.japanese")}
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <img className="icon-search"
+                                 onClick={() => setPopupSearch(true)}
+                                 src={images.logoMagnifyingGlass}
+                                 alt="logo-chevron-down"/>
+
+                        </div>
+
+                    </div>
+                    :
+                    <>
                         <div className="header-box" id="header-box">
                             <a className="logo-header" href="/#">
                                 <img src={images.logoCuckookoo} alt="logo-header"/>
                             </a>
-
-                            <div className="box-menu">
-                                <a className="link"
-                                   href="#products">
-                                    {t("header.menu.products")}
-                                </a>
-
-                                <a className="link"
-                                   href="#technology">
-                                    {t("header.menu.technology")}
-                                </a>
-
-                                <a className="link"
-                                   href="#partners">
-                                    {t("header.menu.partners")}
-                                </a>
-
-                                <a className="link"
-                                   href="#about-us">
-                                    {t("header.menu.aboutUs")}
-                                </a>
-
-                                <a className="link"
-                                   href="#careers">
-                                    {t("header.menu.careers")}
-                                </a>
-
-                                <a className="link"
-                                   href="#support">
-                                    {t("header.menu.support")}
-                                </a>
-
-                                <div className={"button-lang" + (statusLangButton ? "" : " close")}
-                                     onClick={() => clickStatusLang()}>
-                            <span className="title-lang">
-                                {t("header.menu.lang")}
-                            </span>
-
-                                    <img className={"icon-down" + (statusLang ? " open" : "")}
-                                         src={images.logoChevronDown}
-                                         alt="logo-chevron-down"/>
-
-                                    <div className="drop-lang" id="drop-lang">
-                                        <div className="lang"
-                                             id="langEN"
-                                             onClick={() => clickStatusLang("en")}>
-                                            <img src={images.flagEng}
-                                                 alt="flag-eng"/>
-                                            <span className="flag-title">
-                                        {t("header.language.english")}
-                                    </span>
-                                        </div>
-
-                                        <div className="lang"
-                                             id="langKO"
-                                             onClick={() => clickStatusLang("ko")}>
-                                            <img src={images.flagKo}
-                                                 alt="flag-eng"/>
-                                            <span className="flag-title">
-                                        {t("header.language.korean")}
-                                    </span>
-                                        </div>
-
-                                        <div className="lang"
-                                             id="langJA"
-                                             onClick={() => clickStatusLang("ja")}>
-                                            <img src={images.flagJa}
-                                                 alt="flag-eng"/>
-                                            <span className="flag-title">
-                                        {t("header.language.japanese")}
-                                    </span>
-                                        </div>
-                                    </div>
+                            <div className="box-menu"
+                                 onClick={() => clickStatusMenuMobile()}>
+                                <div className={"icon-menu-mobile" + (statusMenuMobile ? " open" : "")}>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
-
-                                <img className="icon-search"
-                                     onClick={() => setPopupSearch(true)}
-                                     src={images.logoMagnifyingGlass}
-                                     alt="logo-chevron-down"/>
-
                             </div>
-
                         </div>
-                        :
-                        <>
-                            <div className="header-box" id="header-box">
-                                <a className="logo-header" href="/#">
-                                    <img src={images.logoCuckookoo} alt="logo-header"/>
-                                </a>
-                                <div className="box-menu"
-                                     onClick={() => clickStatusMenuMobile()}>
-                                    <div className={"icon-menu-mobile" + (statusMenuMobile ? " open" : "")}>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div className="header-box-lang" id="header-box-lang">
-                                <div className="box-menu-lang" onClick={()=>clickLangMobile()}>
-                                    <img className="icon-right-mobile"
-                                         src={images.logoChevronDown}
-                                         alt="logo-chevron-down"/>
-                                    Language
-                                </div>
+                        <div className="header-box-lang" id="header-box-lang">
+                            <div className="box-menu-lang" onClick={()=>clickLangMobile()}>
+                                <img className="icon-right-mobile"
+                                     src={images.logoChevronDown}
+                                     alt="logo-chevron-down"/>
+                                Language
                             </div>
-                        </>
-                }
-            </div>
+                        </div>
+                    </>
+            }
 
             {
                 windowDimensions.width > 991.5 ?

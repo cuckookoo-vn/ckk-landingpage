@@ -1,9 +1,16 @@
+@import "src/styles/variables";
 .review-item{
   display: flex;
   margin: auto;
   flex-direction: row;
+  @media #{$info-phone-540} {
+    flex-direction: column;
+  }
   .title-box{
     margin-left: 30px;
+    @media #{$info-phone-540} {
+      margin-left: 0;
+    }
     .assess-name{
       .name{
         margin-right: 10px;
@@ -32,6 +39,9 @@
     width: 150px;
     height: 150px;
     position: relative;
+    @media #{$info-phone-540} {
+      margin: 0 auto 35px auto;
+    }
     .review-item-frame{
       position: absolute;
       left: 50%;

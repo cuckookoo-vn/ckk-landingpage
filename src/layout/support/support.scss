@@ -3,8 +3,11 @@
 #support{
   width: 100%;
   overflow-x: hidden;
-  padding: 0 0 250px 0;
-  background: #000000;
+  padding: 250px 0 250px 0;
+  background: #121212;
+  @media #{$info-phone} {
+    padding: 120px 0;
+  }
   .container-child{
     flex-direction: column;
     .title-main{
@@ -12,13 +15,9 @@
       text-align: center;
       font-weight: bold;
       color: #FFFFFF;
-      margin-top: 120px;
     }
 
     .description{
-      font-size: 24px;
-      margin-top: 30px;
-      text-align: center;
       color: #FFFFFF
     }
 
@@ -45,17 +44,26 @@
           margin: 25px 0 0  60px;
         }
 
+        @media #{$info-phone} {
+          flex-direction: column;
+          width: auto;
+          margin: 25px 20px 0  20px;
+        }
+
         .title-input{
           width: max-content;
           display: flex;
-          margin-top: 12px;
+          margin: 12px 0 0 0;
           white-space: nowrap;
           flex-direction: row;
           font-weight: bold;
           font-size: 18px;
           @media #{$info-table-1068} {
-            margin-top: 10px;
+            margin: 10px 0 0 0;
             font-size: 16px;
+          }
+          @media #{$info-phone} {
+            margin: 0 0 3px 7px ;
           }
           span{
             color:#ab0101 ;
@@ -73,6 +81,14 @@
             width: calc(100% - 280px);
             border-radius: 6px;
             font-size: 14px;
+          }
+          @media #{$info-phone} {
+            width: auto;
+          }
+          &#support-file-upload{
+            @media #{$info-phone} {
+              padding-right: 100px;
+            }
           }
         }
         input[type="file"]{
@@ -100,6 +116,9 @@
           @media #{$info-table-1068} {
             bottom: -20px;
           }
+          @media #{$info-phone} {
+            bottom: -25px;
+          }
         }
 
         .text-error{
@@ -113,6 +132,10 @@
             font-size: 11px;
             bottom: -30px;
           }
+
+          @media #{$info-phone} {
+            left: 10px;
+          }
         }
 
         .custom-file-upload{
@@ -120,6 +143,10 @@
           right: 10px;
           top: 52%;
           transform: translateY(-50%);
+          @media #{$info-phone} {
+            top: 70%;
+            right: 10px;
+          }
           img{
             cursor: pointer;
             width: 30px;
@@ -137,6 +164,10 @@
           opacity: 0;
           z-index: -1;
           transition: all .2s ease-in-out;
+          @media #{$info-phone} {
+            top: 67%;
+            right: 50px;
+          }
           &.open{
             opacity: 1;
             z-index: 1;
