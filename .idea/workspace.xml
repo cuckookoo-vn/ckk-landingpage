@@ -4,36 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: add cert">
-      <change afterPath="$PROJECT_DIR$/public/.well-known/pki-validation/92CA19F59AF5BFF4AFF03F870A30C203.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/careers/ckksite-careers-slide-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/careers/ckksite-careers-slide-frame.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/careers/ckksite-careers-slide-frame1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: create pm2">
+      <change afterPath="$PROJECT_DIR$/public/.well-known/pki-validation/94908DAD9608CC761727632BF6DA8B86.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/review-item/review-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/review-item/review-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.well-known/pki-validation/92CA19F59AF5BFF4AFF03F870A30C203.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/careers/ckksite-careers-slide-button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/careers/ckksite-careers-slide-frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/careers/ckksite-careers-slide-frame1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/ckksite-scroll-top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-flag-eng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-flag-ja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-flag-ko.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-header-botton-popup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-header-close-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-icon-chevron-down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-icon-close-popup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-logo-header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/header/ckksite-magnifying-glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/partners/ckksite-partners-frame-review.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/technology/ckksite-technology-ai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/technology/ckksite-technology-html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/technology/ckksite-technology-java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/technology/ckksite-technology-my-sql.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/technology/ckksite-technology-unity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.934d2cfd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.934d2cfd.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/787.8698669b.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/787.8698669b.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.b26b1ad6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.b26b1ad6.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.b26b1ad6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/getFetch.40f37ddea2378391108f.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/development-team-member/development-team-member.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/development-team-member/development-team-member.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/development-team-member/development-team-member.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/development-team-member/development-team-member.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/careers/careers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/careers/careers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/careers/careers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/careers/careers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/footer/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/metalish/metalish.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/products/products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/support/support.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/technology/technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/technology/technology.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/technology/technology.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/technology/technology.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locale/language/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +64,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="CKKS-14-code-ui-detail" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,7 +137,7 @@
       <workItem from="1669714106810" duration="5213000" />
       <workItem from="1669719558895" duration="1079000" />
       <workItem from="1669771885486" duration="24611000" />
-      <workItem from="1669857069111" duration="12609000" />
+      <workItem from="1669857069111" duration="23661000" />
     </task>
     <task id="LOCAL-00001" summary="roots: start source">
       <created>1668401289760</created>
@@ -181,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669718055035</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="roots: create pm2">
+      <created>1669877154198</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669877154198</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +235,7 @@
     <MESSAGE value="roots: fix slide" />
     <MESSAGE value="roots: add cert pem" />
     <MESSAGE value="roots: add cert" />
-    <option name="LAST_COMMIT_MESSAGE" value="roots: add cert" />
+    <MESSAGE value="roots: create pm2" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: create pm2" />
   </component>
 </project>

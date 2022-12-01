@@ -6,139 +6,8 @@
   display: flex;
   flex-direction: column;
   background-color: #EFEFEF;
-  .container-child{
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    height: 100%;
-    .box-image{
-      width: 100%;
-      height: 100%;
-      display: block;
-      position: relative;
-
-      .top-title{
-        position: absolute;
-        top: 17%;
-        left: 9%;
-        @media #{$info-phone} {
-          top: 50px;
-          left: 30px;
-        }
-        .title1{
-          font-size: 57px;
-          font-weight: bold;
-          display: block;
-          color: #000000;
-          @media #{$info-table-1400} {
-            font-size: 4vw;
-          }
-          @media #{$info-phone} {
-            font-size: 27px;
-          }
-        }
-
-        .title2{
-          margin-top: 10px;
-          font-size: 42px;
-          font-weight: bold;
-          display: block;
-          @media #{$info-table-1068} {
-            font-size: 3vw;
-            margin-top: 1vw;
-          }
-          @media #{$info-phone} {
-            margin-top: 0;
-            font-size: 17px;
-          }
-        }
-
-        .title3{
-          font-size: 57px;
-          width: 200px;
-          font-weight: bold;
-          display: block;
-          line-height: 65px;
-          @media #{$info-table-1400} {
-            width: 15vw;
-            font-size: 4vw;
-            line-height: 4.3vw;
-          }
-
-          @media #{$info-phone} {
-            width: 100px;
-            font-size: 27px;
-            line-height: 30px;
-          }
-        }
-      }
-
-      .bottom-title{
-        position: absolute;
-        right: 10%;
-        bottom: 218px;
-        display: block;
-        @media #{$info-table-1400} {
-          bottom: 14vw;
-        }
-
-        @media #{$info-phone} {
-          bottom: 50px;
-        }
-
-        .title4{
-          width: 70%;
-          float: right;
-          text-align: right;
-          font-size: 57px;
-          line-height: 68px;
-          font-weight: bold;
-          display: block;
-          color: #000000;
-          z-index: 4;
-          @media #{$info-table-1400} {
-            font-size: 4vw;
-            line-height: 4.3vw;
-          }
-          @media #{$info-phone} {
-            font-size: 27px;
-            line-height: 30px;
-          }
-        }
-      }
-
-      .box-slide{
-        width: 50%;
-        display: block;
-        position: absolute;
-        left: 49.5%;
-        top: 48%;
-        transform: translate(-50%,-50%);
-        @media #{$info-phone} {
-          width: 100%;
-          left: 50%;
-          top: 50%;
-        }
-        img{
-          height: 150px;
-          max-height: 80vw;
-          @media #{$info-table-1400} {
-            height: 8vw;
-          }
-          @media #{$info-phone} {
-            height: 250px;
-          }
-          width: fit-content;
-        }
-      }
-    }
-  }
-
-  .technology-use{
-    padding: 240px 0 240px 0;
+  .technology-use {
+    padding: 150px 0 230px 0;
     position: relative;
     @media #{$info-table-1400} {
       padding: 16vw 0;
@@ -149,11 +18,31 @@
       padding: 100px 0;
     }
 
-    .lap{
-      max-width: 1100px;
-      width: 80%;
-      display: block;
-      margin: auto;
+    .description{
+      font-weight: bold;
+      margin: 0 auto;
+    }
+
+    .container-child {
+      flex-direction: column;
+
+      .box-slide {
+        margin-top: 70px;
+        width: 100%;
+        display: block;
+          img {
+            height: 150px;
+            max-height: 80vw;
+            @media #{$info-table-1400} {
+              height: 8vw;
+            }
+            @media #{$info-phone} {
+              height: 250px;
+            }
+            width: fit-content;
+          }
+        }
+
     }
   }
 }
@@ -171,17 +60,7 @@
       }
       .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
       .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
-        position: relative;
-        display: block;
-        margin-top: 110px;
-        @media #{$info-table-1400}{
-          margin-top: 7vw;
-        }
-        @media #{$info-phone}{
-          position: absolute;
-          display: inherit;
-          bottom: -80px;
-        }
+        bottom: -80px;
       }
     }
   }

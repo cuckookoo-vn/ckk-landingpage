@@ -11,24 +11,23 @@
     margin: auto;
     width: 250px;
     min-width: 250px;
-    height: 294px;
 
     .image-member{
-      position: absolute;
-      width: 77%;
-      top: 34px;
-      left: 50%;
-      transform: translate(-50%, 0);
+      width: 100%;
+      border-radius: 8%;
     }
 
     .name-member{
-      width: max-content;
-      position: absolute;
       color: #000000;
-      left: 50%;
-      transform: translate(-50%,0);
-      font-size: 1rem;
-      bottom: 33px;
+      font-size: 15px;
+      text-align: center;
+      width: 100%;
+      display: block;
+      font-weight: bold;
+      margin: 12px 0 12px 0;
+      @media #{$info-phone} {
+        font-size: 12px;
+      }
     }
   }
   .position-member{
@@ -36,5 +35,9 @@
     width: 100%;
     text-align: center;
     display: block;
+    font-size: 20px;
+    @media #{$info-phone} {
+      font-size: 17px;
+    }
   }
 }
