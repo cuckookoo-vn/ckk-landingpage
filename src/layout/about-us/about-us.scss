@@ -9,16 +9,20 @@
     padding: 120px 0;
   }
   .core-team{
-    overflow: hidden;
     padding-bottom: 80px;
     width: 100%;
     background-color: rgba(0,0,0,0);
     .title-main{
       font-size: 75px;
+      line-height: 90px;
       text-align: center;
       font-weight: bold;
       width: 100%;
       display: block;
+      @media #{$info-phone} {
+        font-size: 40px;
+        line-height: 48px;
+      }
     }
 
     .box-slide{

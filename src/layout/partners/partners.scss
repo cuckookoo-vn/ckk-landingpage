@@ -51,6 +51,9 @@
       display: block;
       text-align: center;
       margin-bottom: 80px;
+      @media #{$info-phone} {
+        font-size: 40px;
+      }
     }
 
     .box-slide{
@@ -133,8 +136,10 @@
       display: block;
       font-size: 40px;
       @media #{$info-phone} {
-        width: calc(100% - 30px);
+        width: calc(100% - 40px);
         margin: 0 auto 50px auto;
+        font-size: 30px;
+        line-height: 42px;
       }
     }
 
