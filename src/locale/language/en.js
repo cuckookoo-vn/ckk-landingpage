@@ -41,30 +41,29 @@ const en = {
             health: {
                 title: "Products in health/medical field",
             },
+
             alqq: {
                 title: "Products in AI field"
             },
+
             bc: {
                 title: "Blockchain development"
             },
+
             ame: {
                 title: "Games development"
             },
+
             net: {
                 title: "Netwwork development"
             },
 
-            technologyUse: {
-                title1: "TECHNOLOGY",
-                title2: "we are",
-                title3: "USING for our",
-                title4: "VALUED PARTNERS"
-            }
+            description: "Technology we are using for our valued partners"
         },
 
         aboutUs: {
             cuckookooTeam: {
-                titleMain:"About us",
+                titleMain:"ABOUT US",
                 description: "Cuckookoo's orientation is to develop community application products in the " +
                     "fields of: health, education, games, fashion in the direction of metaverse."
             }

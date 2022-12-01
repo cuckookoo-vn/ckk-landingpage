@@ -27,22 +27,9 @@ const Technology = ({windowDimensions}) =>{
         <div id="technology">
 
             <div className="technology-use">
-                {
-                    windowDimensions.width >767.5 &&
-                        <img src={images.lap} alt="lap" className="lap"/>
-                }
-
-
                 <div className="container-child">
-                    <div className="box-image">
-                        <div className="top-title">
-                            <span className="title1">{t("technology.technologyUse.title1")}</span>
-
-                            <span className="title2">{t("technology.technologyUse.title2")}</span>
-
-                            <span className="title3">{t("technology.technologyUse.title3")}</span>
-                        </div>
-                        <div className="box-slide">
+                    <span className="description">{t("technology.description")}</span>
+                    <div className="box-slide">
                             <Swiper
                                 slidesPerView={ windowDimensions.width > 767.5 ? 3 : 1}
                                 spaceBetween={30}
@@ -68,11 +55,6 @@ const Technology = ({windowDimensions}) =>{
                                 )}
                             </Swiper>
                         </div>
-
-                        <div className="bottom-title">
-                            <span className="title4">{t("technology.technologyUse.title4")}</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

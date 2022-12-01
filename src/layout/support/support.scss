@@ -12,9 +12,14 @@
     flex-direction: column;
     .title-main{
       font-size: 75px;
+      line-height: 90px;
       text-align: center;
       font-weight: bold;
       color: #FFFFFF;
+      @media #{$info-phone} {
+        font-size: 40px;
+        line-height: 48px;
+      }
     }
 
     .description{

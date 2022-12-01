@@ -2,9 +2,6 @@
 
 .title-main{
   font-size: 22px;
-  @media #{$info-table-1068} {
-    font-size: 18px;
-  }
 }
 
 .description{
@@ -16,6 +13,7 @@
   display: block;
   @media #{$info-phone} {
     font-size: 17px;
+    line-height: 28px;
   }
 }
 
@@ -29,30 +27,40 @@
   @media #{$info-phone} {
     width: calc(100% - 50px);
   }
-}
-
-a{
-  text-decoration: none;
-  font-size: 17px;
-  &:-webkit-any-link:focus-visible {
-    outline-offset: 0px;
-  }
-  &:-webkit-any-link:active {
-    color: #0D0C0C;
-  }
-  &:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
+  @media #{$info-phone-540} {
+    width: calc(100% - 30px);
   }
 }
 
-span,h1,h2,h3,h4,h5,h6,a{
+
+span,h1,h2,h3,h4,h5,h6{
   color: #0D0C0C;
   font-size: 20px;
   letter-spacing: 1px;
   @media #{$info-table-1068} {
     font-size: 17px;
+    line-height: 28px;
+  }
+}
+
+a{
+  color: #00D1FF;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-style: italic;
+  @media #{$info-table-1068} {
+    font-size: 17px;
+    line-height: 28px;
+  }
+  &:-webkit-any-link:focus-visible {
+    outline-offset: 0px;
+  }
+  &:-webkit-any-link:active {
+    color: #00D1FF;
+  }
+  &:-webkit-any-link {
+    color: #00D1FF;
+    cursor: pointer;
   }
 }
 

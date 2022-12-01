@@ -64,6 +64,12 @@
         align-items: flex-end;
         font-size: 14px;
         color: #FFFFFF;
+        text-decoration: none;
+        font-style: inherit;
+        @media #{$info-table-1068} {
+          font-size: 14px;
+          line-height: inherit;
+        }
       }
 
       .button-lang{
@@ -79,6 +85,10 @@
         .title-lang{
           font-size: 14px;
           color: #FFFFFF;
+          @media #{$info-table-1068} {
+            font-size: 14px;
+            line-height: inherit;
+          }
         }
 
         .icon-down{
