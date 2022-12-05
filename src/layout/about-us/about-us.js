@@ -4,9 +4,14 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {useTranslation} from "react-i18next";
 import {useEffect, useRef, useState} from "react";
 import DevelopmentTeamMember from "../../components/development-team-member/development-team-member";
+import AboutUsMember from "../../components/about-us-member/about-us-member";
 
 const AboutUs = ({windowDimensions}) =>{
     const urlImage = "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-team-";
+
+    const [openPopup, setOpenPopup] = useState(false)
+
+    const [slideIndex, setSlideIndex] = useState(0);
 
     const memberTeam = [
         {
@@ -100,71 +105,62 @@ const AboutUs = ({windowDimensions}) =>{
     // translation
     const {t} = useTranslation();
 
-    // button slide
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
-
     return(
-        <div id="about-us">
-            <div className="container-child">
-                <div className="core-team">
-                    <span className="title-main">{t("aboutUs.cuckookooTeam.titleMain")}</span>
-                    <span className="description">{t("aboutUs.cuckookooTeam.description")}</span>
-                    <div className="box-slide">
-                        <Swiper
-                            slidesPerView={slideData.slidesPerView}
-                            spaceBetween={slideData.spaceBetween}
-                            slidesPerGroup={slideData.slidesPerGroup}
-                            autoplay={{
-                                delay: 3000,
-                                disableOnInteraction: false,
-                                pauseOnMouseEnter: true
-                            }}
-                            speed={1000}
-                            preventClicks={true}
-                            loop={true}
-                            loopFillGroupWithBlank={false}
-                            pagination={{
-                                clickable: true,
-                                dynamicBullets: true,
-                            }}
-                            modules={[Pagination, Navigation]}
-                            className="mySwiper"
-                            onInit={(swiper) => {
-                                swiper.params.navigation.prevEl = prevRef.current;
-                                swiper.params.navigation.nextEl = nextRef.current;
-                                swiper.navigation.init();
-                                swiper.navigation.update();
-                            }}
-                        >
-                            <div className="box-member">
-                                {memberTeam.map((element, index) =>
-                                    <SwiperSlide  key={index}>
-                                        <DevelopmentTeamMember
-                                            image={element.image}
-                                            name={element.name}
-                                            position={element.position}
-                                        />
-                                    </SwiperSlide>
-                                )}
-                            </div>
-
-                            {/*<div ref={prevRef}*/}
-                            {/*     data-aos="fade-right"*/}
-                            {/*     className="icon-slide icon-next hidden-mobile">*/}
-                            {/*    <img className="icon-next" src={images.pre} alt="pre"/>*/}
-                            {/*</div>*/}
-
-                            {/*<div ref={nextRef}*/}
-                            {/*     data-aos="fade-left"*/}
-                            {/*     className="icon-slide icon-pre hidden-mobile">*/}
-                            {/*    <img src={images.next} alt="next"/>*/}
-                            {/*</div>*/}
-                        </Swiper>
+        <>
+            <div id="about-us">
+                <div className="container-child">
+                    <div className="core-team">
+                        <span className="title-main">{t("aboutUs.cuckookooTeam.titleMain")}</span>
+                        <span className="description">{t("aboutUs.cuckookooTeam.description")}</span>
+                        <div className="box-slide">
+                            <Swiper
+                                slidesPerView={slideData.slidesPerView}
+                                spaceBetween={slideData.spaceBetween}
+                                slidesPerGroup={slideData.slidesPerGroup}
+                                autoplay={{
+                                    delay: 3000,
+                                    disableOnInteraction: false,
+                                    pauseOnMouseEnter: true
+                                }}
+                                speed={1000}
+                                preventClicks={true}
+                                loop={true}
+                                loopFillGroupWithBlank={false}
+                                pagination={{
+                                    clickable: true,
+                                    dynamicBullets: true,
+                                }}
+                                modules={[Pagination, Navigation]}
+                                className="mySwiper"
+                                onInit={(swiper) => {
+                                    swiper.navigation.init();
+                                    swiper.navigation.update();
+                                }}
+                            >
+                                <div className="box-member">
+                                    {memberTeam.map((element, index) =>
+                                        <SwiperSlide  key={index}>
+                                            <DevelopmentTeamMember
+                                                image={element.image}
+                                                name={element.name}
+                                                position={element.position}
+                                                setOpenPopup={setOpenPopup}
+                                                setSlideIndex={setSlideIndex}
+                                                index={index}
+                                            />
+                                        </SwiperSlide>
+                                    )}
+                                </div>
+                            </Swiper>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            {
+                openPopup && <AboutUsMember setOpenPopup={setOpenPopup} slideIndex={slideIndex}/>
+            }
+
+        </>
     )
 }
 
