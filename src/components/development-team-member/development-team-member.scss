@@ -2,6 +2,7 @@
 .development-team-member{
   width: fit-content;
   margin: auto;
+  cursor: pointer;
 
   .development-team-member-box{
     position: relative;
@@ -14,7 +15,7 @@
 
     .image-member{
       width: 100%;
-      border-radius: 8%;
+      border-radius: 25px;
     }
 
     .name-member{
