@@ -34,7 +34,7 @@ const Home = () =>{
             <Technology windowDimensions={windowDimensions}/>
             <Partners windowDimensions={windowDimensions}/>
             <AboutUs windowDimensions={windowDimensions}/>
-            {/*<Careers windowDimensions={windowDimensions}/>*/}
+            <Careers windowDimensions={windowDimensions}/>
             <Support windowDimensions={windowDimensions}/>
             <Footer windowDimensions={windowDimensions}/>
         </>

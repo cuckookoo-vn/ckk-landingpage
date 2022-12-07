@@ -5,20 +5,13 @@ const TechnologySlide = ({images}) =>{
         <div className="technology-slide-box">
             <div className="technology-slide">
                 {
-                    images[0] &&
-                    images[0].map((element, index)=>
+                    images &&
+                    images.map((element, index)=>
                             <img key={index} src={element.image} alt="image-tech"/>
                     )
                 }
             </div>
-            <div className="technology-slide">
-                {
-                    images[1] &&
-                    images[1].map((element, index)=>
-                        <img key={index} src={element.image} alt="image-technology"/>
-                    )
-                }
-            </div>
+
         </div>
     )
 }
