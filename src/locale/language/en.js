@@ -55,7 +55,7 @@ const en = {
             },
 
             net: {
-                title: "Netwwork development"
+                title: "Network development"
             },
 
             description: "Technology we are using for our valued partners"

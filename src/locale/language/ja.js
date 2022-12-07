@@ -51,7 +51,7 @@ ja = {
                 title: "Games development"
             },
             net: {
-                title: "Netwwork development"
+                title: "Network development"
             },
 
             technologyUse: {
