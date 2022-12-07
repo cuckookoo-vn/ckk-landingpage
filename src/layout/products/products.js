@@ -83,6 +83,41 @@ const Products = ({ windowDimensions }) => {
     setTechContent('');
   };
 
+      // check width set data slide
+      const checkWidthWindowSetSlideData = () =>{
+        let slideDataTemp = {
+            slidesPerView: 5,
+            spaceBetween: 1,
+            slidesPerGroup: 1,
+        };
+
+        if(windowDimensions.width > 1399.5){
+            slideDataTemp.slidesPerView = 5;
+            slideDataTemp.spaceBetween = 1;
+            slideDataTemp.slidesPerGroup = 1;
+        }else if(windowDimensions.width > 900){
+            slideDataTemp.slidesPerView = 5;
+            slideDataTemp.spaceBetween = 30;
+            slideDataTemp.slidesPerGroup = 1;
+        }else if(windowDimensions.width > 600){
+            slideDataTemp.slidesPerView = 5;
+            slideDataTemp.spaceBetween = 30;
+            slideDataTemp.slidesPerGroup = 1;
+        }
+        else{
+            slideDataTemp.slidesPerView = 5;
+            slideDataTemp.spaceBetween = 30;
+            slideDataTemp.slidesPerGroup = 1;
+        }
+        return slideDataTemp;
+    };
+
+    const [slideData, setSlideData] = useState(checkWidthWindowSetSlideData);
+
+    useEffect(()=>{
+        setSlideData(checkWidthWindowSetSlideData)
+    },[windowDimensions.width])
+
   return (
     <div className='products' id='products'>
       <div className='container-child'>
@@ -161,9 +196,9 @@ const Products = ({ windowDimensions }) => {
                           className='img'
                           onClick={() => handleOpenInfo(element.id, index)}
                         />
-                        <span className='technology-title'>
+                        {/* <span className='technology-title'>
                           {element.title}
-                        </span>
+                        </span> */}
                       </div>
                     </div>
                   </SwiperSlide>

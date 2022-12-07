@@ -106,11 +106,20 @@
         &.middle {
           justify-content: space-around;
           margin-top: 50px;
+
+          @media #{$info-phone} {
+            justify-content: space-between;
+            margin-top: 0;
+          }
         }
 
         &.bottom {
           justify-content: space-around;
           margin-top: 100px;
+
+          @media #{$info-phone} {
+            margin-top: 0;
+          }
         }
 
         .technology-item {
@@ -124,9 +133,17 @@
 
           &.middle-1 {
             margin-right: 350px;
+
+            @media #{$info-phone} {
+              margin-right: 0;
+            }
           }
           &.middle-2 {
             margin-left: 350px;
+
+            @media #{$info-phone} {
+              margin-right: 0;
+            }
           }
 
           img {
@@ -135,6 +152,10 @@
             margin: auto;
             @media #{$info-table-1400} {
               height: 22vw;
+            }
+
+            @media #{$info-phone} {
+              height: 20vw;
             }
             filter: grayscale(100%);
 
@@ -148,6 +169,10 @@
             width: 100%;
             color: #ffffff;
             text-align: center;
+
+            @media #{$info-phone} {
+              font-size: 2vw;
+            }
           }
         }
       }
@@ -228,8 +253,13 @@
               height: 100px;
               width: fit-content;
               margin: auto;
+
               @media #{$info-table-1400} {
-                height: 22vw;
+                height: 8vw;
+              }
+
+              @media #{$info-phone} {
+                height: 13vw;
               }
               filter: grayscale(100%);
 
@@ -249,6 +279,16 @@
               width: 100%;
               color: #ffffff;
               text-align: center;
+
+              @media #{$info-table-1400} {
+                font-size: 1.2vw;
+                margin-top: -5vw;
+                margin-bottom: -1.2vw;
+              }
+
+              @media #{$info-phone} {
+                display: none;
+              }
             }
           }
         }
@@ -265,9 +305,6 @@
         border-radius: 40px;
         padding: 40px 0 80px 0;
         position: relative;
-        @media #{$info-phone} {
-          margin-top: 130px;
-        }
         .title-main {
           width: calc(100% - 40px);
           margin: 0 auto 100px auto;
@@ -325,9 +362,22 @@
           background-repeat: no-repeat;
           background-size: contain;
           background-position: left;
-          height: 50px;
-          width: 50px;
+          height: 30px;
+          width: 30px;
           cursor: pointer;
+
+          @media #{$info-phone} {
+            margin-right: 5vw;
+            height: 4vw;
+            width: 4vw;
+          }
+
+          @media #{$info-phone-540} {
+            margin-top: -5%;
+            margin-right: 5vw;
+            height: 4vw;
+            width: 4vw;
+          }
         }
 
         span {
@@ -335,6 +385,28 @@
           color: #ffffff;
           align-self: center;
           transform: translate(-50%, -50%);
+          word-break: keep-all;
+          text-align: center;
+          width: 100%;
+
+          @media #{$info-table-1400} {
+            position: absolute;
+            margin-left: 50%;
+            font-size: 2.5vw;
+          }
+
+          @media #{$info-phone} {
+            position: absolute;
+            margin-left: 50%;
+            font-size: 2.5vw;
+          }
+
+          @media #{$info-phone-540} {
+            position: absolute;
+            margin-top: -15%;
+            margin-left: 50%;
+            font-size: 2.5vw;
+          }
         }
       }
     }
@@ -347,6 +419,17 @@
       position: initial;
       height: 850px;
       width: 350px;
+
+      @media #{$info-table-1400} {
+        height: 57vw;
+        width: 35vw;
+      }
+
+      @media #{$info-phone} {
+        height: 100vw;
+        width: 30vw;
+      }
+
       .swiper-pagination-bullet {
         display: none;
       }
@@ -358,8 +441,25 @@
 
       .swiper-slide-active {
         transform: scale(1.9);
+
+        @media #{$info-table-1400} {
+          transform: scale(1.9);
+        }
+
+        @media #{$info-phone} {
+          transform: scale(1.5);
+        }
+
         span {
           font-size: 10px;
+
+          @media #{$info-table-1400} {
+            font-size: 0.5vw;
+          }
+
+          @media #{$info-phone} {
+            font-size: 2vw;
+          }
         }
 
         img {
