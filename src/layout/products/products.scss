@@ -104,11 +104,13 @@
         }
 
         &.middle {
-          justify-content: space-between;
+          justify-content: space-around;
+          margin-top: 50px;
         }
 
         &.bottom {
           justify-content: space-around;
+          margin-top: 100px;
         }
 
         .technology-item {
@@ -120,8 +122,15 @@
             margin-bottom: 40px;
           }
 
+          &.middle-1 {
+            margin-right: 350px;
+          }
+          &.middle-2 {
+            margin-left: 350px;
+          }
+
           img {
-            height: 300px;
+            height: 170px;
             width: fit-content;
             margin: auto;
             @media #{$info-table-1400} {
@@ -159,6 +168,7 @@
 
       .technology-img {
         flex-direction: column;
+        padding: 5px;
 
         .box-slide {
           position: relative;
@@ -200,6 +210,7 @@
           width: 100%;
           display: flex;
           flex-direction: row;
+          justify-content: center;
           @media #{$info-phone} {
             flex-wrap: wrap;
           }
@@ -214,7 +225,7 @@
             }
 
             .img {
-              height: 150px;
+              height: 100px;
               width: fit-content;
               margin: auto;
               @media #{$info-table-1400} {
@@ -232,7 +243,9 @@
             }
 
             .technology-title {
-              margin-top: 10px;
+              margin-top: -50px;
+              margin-bottom: 20px;
+              font-size: 12px;
               width: 100%;
               color: #ffffff;
               text-align: center;
@@ -332,9 +345,10 @@
   #products {
     .swiper {
       position: initial;
-      height: 800px;
+      height: 850px;
+      width: 350px;
       .swiper-pagination-bullet {
-        background: #000000;
+        display: none;
       }
       .swiper-horizontal
         > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
@@ -342,11 +356,16 @@
         bottom: -50px;
       }
 
-      // .swipper-slide {
-      //   &:active {
-      //     filter: grayscale(0);
-      //   }
-      // }
+      .swiper-slide-active {
+        transform: scale(1.9);
+        span {
+          font-size: 10px;
+        }
+
+        img {
+          filter: grayscale(0);
+        }
+      }
     }
   }
 }

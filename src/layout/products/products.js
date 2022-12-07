@@ -1,6 +1,6 @@
 import './products.scss';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Mousewheel, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -65,32 +65,14 @@ const Products = ({ windowDimensions }) => {
     },
   ];
 
-  const handleOpenInfo = (id) => {
+  const swiperRef = useRef(null);
+
+  const handleOpenInfo = (id, index) => {
     setIsViewTech(true);
-    // setActiveTech(id);
-
-    var tech = document.getElementById(id);
-
-    console.log(tech);
-    // tech.style.filter = 'grayscale(0)';
-
-    // var header = document.getElementById('technology-item');
-
-    // var btns = header.getElementsByClassName('img');
-    // console.log(btns.length);
-
-    // for (var i = 0; i < btns.length; i++) {
-    //   btns[i].addEventListener('click', function () {
-    //     var current = document.getElementsByClassName('active');
-    //     current[0].className = current[0].className.replace(' active', '');
-    //     this.className += ' active';
-    //   });
-    // }
+    setActiveTech(index);
 
     technologies.map((element, index) => {
       if (element.id === id) {
-        tech.style.filter = 'grayscale(0)';
-        tech.className += ' acitve';
         setTechContent(element.content);
       }
     });
@@ -145,12 +127,15 @@ const Products = ({ windowDimensions }) => {
             {/* Technology img */}
             <div className='technology-img'>
               <Swiper
+                ref={swiperRef}
                 slidesPerView={5}
-                spaceBetween={5}
-                slidesPerGroup={5}
+                spaceBetween={1}
                 autoplay={false}
                 preventClicks={true}
-                // loop={true}
+                slideToClickedSlide={true}
+                roundLengths={true}
+                loop={true}
+                centeredSlides={true}
                 direction='vertical'
                 loopFillGroupWithBlank={false}
                 pagination={{
@@ -163,6 +148,7 @@ const Products = ({ windowDimensions }) => {
                   swiper.navigation.init();
                   swiper.navigation.update();
                 }}
+                initialSlide={activeTech}
               >
                 {technologies.map((element, index) => (
                   <SwiperSlide key={index}>
@@ -173,8 +159,11 @@ const Products = ({ windowDimensions }) => {
                           src={element.src}
                           alt={element.alt}
                           className='img'
-                          onClick={() => handleOpenInfo(element.id)}
+                          onClick={() => handleOpenInfo(element.id, index)}
                         />
+                        <span className='technology-title'>
+                          {element.title}
+                        </span>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -182,8 +171,6 @@ const Products = ({ windowDimensions }) => {
               </Swiper>
             </div>
             {/* Technology img */}
-
-            {/* Technology content */}
 
             {/* Technology content */}
             <div className='technology-content'>
@@ -197,6 +184,7 @@ const Products = ({ windowDimensions }) => {
               <br />
               <span>{techContent}</span>
             </div>
+            {/* Technology content */}
           </div>
         </div>
       ) : (
@@ -209,7 +197,7 @@ const Products = ({ windowDimensions }) => {
                   src={images.bc}
                   alt='bc'
                   className='img'
-                  onClick={() => handleOpenInfo('bc')}
+                  onClick={() => handleOpenInfo('bc', 0)}
                 />
 
                 <span className='technology-title'>
@@ -219,13 +207,13 @@ const Products = ({ windowDimensions }) => {
             </div>
 
             <div className='technology-box middle'>
-              <div className='technology-item'>
+              <div className='technology-item middle-1'>
                 <img
                   id='health'
                   src={images.health}
                   alt='health'
                   className='img'
-                  onClick={() => handleOpenInfo('health')}
+                  onClick={() => handleOpenInfo('health', 2)}
                 />
 
                 <span className='technology-title'>
@@ -239,7 +227,7 @@ const Products = ({ windowDimensions }) => {
                   src={images.alqq}
                   alt='alqq'
                   className='img'
-                  onClick={() => handleOpenInfo('alqq')}
+                  onClick={() => handleOpenInfo('alqq', 1)}
                 />
 
                 <span className='technology-title'>
@@ -247,7 +235,7 @@ const Products = ({ windowDimensions }) => {
                 </span>
               </div>
             </div>
-
+            
             <div className='technology-box bottom'>
               <div className='technology-item'>
                 <img
@@ -255,7 +243,7 @@ const Products = ({ windowDimensions }) => {
                   src={images.ame}
                   alt='ame'
                   className='img'
-                  onClick={() => handleOpenInfo('ame')}
+                  onClick={() => handleOpenInfo('ame', 3)}
                 />
 
                 <span className='technology-title'>
@@ -269,7 +257,7 @@ const Products = ({ windowDimensions }) => {
                   src={images.net}
                   alt='net'
                   className='img'
-                  onClick={() => handleOpenInfo('net')}
+                  onClick={() => handleOpenInfo('net', 4)}
                 />
 
                 <span className='technology-title'>
