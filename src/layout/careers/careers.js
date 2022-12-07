@@ -1,31 +1,58 @@
 import './careers.scss';
 import {useTranslation} from "react-i18next";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {EffectCoverflow, Mousewheel, Navigation, Pagination} from "swiper";
+import CareersSlide from "../../components/careers-slide/careers-slide";
+import {useState} from "react";
+import ApplicationForm from "../../components/application-form/application-form";
 
 const Careers = ({windowDimensions}) =>{
-    const images = {
-        slideFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame.png",
-        slideButton: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-button.png"
-    }
+    const {t} = useTranslation();
 
-    const {t} = useTranslation()
+    const [openPopup, setOpenPopup] = useState(false);
+
+    const [valueSelect, setValueSelect] = useState(1);
 
     const jobs = [
         {
             title: t("careers.job1.title"),
             time: t("careers.job1.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png"
+            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
+            key: 1
         },
         {
             title: t("careers.job2.title"),
             time: t("careers.job2.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame.png"
+            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
+            key: 2
         },
         {
             title: t("careers.job3.title"),
             time: t("careers.job3.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png"
+            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
+            key: 3
+        },
+        {
+            title: t("careers.job4.title"),
+            time: t("careers.job4.time"),
+            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
+            key: 4
+        },
+        {
+            title: t("careers.job5.title"),
+            time: t("careers.job5.time"),
+            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
+            key: 5
+        },
+        {
+            title: t("careers.job6.title"),
+            time: t("careers.job6.time"),
+            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
+            key: 6
         }
     ]
+
+
 
     return(
         <div id="careers">
@@ -36,22 +63,58 @@ const Careers = ({windowDimensions}) =>{
                 </div>
                 <div className="slider-box">
                     {
-                        jobs.map((element,index)=>
-                            <div className="career-slides"
-                                 style={{backgroundImage: `url(${element.imgFrame})`}}>
-                                <span className="title">{element.title}</span>
+                        <Swiper
+                            direction={"vertical"}
+                            effect= {"coverflow"}
+                            coverflowEffect={{
+                                rotate: 0,
+                                scale: .75,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                                slideShadows: true,
+                            }}
 
-                                <span className="title-time">{element.time}</span>
+                            slidesPerView={4}
+                            spaceBetween={0}
+                            slidesPerGroup={1}
+                            mousewheel={true}
+                            centeredSlides={true}
+                            // autoplay={{
+                            //     delay: 6000,
+                            //     disableOnInteraction: false,
+                            //     pauseOnMouseEnter: true,
+                            // }}
+                            speed={800}
 
-                                <button className="button-apply"
-                                        style={{backgroundImage: `url(${images.slideButton})`}}>
-                                    {t("careers.buttonApply")}
-                                </button>
+                            // loop={true}
+                            pagination={{
+                                clickable: true,
+                                dynamicBullets: true,
+                            }}
+                            modules={[EffectCoverflow, Mousewheel,Pagination, Navigation]}
+                        >
+                            <div className="box-slide">
+                                {
+                                    jobs.map((element, index)=>
+                                        <SwiperSlide key={index}>
+                                            <CareersSlide element={element} setOpenPopup={setOpenPopup} setValueSelect={setValueSelect}/>
+                                        </SwiperSlide>
+                                    )
+                                }
+
                             </div>
-                        )
+                        </Swiper>
                     }
                 </div>
             </div>
+            {
+                openPopup ?
+                    <ApplicationForm setOpenPopup={setOpenPopup} valueSelect={valueSelect} jobs={jobs} />
+                    :
+                    null
+            }
+
         </div>
     )
 }
