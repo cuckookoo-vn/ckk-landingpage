@@ -138,6 +138,21 @@ const en = {
                 time: "20/11/2022"
             },
 
+            job4: {
+                title: "4. Job’s title 4",
+                time: "29/12/2022"
+            },
+
+            job5: {
+                title: "5. Job’s title 5",
+                time: "20/11/2022"
+            },
+
+            job6: {
+                title: "6. Job’s title 6",
+                time: "20/11/2022"
+            },
+
             buttonApply: "Apply"
         },
 

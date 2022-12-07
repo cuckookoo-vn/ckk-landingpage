@@ -9,7 +9,7 @@ import AboutUsMember from "../../components/about-us-member/about-us-member";
 const AboutUs = ({windowDimensions}) =>{
     const urlImage = "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-team-";
 
-    const [openPopup, setOpenPopup] = useState(false)
+    const [openPopup, setOpenPopup] = useState(false);
 
     const [slideIndex, setSlideIndex] = useState(0);
 

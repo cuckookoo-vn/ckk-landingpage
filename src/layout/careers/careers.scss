@@ -1,24 +1,35 @@
 @import "src/styles/variables";
+
 #careers{
   width: 100%;
   display: flex;
-  padding: 240px 0;
+  padding: 220px 0;
   background-color: #000000;
+  @media #{$info-phone} {
+    padding: 120px 0;
+  }
+
   .container-child{
     display: block;
     .title-box{
       position: absolute;
-      left: 140px;
+      left: 170px;
+      top: 110px;
+      display: block;
+      z-index: 3;
       @media #{$info-table-1400} {
-        left: 12vw;
-        top: -1.7vw;
+        width: 27vw;
+        left: 6vw;
+        top: 6vw;
+      }
+      @media #{$info-phone} {
+        top: -10vw;
       }
       .title{
         color: #FFFFFF;
         font-weight: bold;
         display: block;
-        width: 410px;
-
+        width: fit-content;
 
         &.title1{
           font-size: 40px;
@@ -31,11 +42,11 @@
 
         &.title2{
           line-height: 84px;
-          font-size: 90px;
-          width: 80px;
+          font-size: 80px;
+          width: 410px;
           @media #{$info-table-1400} {
-            width: 32vw;
-            font-size: 6.86vw;
+            width: 27vw;
+            font-size: 5.86vw;
             line-height: 6.3vw;
           }
         }
@@ -45,69 +56,111 @@
 
     .slider-box{
       display: block;
-      width: fit-content;
-      margin: auto;
+      width: 950px;
+      float: right;
+      @media #{$info-table-1400} {
+        width: 60vw;
+        margin-right: 4vw;
+      }
+      @media #{$info-phone} {
+        float: inherit;
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+#root #careers .swiper {
+  height: 600px;
+  overflow-y: hidden;
+  position: initial;
+  width: 100%;
+  @media #{$info-table-1400} {
+    height: 40vw;
+  }
+  @media #{$info-phone} {
+    height: 52vw;
+  }
+
+  .swiper-slide {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+    .career-slides{
+      transform: scale(1);
+      opacity: .6;
+      .button-apply{
+        transition: all 200ms linear;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .title{
+         transition:all 200ms linear;
+         opacity: 0;
+       }
+      .title-time{
+        transition:all 200ms linear;
+        opacity: 0;
+      }
+    }
+
+    &.swiper-slide-active{
       .career-slides{
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        justify-content: space-around;
-        width: 750px;
-        height: 145px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        @media #{$info-table-1400} {
-          width: 47vw;
-          height: 8.8vw;
-        }
-        &:nth-child(1){
-          transform: translateX(230px);
-          @media #{$info-table-1400} {
-            transform: translateX(18vw);
-          }
-        }
-        &:nth-child(3){
-          transform: translateX(230px);
-          @media #{$info-table-1400} {
-            transform: translateX(18vw);
-          }
-        }
-
-        .title{
-          font-size: 27px;
-          color: #FFFFFF;
-          font-weight: bold;
-          @media #{$info-table-1400} {
-            font-size: 1.5vw;
-          }
-        }
-
-        .title-time{
-          font-size: 15px;
-          color: #FFFFFF;
-          @media #{$info-table-1400} {
-            font-size: .7vw;
-          }
-        }
-
+        opacity: 1;
         .button-apply{
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
-          background-color: rgba(0,0,0,0);
-          width: 180px;
-          height: 47px;
-          font-size: 1vw;
-          font-weight: bold;
-          border: none;
-          @media #{$info-table-1400} {
-            width: 10vw;
-            height: 3vw;
-            font-size: 1vw;
-          }
+          opacity: 1;
+          visibility: inherit;
+        }
+        .title{
+          opacity: 1;
+        }
+        .title-time{
+          opacity: 1;
+        }
+        .button-apply{
+          opacity: 1;
+          visibility: inherit;
         }
       }
+    }
+
+    &.swiper-slide-next{
+      .career-slides{
+        opacity: 1;
+        transition:all 800ms linear;
+        .title{
+          opacity: 1;
+        }
+        .title-time{
+          opacity: 1;
+        }
+      }
+    }
+
+    &.swiper-slide-prev{
+      .career-slides{
+        opacity: 1;
+        transition:all 800ms linear;
+        .title{
+          opacity: 1;
+        }
+        .title-time{
+          opacity: 1;
+        }
+
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: #ffffff;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    @media #{$info-phone} {
+      display: none;
     }
   }
 }
