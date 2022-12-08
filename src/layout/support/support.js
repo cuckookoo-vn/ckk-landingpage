@@ -4,12 +4,13 @@ import {useForm} from "react-hook-form";
 import {useTranslation} from "react-i18next";
 import {faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {cloudS3} from "../../constant/global";
 
 const Support = ({windowDimensions}) =>{
     const images = {
-        bgForm: "https://d2lonqwqrbh3kq.cloudfront.net/support/ckksite-support-bg-form.png",
-        bgButton: "https://d2lonqwqrbh3kq.cloudfront.net/support/ckksite-support-bg-button.png",
-        iconUpload: "https://d2lonqwqrbh3kq.cloudfront.net/support/ckksite-support-upload-file.png"
+        bgForm: cloudS3 + "support/ckksite-support-bg-form.png",
+        bgButton: cloudS3 + "support/ckksite-support-bg-button.png",
+        iconUpload: cloudS3 + "support/ckksite-support-upload-file.png"
     }
 
     const [valueTextarea, setValueTextarea] = useState('');

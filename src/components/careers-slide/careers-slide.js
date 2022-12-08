@@ -1,8 +1,10 @@
 import './careers-slide.scss';
 import {useTranslation} from "react-i18next";
+import {cloudS3} from "../../constant/global";
+
 const images = {
-    slideFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame.png",
-    slideButton: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-button.png"
+    slideFrame: cloudS3 + "careers/ckksite-careers-slide-frame.png",
+    slideButton: cloudS3 + "careers/ckksite-careers-slide-button.png"
 }
 
 const CareersSlide = ({element, setOpenPopup, setValueSelect}) =>{
@@ -14,8 +16,7 @@ const CareersSlide = ({element, setOpenPopup, setValueSelect}) =>{
     }
 
     return(
-        <div className="career-slides"
-             style={{backgroundImage: `url(${element.imgFrame})`}}>
+        <div className="career-slides">
             <span className="title">{element.title}</span>
 
             <span className="title-time">{element.time}</span>
