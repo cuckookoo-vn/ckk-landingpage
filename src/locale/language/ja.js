@@ -75,22 +75,22 @@ vn = {
                 "Have cooperated in development and received good feedback on quality and reputation from foreign customers in the US, Japan, Korea, France, Sweden, Australia, Singapore, China, Philippines, …<br></br><br></br>" +
                 "Have a passion and special interest in new technologies and applying technologies to create good and useful products for the community.<br></br><br></br>" +
                 "Willing to cooperate with partners, investors who are both capable and ethical, cooperation and development in the spirit of win-win.",
-            felixNguyen: "Over 18 years of experience in software development<br></br><br></br>" +
+            felixNguyen: "Over 18 years of experience in software development.<br></br><br></br>" +
                 "Ph.D. in Computer Science, University of Ulsan, S. Korea.<br></br><br></br>" +
-                "Always give priority to creating products that receive customer satisfaction<br></br><br></br>" +
+                "Always give priority to creating products that receive customer satisfaction.<br></br><br></br>" +
                 "Passionate about high technology, especially AI technology, and experienced in the field of speech recognition technology.<br></br><br></br>" +
-                "Chairman of Korean and Vietnamese business cooperation and development organization",
+                "Chairman of Korean and Vietnamese business cooperation and development organization.",
             tonyQuach: "Success in own business of AI and Blockchain system developments.<br></br><br></br>" +
                 "Representative of several Vietnamese software outsourcing enterprises in S. Korea.<br></br><br></br>" +
                 "More than 16 years of experience in Software Development, AI systems, and Blockchain.<br></br><br></br>" +
                 "Master degree in Advanced Fusion Technology from Konkuk University, S. Korea." +
-                "Always prioritize the application of technology with the best quality when cooperating and developing products with partners and customers",
+                "Always prioritize the application of technology with the best quality when cooperating and developing products with partners and customers.",
             kanPham: "Passion and special experience in the field of AI.<br></br><br></br>" +
-                "Cooperated to develop products and services with AI applications for banking, insurance and entertainment customers<br></br><br></br>" +
+                "Cooperated to develop products and services with AI applications for banking, insurance and entertainment customers.<br></br><br></br>" +
                 "Working enthusiastically and especially giving priority to creating results with customer satisfaction.<br></br><br></br>" +
                 "Building a Deep Learning Model to colorize a sketch given color reference.<br></br><br></br>" +
-                "Interpolation : Building machine learning algorithm to interpolate in-between frames given anime-style source and target images.<br></br><br></br>" +
-                "Information Extraction: Building Text Detection/ Text Recognition for Japanese Invoice Document.<br></br><br></br>" +
+                "Interpolation: Building machine learning algorithm to interpolate in-between frames given anime-style source and target images.<br></br><br></br>" +
+                "Information Extraction: Building Text Detection/Text Recognition for Japanese Invoice Document.<br></br><br></br>" +
                 "Technical assessment for some AI products related to Computer Vision, such as: object detection, fraud detection.",
             henryHo:"Over 8 years of experience in software programming with Java-based technologies, such as Spring Boot, Hibernate..., including Front-end technologies: HTML, CSS, jQuery, Bootstrap, Angular...<br></br><br></br>"+
                 "Experienced with Microservices, REST API, CMS development... <br></br><br></br>"+
@@ -99,7 +99,7 @@ vn = {
             julieTran: "3+ years experience in working with customers to get information and provide solutions for their needs.<br></br><br></br>" +
                 "Experienced in developing NFT game, Metaverse & Education projects.<br></br><br></br>",
             joyLe: "Manage Creative with 10+ years experience, with a passion for travel to find a lot of new ideas for design work, as well as the sequence of UX, UI learned from everywhere I came.<br></br><br></br>",
-            leonNguyen: "3D Artist Character ,BG, 7+ years experience Hand painting texture , substance painter( real and semi real ) Rigging and Animation 2D concept artist.<br></br><br></br>",
+            leonNguyen: "3D Artist Character, BG, 7+ years experience Hand painting texture, substance painter (real and semi real) Rigging and Animation 2D concept artist.<br></br><br></br>",
             JohnnyLe: "2+ years experience,<br></br><br></br>" +
                 "Familiar with working modelling such as Agile, Hybrid, Waterfall.<br></br><br></br>" +
                 "Experienced with NFT, Metaverse project.",

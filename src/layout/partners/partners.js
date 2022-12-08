@@ -30,7 +30,7 @@ const Partners = ({ windowDimensions }) => {
       {
         name: 'Mr.Tony',
         countStar: 4,
-        position: '(CEO of Chainos globle)',
+        position: '(CEO of Chainos Global)',
         content: 'Review content',
         image:
           'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -48,7 +48,7 @@ const Partners = ({ windowDimensions }) => {
       {
         name: 'Mr.Tony',
         countStar: 4,
-        position: '(CEO of Chainos globle)',
+        position: '(CEO of Chainos Global)',
         content: 'Review content',
         image:
           'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -66,7 +66,7 @@ const Partners = ({ windowDimensions }) => {
       {
         name: 'Mr.Tony',
         countStar: 4,
-        position: '(CEO of Chainos globle)',
+        position: '(CEO of Chainos Global)',
         content: 'Review content',
         image:
           'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -86,7 +86,7 @@ const Partners = ({ windowDimensions }) => {
     {
       name: 'Mr.Tony',
       countStar: 4,
-      position: '(CEO of Chainos globle)',
+      position: '(CEO of Chainos Global)',
       content: 'Review content',
       image:
         'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -103,7 +103,7 @@ const Partners = ({ windowDimensions }) => {
     {
       name: 'Mr.Tony',
       countStar: 4,
-      position: '(CEO of Chainos globle)',
+      position: '(CEO of Chainos Global)',
       content: 'Review content',
       image:
         'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -119,7 +119,7 @@ const Partners = ({ windowDimensions }) => {
     {
       name: 'Mr.Tony',
       countStar: 4,
-      position: '(CEO of Chainos globle)',
+      position: '(CEO of Chainos Global)',
       content: 'Review content',
       image:
         'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',

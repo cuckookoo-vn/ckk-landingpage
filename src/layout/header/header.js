@@ -510,7 +510,7 @@ const Header = ({windowDimensions}) =>{
                                          alt="logo-chevron-down"/>
 
                                     <input className="input-search-popup"
-                                           placeholder="Search Cuckookoo.com"/>
+                                           placeholder="Search Cuckookoo.vn"/>
 
                                     <img className="icon-close-popup"
                                          onClick={()=>setPopupSearch(false)}
@@ -560,7 +560,7 @@ const Header = ({windowDimensions}) =>{
                                      alt="logo-chevron-down"/>
 
                                 <input className="input-search-mobile"
-                                       placeholder="search..."/>
+                                       placeholder="Search Cuckookoo.vn"/>
                             </div>
 
                             <div className="menu-mobile-content" id="menu-mobile-content">
