@@ -1,12 +1,13 @@
 import './metalish.scss';
 import {useTranslation} from "react-i18next";
+import {cloudS3} from "../../constant/global";
 
 const Metalish = ({windowDimensions}) =>{
     const images = {
-        logoMetalish: "https://d2lonqwqrbh3kq.cloudfront.net/home/ckksite-metalish-logo.png",
-        room1Metalish: "https://d2lonqwqrbh3kq.cloudfront.net/home/ckksite-metalish-room1.png",
-        room2Metalish: "https://d2lonqwqrbh3kq.cloudfront.net/home/ckksite-metalish-room2.png",
-        room3Metalish: "https://d2lonqwqrbh3kq.cloudfront.net/home/ckksite-metalish-room3.png"
+        logoMetalish: cloudS3 + "home/ckksite-metalish-logo.png",
+        room1Metalish: cloudS3 + "home/ckksite-metalish-room1.png",
+        room2Metalish: cloudS3 + "home/ckksite-metalish-room2.png",
+        room3Metalish: cloudS3 + "home/ckksite-metalish-room3.png"
     }
 
     const {t} = useTranslation();

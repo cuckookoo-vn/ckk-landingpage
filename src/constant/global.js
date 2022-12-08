@@ -1,0 +1,1 @@
+export const cloudS3 = "https://d2lonqwqrbh3kq.cloudfront.net/";

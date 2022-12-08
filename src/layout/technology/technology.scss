@@ -18,8 +18,16 @@
     }
 
     .description{
+      font-size: 40px;
+      line-height: 55px;
+      text-align: center;
       font-weight: bold;
-      margin: 0 auto;
+      width: 100%;
+      display: block;
+      @media #{$info-phone} {
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
 
     .container-child {
@@ -29,6 +37,9 @@
         margin-top: 70px;
         width: 100%;
         display: block;
+        @media #{$info-phone} {
+          height: 40vw;
+        }
       }
     }
   }
@@ -47,7 +58,7 @@
       }
       .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
       .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
-        bottom: -70px;
+        bottom: -40px;
       }
     }
   }

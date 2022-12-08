@@ -1,22 +1,21 @@
 import './header.scss';
-
-// translation
 import i18next from "i18next";
 import {useTranslation} from "react-i18next";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {cloudS3} from "../../constant/global";
 
 const Header = ({windowDimensions}) =>{
     // list images
     const images = {
-        logoCuckookoo: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-logo-header.png",
-        logoChevronDown: process.env.PUBLIC_URL + "/images/header/ckksite-icon-chevron-down.png",
-        logoMagnifyingGlass: process.env.PUBLIC_URL + "/images/header/ckksite-magnifying-glass.png",
-        flagEng: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-eng.png",
-        flagKo: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-ko.png",
-        flagJa: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-flag-ja.png",
-        iconClosePopup: "https://d2lonqwqrbh3kq.cloudfront.net/header/ckksite-icon-close-popup.png",
-        iconCloseWhite:  process.env.PUBLIC_URL + "/images/header/ckksite-header-close-white.png",
-        bgPopupButtonHeader:  process.env.PUBLIC_URL + "/images/header/ckksite-header-botton-popup.png",
+        logoCuckookoo: cloudS3 + "header/ckksite-logo-header.png",
+        logoChevronDown: cloudS3 + "header/ckksite-icon-chevron-down.png",
+        logoMagnifyingGlass: cloudS3 + "header/ckksite-magnifying-glass.png",
+        flagEng: cloudS3 + "header/ckksite-flag-eng.png",
+        flagKo: cloudS3 + "header/ckksite-flag-ko.png",
+        flagVn: cloudS3 + "header/ckksite-flag-vn.jpg",
+        iconClosePopup: cloudS3 + "header/ckksite-icon-close-popup.png",
+        iconCloseWhite: cloudS3 + "header/ckksite-header-close-white.png",
+        bgPopupButtonHeader: cloudS3 + "header/ckksite-header-botton-popup.png",
     }
 
     // translation
@@ -298,15 +297,6 @@ const Header = ({windowDimensions}) =>{
 
     }
 
-    const clickStatusMenuMobile = () =>{
-        let statusTeam = !statusMenuMobile
-        setStatusMenuMobile(statusTeam);
-        if(statusTeam){
-            animationMenuMobile("open")
-        }else {
-            animationMenuMobile("close")
-        }
-    }
 
     const clickLangMobile = () =>{
         let tempStatus = !statusLangMobile;
@@ -321,6 +311,74 @@ const Header = ({windowDimensions}) =>{
         }
     }
 
+    // scroll active
+    const [listOffsetTop, setListOffsetTop] = useState([]);
+    const listClassSection = ["products","technology","partners","about-us","careers",
+        "support"];
+
+    const listClass = ["menu-products","menu-technology","menu-partners","menu-about-us","menu-careers",
+        "menu-support"];
+
+    const scrollCLick = (className) =>{
+        let getId = document.getElementById(className);
+        if(getId){
+            window.scrollTo(0, getId.offsetTop);
+        }
+    }
+
+    const removeActive = () =>{
+        listClass.forEach((element)=>{
+            let getClass = document.getElementsByClassName(element)[0];
+            if(getClass.classList.contains("active")){
+                getClass.classList.remove("active");
+            }
+        })
+    }
+
+    const clickStatusMenuMobile = (id) =>{
+        let statusTeam = !statusMenuMobile
+        setStatusMenuMobile(statusTeam);
+        if(statusTeam){
+            animationMenuMobile("open")
+        }else {
+            animationMenuMobile("close")
+        }
+
+        scrollCLick(id)
+    }
+
+    useEffect(() => {
+        let listClassElement = [];
+        listClassSection.forEach((element)=>{
+            listClassElement.push(document.getElementById(element))
+        });
+        setListOffsetTop(listClassElement);
+
+        const scrollSetActive = () =>{
+            listOffsetTop.forEach((element, index)=>{
+                let getClassItem = document.getElementsByClassName(listClass[index])[0];
+                if(window.pageYOffset + 10 > element.offsetTop){
+                    if(!getClassItem.classList.contains("active")){
+                        removeActive()
+                        getClassItem.classList.add("active");
+                        return;
+                    }
+                }
+            })
+        }
+
+        scrollSetActive();
+
+        const onScroll = () =>{
+            scrollSetActive();
+        }
+
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, [document.getElementById('products')]);
+
+
     return(
         <div id="header">
             {
@@ -331,33 +389,33 @@ const Header = ({windowDimensions}) =>{
                         </a>
 
                         <div className="box-menu">
-                            <a className="link"
-                               href="#products">
+                            <a className="link menu-products"
+                               onClick={()=>scrollCLick("products")}>
                                 {t("header.menu.products")}
                             </a>
 
-                            <a className="link"
-                               href="#technology">
+                            <a className="link menu-technology"
+                               onClick={()=>scrollCLick("technology")}>
                                 {t("header.menu.technology")}
                             </a>
 
-                            <a className="link"
-                               href="#partners">
+                            <a className="link menu-partners"
+                               onClick={()=>scrollCLick("partners")}>
                                 {t("header.menu.partners")}
                             </a>
 
-                            <a className="link"
-                               href="#about-us">
+                            <a className="link menu-about-us"
+                               onClick={()=>scrollCLick("about-us")}>
                                 {t("header.menu.aboutUs")}
                             </a>
 
-                            <a className="link"
-                               href="#careers">
+                            <a className="link menu-careers"
+                               onClick={()=>scrollCLick("careers")}>
                                 {t("header.menu.careers")}
                             </a>
 
-                            <a className="link"
-                               href="#support">
+                            <a className="link menu-support"
+                               onClick={()=>scrollCLick("support")}>
                                 {t("header.menu.support")}
                             </a>
 
@@ -394,11 +452,11 @@ const Header = ({windowDimensions}) =>{
 
                                     <div className="lang"
                                          id="langJA"
-                                         onClick={() => clickStatusLang("ja")}>
-                                        <img src={images.flagJa}
+                                         onClick={() => clickStatusLang("vn")}>
+                                        <img src={images.flagVn}
                                              alt="flag-eng"/>
                                         <span className="flag-title">
-                                    {t("header.language.japanese")}
+                                    {t("header.language.vietnam")}
                                 </span>
                                     </div>
                                 </div>
@@ -413,7 +471,7 @@ const Header = ({windowDimensions}) =>{
 
                     </div>
                     :
-                    <>
+                    <div className="header-frame">
                         <div className="header-box" id="header-box">
                             <a className="logo-header" href="/#">
                                 <img src={images.logoCuckookoo} alt="logo-header"/>
@@ -436,7 +494,7 @@ const Header = ({windowDimensions}) =>{
                                 Language
                             </div>
                         </div>
-                    </>
+                    </div>
             }
 
             {
@@ -506,39 +564,33 @@ const Header = ({windowDimensions}) =>{
                             </div>
 
                             <div className="menu-mobile-content" id="menu-mobile-content">
-                                <a className="link-mobile"
-                                   onClick={() => clickStatusMenuMobile()}
-                                   href="#products">
+                                <a className="link-mobile menu-products"
+                                   onClick={() => clickStatusMenuMobile("products")}>
                                     {t("header.menu.products")}
                                 </a>
 
-                                <a className="link-mobile"
-                                   onClick={() => clickStatusMenuMobile()}
-                                   href="#technology">
+                                <a className="link-mobile menu-technology"
+                                   onClick={() => clickStatusMenuMobile("technology")}>
                                     {t("header.menu.technology")}
                                 </a>
 
-                                <a className="link-mobile"
-                                   onClick={() => clickStatusMenuMobile()}
-                                   href="#partners">
+                                <a className="link-mobile menu-partners"
+                                   onClick={() => clickStatusMenuMobile("partners")}>
                                     {t("header.menu.partners")}
                                 </a>
 
-                                <a className="link-mobile"
-                                   onClick={() => clickStatusMenuMobile()}
-                                   href="#about-us">
+                                <a className="link-mobile menu-about-us"
+                                   onClick={() => clickStatusMenuMobile("about-us")}>
                                     {t("header.menu.aboutUs")}
                                 </a>
 
-                                <a className="link-mobile"
-                                   onClick={() => clickStatusMenuMobile()}
-                                   href="#careers">
+                                <a className="link-mobile menu-careers"
+                                   onClick={() => clickStatusMenuMobile("careers")}>
                                     {t("header.menu.careers")}
                                 </a>
 
-                                <a className="link-mobile"
-                                   onClick={() => clickStatusMenuMobile()}
-                                   href="#support">
+                                <a className="link-mobile menu-support"
+                                   onClick={() => clickStatusMenuMobile("support")}>
                                     {t("header.menu.support")}
                                 </a>
 
@@ -580,12 +632,12 @@ const Header = ({windowDimensions}) =>{
 
                                 <div className="lang-mobile"
                                      id="langJA-mobile"
-                                     onClick={()=>clickStatusLang("ja")}>
-                                    <img src={images.flagJa}
+                                     onClick={()=>clickStatusLang("vn")}>
+                                    <img src={images.flagVn}
                                          alt="flag-eng"/>
 
                                     <span className="flag-title-mobile">
-                                        {t("header.language.japanese")}
+                                        {t("header.language.vietnam")}
                                     </span>
                                 </div>
                             </div>

@@ -23,7 +23,10 @@
         top: 6vw;
       }
       @media #{$info-phone} {
-        top: -10vw;
+        position: relative;
+        margin-bottom: -6vw;
+        top:0;
+        left: 0;
       }
       .title{
         color: #FFFFFF;
@@ -38,6 +41,10 @@
             font-size: 3.05vw;
             line-height: 2.9vw;
           }
+          @media #{$info-phone} {
+            font-size: 3.7vw;
+            line-height: 4.9vw;
+          }
         }
 
         &.title2{
@@ -48,6 +55,11 @@
             width: 27vw;
             font-size: 5.86vw;
             line-height: 6.3vw;
+          }
+          @media #{$info-phone} {
+            width: 27vw;
+            font-size: 7.86vw;
+            line-height: 8.7vw;
           }
         }
       }
@@ -89,6 +101,7 @@
     justify-content:center;
 
     .career-slides{
+      background-image: url($cloudS3 + "careers/ckksite-careers-slide-frame1.png");
       transform: scale(1);
       opacity: .6;
       .button-apply{
@@ -107,7 +120,9 @@
     }
 
     &.swiper-slide-active{
+
       .career-slides{
+        background-image: url($cloudS3 + "careers/ckksite-careers-slide-frame.png");
         opacity: 1;
         .button-apply{
           opacity: 1;
@@ -157,9 +172,9 @@
   .swiper-pagination-bullet {
     background: #ffffff;
   }
-
   .swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
-    @media #{$info-phone} {
+
+    @media #{$info-table-1400} {
       display: none;
     }
   }

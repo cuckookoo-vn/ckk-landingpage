@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: create change 40%">
-      <change afterPath="$PROJECT_DIR$/src/components/application-form/application-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/application-form/application-form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/careers-slide/careers-slide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/careers-slide/careers-slide.scss" afterDir="false" />
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: create careers layout">
+      <change afterPath="$PROJECT_DIR$/public/ckksite-logo-header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constant/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.prod" beforeDir="false" afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.qc" beforeDir="false" afterPath="$PROJECT_DIR$/.env.qc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.uat" beforeDir="false" afterPath="$PROJECT_DIR$/.env.uat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.well-known/pki-validation/92CA19F59AF5BFF4AFF03F870A30C203.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/.well-known/pki-validation/94908DAD9608CC761727632BF6DA8B86.txt" beforeDir="false" />
@@ -68,24 +70,94 @@
       <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.1eab2d6b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.1eab2d6b.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.d94050e5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.d94050e5.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/js/787.8698669b.chunk.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/js/787.8698669b.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.6da232e0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.6da232e0.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.6da232e0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.0e559f7d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.0e559f7d.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.0e559f7d.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/media/getFetch.40f37ddea2378391108f.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/careers/ckksite-careers-slide-button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/careers/ckksite-careers-slide-frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/careers/ckksite-careers-slide-frame1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/ckksite-scroll-top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-flag-eng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-flag-ja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-flag-ko.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-header-botton-popup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-header-close-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-icon-chevron-down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-icon-close-popup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-logo-header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/ckksite-magnifying-glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/ckksite-partners-frame-review.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/technology/ckksite-technology-9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/technology-slide/technology-slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/technology-slide/technology-slide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/application-form/application-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/application-form/application-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/careers-slide/careers-slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/careers-slide/careers-slide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/review-item/review-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/review-item/review-item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/technology-slide/technology-slide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/technology-slide/technology-slide.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/careers/careers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/careers/careers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/careers/careers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/careers/careers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/footer/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/metalish/metalish.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/partners/partners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/partners/partners.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/products/products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/support/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/support/support.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/technology/technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/technology/technology.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/technology/technology.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/technology/technology.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/locale/language/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locale/language/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locale/language/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locale/locale.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/locale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +167,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="CKKS-14-code-ui-detail" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,28 +180,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/src/metalish/metalish-landingpage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/src/aroundtheworld-landingpage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\header" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\image\header" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\image\technology" />
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src\components" />
-      <recent name="D:\src\ckk-ladingpage\ckk-landingpage\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public\images\technology" />
@@ -179,6 +251,9 @@
       <workItem from="1670289158058" duration="586000" />
       <workItem from="1670292841440" duration="25727000" />
       <workItem from="1670378432231" duration="10332000" />
+      <workItem from="1670463565141" duration="9711000" />
+      <workItem from="1670474351541" duration="2744000" />
+      <workItem from="1670480339735" duration="4177000" />
     </task>
     <task id="LOCAL-00001" summary="roots: start source">
       <created>1668401289760</created>

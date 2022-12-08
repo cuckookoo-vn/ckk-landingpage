@@ -3,21 +3,19 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
 import { Mousewheel, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {cloudS3} from "../../constant/global";
 
 const Products = ({ windowDimensions }) => {
   const images = {
-    metalish:
-      'https://d2lonqwqrbh3kq.cloudfront.net/products/ckksite-products-metalish.png',
-    artw: 'https://d2lonqwqrbh3kq.cloudfront.net/products/ckksite-products-artw.png',
-    alqq: 'https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-technology-alqq.png',
-    ame: 'https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-technology-ame.png',
-    bc: 'https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-technology-bc.png',
-    health:
-      'https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-technology-health.png',
-    net: 'https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-technology-net.png',
-    lap: 'https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-technology-lap.png',
-    iconClose:
-      process.env.PUBLIC_URL + '/images/header/ckksite-header-close-white.png',
+    metalish: cloudS3 + "products/ckksite-products-metalish.png",
+    artw: cloudS3 + "products/ckksite-products-artw.png",
+    alqq: cloudS3 + "technology/ckksite-technology-alqq.png",
+    ame: cloudS3 + "technology/ckksite-technology-ame.png",
+    bc: cloudS3 + "technology/ckksite-technology-bc.png",
+    health: cloudS3 + "technology/ckksite-technology-health.png",
+    net: cloudS3 + "technology/ckksite-technology-net.png",
+    lap: cloudS3 + "technology/ckksite-technology-lap.png",
+    iconClose: cloudS3 + "header/ckksite-header-close-white.png",
   };
 
   const { t } = useTranslation();

@@ -6,9 +6,10 @@ import {useTranslation} from "react-i18next";
 import ContentAboutUsMember from "../content-about-us-member/content-about-us-member";
 import {faAnglesRight, faAnglesLeft, faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {cloudS3} from "../../constant/global";
 
-const AboutUsMember = ({setOpenPopup, slideIndex}) =>{
-    const urlImage = "https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-team-";
+const AboutUsMember = ({setOpenPopup, openPopup, slideIndex}) =>{
+    const urlImage = cloudS3 + "about-us/ckksite-about-us-team-";
 
     const swiperRef = useRef(null);
 
@@ -17,19 +18,19 @@ const AboutUsMember = ({setOpenPopup, slideIndex}) =>{
     const datasSlide = [
         {
             name: 'Paul Pham',
-            position: 'Product Owner',
+            position: 'Chairman - CEO - Founder Cuckookoo',
             image: urlImage + '1.png',
             content: t("aboutUs.paulPham")
         },
         {
             name: 'Felix Nguyen',
-            position: 'Executive',
+            position: 'CEO Chainos Global',
             image: urlImage + '2.png',
             content: t("aboutUs.felixNguyen")
         },
         {
             name: 'Tony Quach',
-            position: 'Executive',
+            position: 'Chairman Chainos Global',
             image: urlImage + '3.png',
             content: t("aboutUs.tonyQuach")
         },
@@ -47,7 +48,7 @@ const AboutUsMember = ({setOpenPopup, slideIndex}) =>{
         },
         {
             name: 'Julie Tran',
-            position: 'Content Advisor Leader',
+            position: 'Business Analyst Leader',
             image: urlImage + '6.png',
             content: t("aboutUs.julieTran")
         },
@@ -67,7 +68,7 @@ const AboutUsMember = ({setOpenPopup, slideIndex}) =>{
             name: 'Johnny Le',
             position: 'Developer Leader',
             image: urlImage + '9.png',
-            content: t("aboutUs.johnnyLe")
+            content: t("aboutUs.JohnnyLe")
         },
 
         {
