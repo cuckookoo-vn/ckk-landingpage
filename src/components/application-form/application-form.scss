@@ -141,6 +141,10 @@
         }
 
         textarea{
+          min-width: calc(100% - 40px);
+          max-width: calc(100% - 40px);
+          min-height: 100px;
+          max-height: 100px;
           &.input-form{
             height: 100px;
             max-height: 100px;
