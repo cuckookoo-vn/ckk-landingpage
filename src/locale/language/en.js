@@ -13,14 +13,14 @@ const en = {
 
             language: {
                 english: "English",
-                korean: "Korean",
-                japanese: "Japanese"
+                korean: "언어",
+                vietnam: "Tiếng Việt"
             }
         },
 
         metalish: {
             titleMain: "Metalish",
-            title: "English Application for Student form grade 1 to grade 12 following the curriculum given by Ministry of Education.",
+            title: "English Application for Student from grade 1 to grade 12 following the curriculum given by Ministry of Education.",
             learnMore: "Learn more"
         },
 
@@ -74,33 +74,31 @@ const en = {
                 "Have cooperated in development and received good feedback on quality and reputation from foreign customers in the US, Japan, Korea, France, Sweden, Australia, Singapore, China, Philippines, …<br></br><br></br>" +
                 "Have a passion and special interest in new technologies and applying technologies to create good and useful products for the community.<br></br><br></br>" +
                 "Willing to cooperate with partners, investors who are both capable and ethical, cooperation and development in the spirit of win-win.",
-            felixNguyen: "Over 18 years of experience in software development<br></br><br></br>" +
+            felixNguyen: "Over 18 years of experience in software development.<br></br><br></br>" +
                 "Ph.D. in Computer Science, University of Ulsan, S. Korea.<br></br><br></br>" +
-                "Always give priority to creating products that receive customer satisfaction<br></br><br></br>" +
+                "Always give priority to creating products that receive customer satisfaction.<br></br><br></br>" +
                 "Passionate about high technology, especially AI technology, and experienced in the field of speech recognition technology.<br></br><br></br>" +
-                "Chairman of Korean and Vietnamese business cooperation and development organization",
+                "Chairman of Korean and Vietnamese business cooperation and development organization.",
             tonyQuach: "Success in own business of AI and Blockchain system developments.<br></br><br></br>" +
                 "Representative of several Vietnamese software outsourcing enterprises in S. Korea.<br></br><br></br>" +
                 "More than 16 years of experience in Software Development, AI systems, and Blockchain.<br></br><br></br>" +
                 "Master degree in Advanced Fusion Technology from Konkuk University, S. Korea." +
-                "Always prioritize the application of technology with the best quality when cooperating and developing products with partners and customers",
+                "Always prioritize the application of technology with the best quality when cooperating and developing products with partners and customers.",
             kanPham: "Passion and special experience in the field of AI.<br></br><br></br>" +
-                "Cooperated to develop products and services with AI applications for banking, insurance and entertainment customers<br></br><br></br>" +
+                "Cooperated to develop products and services with AI applications for banking, insurance and entertainment customers.<br></br><br></br>" +
                 "Working enthusiastically and especially giving priority to creating results with customer satisfaction.<br></br><br></br>" +
                 "Building a Deep Learning Model to colorize a sketch given color reference.<br></br><br></br>" +
-                "Interpolation : Building machine learning algorithm to interpolate in-between frames given anime-style source and target images.<br></br><br></br>" +
-                "Information Extraction: Building Text Detection/ Text Recognition for Japanese Invoice Document.<br></br><br></br>" +
+                "Interpolation: Building machine learning algorithm to interpolate in-between frames given anime-style source and target images.<br></br><br></br>" +
+                "Information Extraction: Building Text Detection/Text Recognition for Japanese Invoice Document.<br></br><br></br>" +
                 "Technical assessment for some AI products related to Computer Vision, such as: object detection, fraud detection.",
-            henryHo: "More than 18 years of experience in innovative software development.<br></br><br></br>" +
-                "Participate in the development of games and applications in the fields of Education, Entertainment, Health and Medicine.<br></br><br></br>" +
-                "Many years of experience in human resource management and applying methods, which makes the quality of human resources in projects better every day.<br></br><br></br>" +
-                "Have cooperated in development and received good feedback on quality and reputation from foreign customers in the US, Japan, Korea, France, Sweden, Australia, Singapore, China, Philippines, …<br></br><br></br>" +
-                "Have a passion and special interest in new technologies and applying technologies to create good and useful products for the community.<br></br><br></br>" +
-                "Willing to cooperate with partners, investors who are both capable and ethical, cooperation and development in the spirit of win-win.",
+            henryHo: "Over 8 years of experience in software programming with Java-based technologies, such as Spring Boot, Hibernate..., including Front-end technologies: HTML, CSS, jQuery, Bootstrap, Angular...<br></br><br></br>"+
+                "Experienced with Microservices, REST API, CMS development... <br></br><br></br>"+
+                "Solid understanding of the Principles of Programming Languages, OOP, Algorithm, Data concepts, Testing Concepts,..<br></br><br></br>"+
+                "Practical experience in software engineering techniques: Continuous Integration, Unit Testing, Source Code Control, Bug Tracker, Refactoring, Debugging, Code Review, Static Analytics.",
             julieTran: "3+ years experience in working with customers to get information and provide solutions for their needs.<br></br><br></br>" +
                 "Experienced in developing NFT game, Metaverse & Education projects.<br></br><br></br>",
             joyLe: "Manage Creative with 10+ years experience, with a passion for travel to find a lot of new ideas for design work, as well as the sequence of UX, UI learned from everywhere I came.<br></br><br></br>",
-            leonNguyen: "3D Artist Character ,BG, 7+ years experience Hand painting texture , substance painter( real and semi real ) Rigging and Animation 2D concept artist.<br></br><br></br>",
+            leonNguyen: "3D Artist Character, BG, 7+ years experience Hand painting texture, substance painter (real and semi real) Rigging and Animation 2D concept artist.<br></br><br></br>",
             JohnnyLe: "2+ years experience,<br></br><br></br>" +
                 "Familiar with working modelling such as Agile, Hybrid, Waterfall.<br></br><br></br>" +
                 "Experienced with NFT, Metaverse project.",
@@ -187,7 +185,9 @@ const en = {
             contactUs: "Contact us",
             email: "Email",
             phoneNumber: "Phone number"
-        }
+        },
+
+        lang: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6873595234088!2d106.66678431524116!3d10.835220361067488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529a9e817e8db%3A0xc5f7b6893d7a3ec6!2zODIgxJAuIFPhu5EgNiwgUGjGsOG7nW5nIDEwLCBHw7IgVuG6pXAsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1sen!2s!4v1667975602005!5m2!1sen!2s"
     }
 }
 export default en;

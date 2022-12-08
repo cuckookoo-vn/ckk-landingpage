@@ -1,5 +1,6 @@
 import './review-item.scss';
 import {useEffect, useState} from "react";
+import {cloudS3} from "../../constant/global";
 
 const ReviewItem = ({element}) =>{
     const const_start = 5;
@@ -8,9 +9,9 @@ const ReviewItem = ({element}) =>{
     const [assessStart,setAssessStart] = useState([]);
 
     const images = {
-        star: "https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-about-star.png",
-        starFull: "https://d2lonqwqrbh3kq.cloudfront.net/technology/ckksite-about-star-full.png",
-        partnersFrame:  process.env.PUBLIC_URL + '/images/partners/ckksite-partners-frame-review.png'
+        star: cloudS3 + "technology/ckksite-about-star.png",
+        starFull: cloudS3 + "technology/ckksite-about-star-full.png",
+        partnersFrame:'https://d2lonqwqrbh3kq.cloudfront.net/partners/ckksite-partners-frame-review.png'
     }
 
     useEffect(()=>{

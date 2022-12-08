@@ -10,9 +10,14 @@
   @media #{$info-table-991} {
     background: #63636F;
   }
+  .header-frame{
+    @media #{$info-phone} {
+      height: 55px;
+    }
+  }
 
   .header-box{
-    padding: 17px 0 19px 0;
+    height: 55px;
     width: 100%;
     margin: 0 auto 0 auto;
     position: relative;
@@ -28,7 +33,8 @@
     }
 
     @media #{$info-table-991} {
-      padding: 22px 0;
+      padding: 13px 0;
+      height: fit-content;
       background: #63636F;
     }
     &.open-popup{
@@ -37,7 +43,7 @@
 
     .logo-header{
       display: flex;
-      width: 180px;
+      width: fit-content;
       align-items: center;
       padding-left: 25px;
       @media #{$info-table-991} {
@@ -45,15 +51,17 @@
       }
 
       img{
-        width: 100%;
-        height: fit-content;
+        height: 30px;
+        @media #{$info-table-991} {
+          height: 25px;
+        }
       }
     }
 
     .box-menu{
       width: inherit;
       position: relative;
-      margin: 0 25px 0 60px;
+      margin: auto 25px auto 60px;
       display: flex;
       justify-content: space-between;
       @media #{$info-table-991} {
@@ -61,11 +69,15 @@
       }
       .link{
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         font-size: 14px;
+        cursor: pointer;
         color: #FFFFFF;
         text-decoration: none;
         font-style: inherit;
+        &.active{
+          color: #FCE517;
+        }
         @media #{$info-table-1068} {
           font-size: 14px;
           line-height: inherit;
@@ -76,7 +88,7 @@
         position: relative;
         display: flex;
         cursor: pointer;
-        align-items: flex-end;
+        align-items: center;
         &.close{
           cursor: not-allowed;
           pointer-events: none;
@@ -93,7 +105,7 @@
 
         .icon-down{
           width: 13px;
-          margin: 0 0 4px 7px;
+          margin: 7px 0 0 8px;
           font-weight: lighter;
           transform: rotate(0deg);
           transition: transform 300ms ease-in-out;
@@ -105,7 +117,7 @@
         .drop-lang{
           position: absolute;
           width: 140px;
-          top: 40px;
+          top: 38px;
           left: 0;
           height: 0;
           display: block;
@@ -150,6 +162,8 @@
       .icon-search{
         cursor: pointer;
         width: 20px;
+        margin: auto 0 auto 0;
+        height: fit-content;
       }
 
       .icon-menu-mobile {
@@ -204,7 +218,7 @@
   }
 
   .header-box-lang {
-    padding: 25px 0;
+    padding: 15px 0;
     width: 100%;
     margin: 0 auto 0 auto;
     position: relative;
@@ -343,7 +357,7 @@
     height: 0;
     z-index: 2;
     &.open{
-      height: calc(100vh - 61.19px);
+      height: calc(100vh - 55px);
       overflow-y: auto;;
       visibility: visible;
     }
@@ -385,6 +399,10 @@
           height: 30px;
           font-size: 16px;
           padding: 0 10px;
+          color: #FFFFFF;
+          &::placeholder{
+            color: #cbcaca;
+          }
         }
       }
 
@@ -409,6 +427,9 @@
           color: #FFFFFF;
           opacity: 0;
           transition: all 600ms ease-in-out;
+          &.active{
+            color:#FCE517;
+          }
           &.open{
             transform: translateX(0);
             opacity: 1;

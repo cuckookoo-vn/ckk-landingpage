@@ -16,14 +16,14 @@ import SwiperCore, { Navigation,
 import './App.css';
 import './styles/index.scss';
 import {useEffect, useState} from "react";
-
+import {cloudS3} from "./constant/global";
 function App() {
   SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
 
   const [isVisible, setIsVisible] = useState(false);
 
   const images = {
-    imageScrollTop: process.env.PUBLIC_URL + "/images/ckksite-scroll-top.png"
+    imageScrollTop: cloudS3 + "ckksite-scroll-top.png"
   }
 
   // Top: 0 takes us all the way back to the top of the page

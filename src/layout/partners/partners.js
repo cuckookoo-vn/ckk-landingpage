@@ -4,28 +4,24 @@ import { Mousewheel, Navigation, Pagination } from 'swiper';
 import ReviewItem from '../../components/review-item/review-item';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
+import {cloudS3} from "../../constant/global";
 
 const Partners = ({ windowDimensions }) => {
   const ourPatners = [
     {
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png',
+      image: cloudS3 + "about-us/ckksite-about-us-chainos.png",
     },
     {
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png',
+      image: cloudS3 + "about-us/ckksite-about-us-chainos.png",
     },
     {
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png',
+      image: cloudS3 + "about-us/ckksite-about-us-chainos.png",
     },
     {
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png',
+      image: cloudS3 + "about-us/ckksite-about-us-chainos.png",
     },
     {
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-us-chainos.png',
+      image: cloudS3 + "about-us/ckksite-about-us-chainos.png",
     },
   ];
 
@@ -34,7 +30,7 @@ const Partners = ({ windowDimensions }) => {
       {
         name: 'Mr.Tony',
         countStar: 4,
-        position: '(CEO of Chainos globle)',
+        position: '(CEO of Chainos Global)',
         content: 'Review content',
         image:
           'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -52,7 +48,7 @@ const Partners = ({ windowDimensions }) => {
       {
         name: 'Mr.Tony',
         countStar: 4,
-        position: '(CEO of Chainos globle)',
+        position: '(CEO of Chainos Global)',
         content: 'Review content',
         image:
           'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -70,7 +66,7 @@ const Partners = ({ windowDimensions }) => {
       {
         name: 'Mr.Tony',
         countStar: 4,
-        position: '(CEO of Chainos globle)',
+        position: '(CEO of Chainos Global)',
         content: 'Review content',
         image:
           'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -90,7 +86,7 @@ const Partners = ({ windowDimensions }) => {
     {
       name: 'Mr.Tony',
       countStar: 4,
-      position: '(CEO of Chainos globle)',
+      position: '(CEO of Chainos Global)',
       content: 'Review content',
       image:
         'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -107,7 +103,7 @@ const Partners = ({ windowDimensions }) => {
     {
       name: 'Mr.Tony',
       countStar: 4,
-      position: '(CEO of Chainos globle)',
+      position: '(CEO of Chainos Global)',
       content: 'Review content',
       image:
         'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -123,7 +119,7 @@ const Partners = ({ windowDimensions }) => {
     {
       name: 'Mr.Tony',
       countStar: 4,
-      position: '(CEO of Chainos globle)',
+      position: '(CEO of Chainos Global)',
       content: 'Review content',
       image:
         'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
@@ -137,41 +133,6 @@ const Partners = ({ windowDimensions }) => {
         'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png',
     },
   ];
-
-  // check width set data slide
-  const checkWidthWindowSetSlideData = () => {
-    let slideDataTemp = {
-      slidesPerView: 5,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      speed: 8000,
-    };
-
-    if (windowDimensions.width > 1150) {
-      slideDataTemp.slidesPerView = 5;
-      slideDataTemp.spaceBetween = 0;
-      slideDataTemp.slidesPerGroup = 1;
-    } else if (windowDimensions.width > 900) {
-      slideDataTemp.slidesPerView = 4;
-      slideDataTemp.spaceBetween = 0;
-      slideDataTemp.slidesPerGroup = 1;
-    } else if (windowDimensions.width > 768) {
-      slideDataTemp.slidesPerView = 3;
-      slideDataTemp.spaceBetween = 0;
-      slideDataTemp.slidesPerGroup = 1;
-    } else {
-      slideDataTemp.slidesPerView = 2;
-      slideDataTemp.spaceBetween = 0;
-      slideDataTemp.slidesPerGroup = 2;
-    }
-    return slideDataTemp;
-  };
-
-  const [slideData, setSlideData] = useState(checkWidthWindowSetSlideData);
-
-  useEffect(() => {
-    setSlideData(checkWidthWindowSetSlideData);
-  }, [windowDimensions.width]);
 
   const { t } = useTranslation();
 
@@ -201,15 +162,34 @@ const Partners = ({ windowDimensions }) => {
                 <div className='overlay-left'></div>
 
                 <Swiper
-                  slidesPerView={slideData.slidesPerView}
-                  spaceBetween={slideData.spaceBetween}
-                  slidesPerGroup={slideData.slidesPerGroup}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 2,
+                      spaceBetween: 0,
+                      slidesPerGroup: 2,
+                    },
+                    767.5: {
+                      slidesPerView: 3,
+                      spaceBetween: 0,
+                      slidesPerGroup: 1,
+                    },
+                    900: {
+                      slidesPerView: 4,
+                      spaceBetween: 0,
+                      slidesPerGroup: 1,
+                    },
+                    1150: {
+                      slidesPerView: 5,
+                      spaceBetween: 0,
+                      slidesPerGroup: 1,
+                    }
+                  }}
                   autoplay={{
                     delay: 1,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: false,
                   }}
-                  speed={slideData.speed}
+                  speed={8000}
                   freeMode={true}
                   loop={true}
                   pagination={{

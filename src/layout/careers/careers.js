@@ -5,6 +5,7 @@ import {EffectCoverflow, Mousewheel, Navigation, Pagination} from "swiper";
 import CareersSlide from "../../components/careers-slide/careers-slide";
 import {useState} from "react";
 import ApplicationForm from "../../components/application-form/application-form";
+import {cloudS3} from "../../constant/global";
 
 const Careers = ({windowDimensions}) =>{
     const {t} = useTranslation();
@@ -17,37 +18,31 @@ const Careers = ({windowDimensions}) =>{
         {
             title: t("careers.job1.title"),
             time: t("careers.job1.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
             key: 1
         },
         {
             title: t("careers.job2.title"),
             time: t("careers.job2.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
             key: 2
         },
         {
             title: t("careers.job3.title"),
             time: t("careers.job3.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
             key: 3
         },
         {
             title: t("careers.job4.title"),
             time: t("careers.job4.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
             key: 4
         },
         {
             title: t("careers.job5.title"),
             time: t("careers.job5.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
             key: 5
         },
         {
             title: t("careers.job6.title"),
             time: t("careers.job6.time"),
-            imgFrame: process.env.PUBLIC_URL + "/images/careers/ckksite-careers-slide-frame1.png",
             key: 6
         }
     ]

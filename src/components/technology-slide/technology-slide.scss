@@ -13,16 +13,20 @@
       margin-bottom: 3vw;
     }
     @media #{$info-phone} {
+      grid-template-columns: auto auto auto;
       margin-bottom: 5vw;
     }
 
     img{
       width: 150px;
+      margin: 0 auto 45px auto;
       @media #{$info-table-1400} {
         width: 10vw;
+        margin: 0 auto 4vw auto;
       }
       @media #{$info-phone} {
         width: 16vw;
+        margin: 0 auto 5vw auto;
       }
     }
   }
