@@ -45,7 +45,7 @@ const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
             setStatusClose(false);
             event.target.style.color = "transparent";
         }else {
-            event.target.style.color = "#0D0C0C";
+            event.target.style.color = "#FFFFFF";
             setStatusSize(true);
             setStatusClose(true);
         }
@@ -76,7 +76,7 @@ const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
                                          onClick={()=>closePopup()}
                                          className="close-application"/>
 
-                        <span className="title-notification">Your application has been submitted successfully.</span>
+                        <span className="title-notification">{t("careers.notification")}</span>
                     </div>
                     :
                     <div className="career-information-box">
@@ -85,7 +85,7 @@ const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
                                          className="close-application"/>
 
                         <div className="career-information-header">
-                            <span className="title-application">Application form</span>
+                            <span className="title-application">{t("careers.formCareers.titleMain")}</span>
                         </div>
 
                         <form className="application-form"
@@ -93,7 +93,7 @@ const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
 
                             <div className="form-input">
                             <span className="title-input">
-                                Position
+                                {t("careers.formCareers.position")}
                                 <span>*</span>:
                             </span>
                                 <select className="input-form" defaultValue={valueSelect}>
@@ -107,7 +107,7 @@ const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
 
                             <div className="form-input">
                         <span className="title-input">
-                            Your CV<span>*</span>(Max: 25MB)
+                            {t("careers.formCareers.file")}<span>*</span>{t("careers.formCareers.file1")}
                         </span>
                                 <input id="support-file-upload"
                                        onInput={(event)=>changeFile(event)}
@@ -140,7 +140,7 @@ const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
 
                             <div className="form-input">
                         <span className="title-input">
-                            Message
+                            {t("careers.formCareers.message")}
                             <span>*</span>:
                         </span>
 

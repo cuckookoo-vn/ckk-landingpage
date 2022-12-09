@@ -2,82 +2,13 @@ import {useEffect, useRef, useState} from "react";
 import './about-us-member.scss';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Pagination} from "swiper";
-import {useTranslation} from "react-i18next";
 import ContentAboutUsMember from "../content-about-us-member/content-about-us-member";
 import {faAnglesRight, faAnglesLeft, faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {cloudS3} from "../../constant/global";
 
-const AboutUsMember = ({setOpenPopup, openPopup, slideIndex}) =>{
-    const urlImage = cloudS3 + "about-us/ckksite-about-us-team-";
+const AboutUsMember = ({setOpenPopup, slideIndex, datasSlide}) =>{
 
     const swiperRef = useRef(null);
-
-    const {t} = useTranslation();
-
-    const datasSlide = [
-        {
-            name: 'Paul Pham',
-            position: 'Chairman - CEO - Founder Cuckookoo',
-            image: urlImage + '1.png',
-            content: t("aboutUs.paulPham")
-        },
-        {
-            name: 'Felix Nguyen',
-            position: 'CEO Chainos Global',
-            image: urlImage + '2.png',
-            content: t("aboutUs.felixNguyen")
-        },
-        {
-            name: 'Tony Quach',
-            position: 'Chairman Chainos Global',
-            image: urlImage + '3.png',
-            content: t("aboutUs.tonyQuach")
-        },
-        {
-            name: 'Mr.Kan',
-            position: 'AI Leader',
-            image: urlImage + '4.png',
-            content: t("aboutUs.kanPham")
-        },
-        {
-            name: 'Henry Ho',
-            position: 'Solution Architect',
-            image: urlImage + '5.png',
-            content: t("aboutUs.henryHo")
-        },
-        {
-            name: 'Julie Tran',
-            position: 'Business Analyst Leader',
-            image: urlImage + '6.png',
-            content: t("aboutUs.julieTran")
-        },
-        {
-            name: 'Joy Le',
-            position: 'Artist Manager',
-            image: urlImage + '7.png',
-            content: t("aboutUs.joyLe")
-        },
-        {
-            name: 'Leon Nguyen',
-            position: 'Senior Artist',
-            image: urlImage + '8.png',
-            content: t("aboutUs.leonNguyen")
-        },
-        {
-            name: 'Johnny Le',
-            position: 'Developer Leader',
-            image: urlImage + '9.png',
-            content: t("aboutUs.JohnnyLe")
-        },
-
-        {
-            name: 'GiGi Le',
-            position: 'Translator',
-            image: urlImage + '10.png',
-            content: t("aboutUs.gigiLe")
-        },
-    ]
 
     // button slide
     const prevRef = useRef(null);

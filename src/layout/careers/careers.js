@@ -5,7 +5,6 @@ import {EffectCoverflow, Mousewheel, Navigation, Pagination} from "swiper";
 import CareersSlide from "../../components/careers-slide/careers-slide";
 import {useState} from "react";
 import ApplicationForm from "../../components/application-form/application-form";
-import {cloudS3} from "../../constant/global";
 
 const Careers = ({windowDimensions}) =>{
     const {t} = useTranslation();
