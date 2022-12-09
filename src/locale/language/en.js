@@ -13,8 +13,19 @@ const en = {
 
             language: {
                 english: "English",
-                korean: "언어",
+                korean: "일본어",
                 vietnam: "Tiếng Việt"
+            },
+
+            formSearch: {
+                placeholder: "Search Cuckookoo.com",
+                buttons: {
+                    button1: "Metaverse",
+                    button2: "English",
+                    button3: "3D advertising",
+                    button4: "Traveling",
+                    button5: "AI",
+                }
             }
         },
 
@@ -112,7 +123,17 @@ const en = {
             },
 
             review: {
-                titleMain: "What partners say about Cuckookoo?"
+                titleMain: "What partners say about Cuckookoo?",
+                item1: {
+                    name: "Mr. Tony",
+                    position: "(CEO of Chainos global)",
+                    content: "Review content"
+                },
+                item2: {
+                    name: "Mr. Lee",
+                    position: "(PM from Ludena Protocol)",
+                    content: "Review content"
+                }
             },
         },
 
@@ -151,7 +172,18 @@ const en = {
                 time: "20/11/2022"
             },
 
-            buttonApply: "Apply"
+            buttonApply: "Apply",
+
+            formCareers: {
+                titleMain: "Application form",
+                position: "Position",
+                file: "Your CV",
+                file1:"(Max: 25MB)",
+                message: "Message",
+                buttonSubmit: "Submit"
+            },
+
+            notification: "Your application has been submitted successfully."
         },
 
         support: {

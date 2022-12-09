@@ -50,14 +50,14 @@
         &.title2{
           line-height: 84px;
           font-size: 80px;
-          width: 410px;
+          width: 380px;
           @media #{$info-table-1400} {
-            width: 27vw;
+            width: 26vw;
             font-size: 5.86vw;
             line-height: 6.3vw;
           }
           @media #{$info-phone} {
-            width: 27vw;
+            width: 37vw;
             font-size: 7.86vw;
             line-height: 8.7vw;
           }

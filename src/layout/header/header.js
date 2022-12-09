@@ -510,7 +510,7 @@ const Header = ({windowDimensions}) =>{
                                          alt="logo-chevron-down"/>
 
                                     <input className="input-search-popup"
-                                           placeholder="Search Cuckookoo.vn"/>
+                                           placeholder={t("header.formSearch.placeholder")}/>
 
                                     <img className="icon-close-popup"
                                          onClick={()=>setPopupSearch(false)}
@@ -522,23 +522,23 @@ const Header = ({windowDimensions}) =>{
                             <div className="content-box-popup">
                                 <div className="suggestions-box">
                                     <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
-                                        Metaverse
+                                        {t("header.formSearch.buttons.button1")}
                                     </button>
 
                                     <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
-                                        English
+                                        {t("header.formSearch.buttons.button2")}
                                     </button>
 
                                     <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
-                                        3D advertising
+                                        {t("header.formSearch.buttons.button3")}
                                     </button>
 
                                     <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
-                                        Traveling
+                                        {t("header.formSearch.buttons.button4")}
                                     </button>
 
                                     <button style={{backgroundImage:`url(${images.bgPopupButtonHeader})`}}>
-                                        AI
+                                        {t("header.formSearch.buttons.button5")}
                                     </button>
                                 </div>
                             </div>
@@ -560,7 +560,7 @@ const Header = ({windowDimensions}) =>{
                                      alt="logo-chevron-down"/>
 
                                 <input className="input-search-mobile"
-                                       placeholder="Search Cuckookoo.vn"/>
+                                       placeholder={t("header.formSearch.placeholder")}/>
                             </div>
 
                             <div className="menu-mobile-content" id="menu-mobile-content">

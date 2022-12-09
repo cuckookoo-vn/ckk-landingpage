@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Navigation, Pagination } from 'swiper';
 import ReviewItem from '../../components/review-item/review-item';
 import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
 import {cloudS3} from "../../constant/global";
 
 const Partners = ({ windowDimensions }) => {
@@ -25,116 +24,104 @@ const Partners = ({ windowDimensions }) => {
     },
   ];
 
+  const { t } = useTranslation();
+
   const review = [
     [
       {
-        name: 'Mr.Tony',
+        name: t("partners.review.item1.name"),
         countStar: 4,
-        position: '(CEO of Chainos Global)',
-        content: 'Review content',
-        image:
-          'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
+        position: t("partners.review.item1.position"),
+        content: t("partners.review.item1.content"),
+        image: cloudS3 + 'about-us/ckksite-about-review1.png',
       },
       {
-        name: 'Mr.Lee',
+        name: t("partners.review.item2.name"),
         countStar: 5,
-        position: '(PM from Ludena Protocol)',
-        content: 'Review content',
-        image:
-          'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png',
+        position: t("partners.review.item2.position"),
+        content: t("partners.review.item2.content"),
+        image: cloudS3 + 'about-us/ckksite-about-review2.png',
       },
     ],
     [
       {
-        name: 'Mr.Tony',
+        name: t("partners.review.item1.name"),
         countStar: 4,
-        position: '(CEO of Chainos Global)',
-        content: 'Review content',
-        image:
-          'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
+        position: t("partners.review.item1.position"),
+        content: t("partners.review.item1.content"),
+        image: cloudS3 + 'about-us/ckksite-about-review1.png',
       },
       {
-        name: 'Mr.Lee',
+        name: t("partners.review.item2.name"),
         countStar: 5,
-        position: '(PM from Ludena Protocol)',
-        content: 'Review content',
-        image:
-          'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png',
+        position: t("partners.review.item2.position"),
+        content: t("partners.review.item2.content"),
+        image: cloudS3 + 'about-us/ckksite-about-review2.png',
       },
     ],
     [
       {
-        name: 'Mr.Tony',
+        name: t("partners.review.item1.name"),
         countStar: 4,
-        position: '(CEO of Chainos Global)',
-        content: 'Review content',
-        image:
-          'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
+        position: t("partners.review.item1.position"),
+        content: t("partners.review.item1.content"),
+        image: cloudS3 + 'about-us/ckksite-about-review1.png',
       },
       {
-        name: 'Mr.Lee',
+        name: t("partners.review.item2.name"),
         countStar: 5,
-        position: '(PM from Ludena Protocol)',
-        content: 'Review content',
-        image:
-          'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png',
+        position: t("partners.review.item2.position"),
+        content: t("partners.review.item2.content"),
+        image: cloudS3 + 'about-us/ckksite-about-review2.png',
       },
     ],
   ];
 
   const reviewMobile = [
     {
-      name: 'Mr.Tony',
+      name: t("partners.review.item1.name"),
       countStar: 4,
-      position: '(CEO of Chainos Global)',
-      content: 'Review content',
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
+      position: t("partners.review.item1.position"),
+      content: t("partners.review.item1.content"),
+      image: cloudS3 + 'about-us/ckksite-about-review1.png',
     },
     {
-      name: 'Mr.Lee',
+      name: t("partners.review.item2.name"),
       countStar: 5,
-      position: '(PM from Ludena Protocol)',
-      content: 'Review content',
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png',
+      position: t("partners.review.item2.position"),
+      content: t("partners.review.item2.content"),
+      image: cloudS3 + 'about-us/ckksite-about-review2.png',
+    },
+    {
+      name: t("partners.review.item1.name"),
+      countStar: 4,
+      position: t("partners.review.item1.position"),
+      content: t("partners.review.item1.content"),
+      image: cloudS3 + 'about-us/ckksite-about-review1.png',
+    },
+    {
+      name: t("partners.review.item2.name"),
+      countStar: 5,
+      position: t("partners.review.item2.position"),
+      content: t("partners.review.item2.content"),
+      image: cloudS3 + 'about-us/ckksite-about-review2.png',
+    },
+    {
+      name: t("partners.review.item1.name"),
+      countStar: 4,
+      position: t("partners.review.item1.position"),
+      content: t("partners.review.item1.content"),
+      image: cloudS3 + 'about-us/ckksite-about-review1.png',
+    },
+    {
+      name: t("partners.review.item2.name"),
+      countStar: 5,
+      position: t("partners.review.item2.position"),
+      content: t("partners.review.item2.content"),
+      image: cloudS3 + 'about-us/ckksite-about-review2.png',
     },
 
-    {
-      name: 'Mr.Tony',
-      countStar: 4,
-      position: '(CEO of Chainos Global)',
-      content: 'Review content',
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
-    },
-    {
-      name: 'Mr.Lee',
-      countStar: 5,
-      position: '(PM from Ludena Protocol)',
-      content: 'Review content',
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png',
-    },
-    {
-      name: 'Mr.Tony',
-      countStar: 4,
-      position: '(CEO of Chainos Global)',
-      content: 'Review content',
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review1.png',
-    },
-    {
-      name: 'Mr.Lee',
-      countStar: 5,
-      position: '(PM from Ludena Protocol)',
-      content: 'Review content',
-      image:
-        'https://d2lonqwqrbh3kq.cloudfront.net/about-us/ckksite-about-review2.png',
-    },
   ];
-
-  const { t } = useTranslation();
 
   return (
     <div id='partners'>
