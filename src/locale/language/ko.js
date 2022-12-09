@@ -30,6 +30,7 @@ const ko = {
     },
 
     metalish: {
+      titleMain: "Metalish",
       title:
         'Metalish는 교육부에서 제공하는 커리큘럼을 기반으로 사용자의 영어 향상을 돕는 애플리케이션입니다',
       learnMore: '더 보기',

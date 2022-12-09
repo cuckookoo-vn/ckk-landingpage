@@ -101,15 +101,15 @@ const Technology = ({windowDimensions}) =>{
         ],
         [
             {image: cloudS3 + "technology/ckksite-technology-31.png"},
-            {image: process.env.REACT_APP_S3 + "technology/ckksite-technology-32.png"},
-            {image: process.env.REACT_APP_S3 + "technology/ckksite-technology-33.png"},
-            {image: process.env.REACT_APP_S3 + "technology/ckksite-technology-34.png"},
-            {image: process.env.REACT_APP_S3 + "technology/ckksite-technology-35.png"},
-            {image: process.env.REACT_APP_S3 + "technology/ckksite-technology-36.png"},
+            {image: cloudS3 + "technology/ckksite-technology-32.png"},
+            {image: cloudS3 + "technology/ckksite-technology-33.png"},
+            {image: cloudS3 + "technology/ckksite-technology-34.png"},
+            {image: cloudS3 + "technology/ckksite-technology-35.png"},
+            {image: cloudS3 + "technology/ckksite-technology-36.png"},
         ],
         [
-            {image: process.env.REACT_APP_S3 + "technology/ckksite-technology-37.png"},
-            {image: process.env.REACT_APP_S3 + "technology/ckksite-technology-38.png"},
+            {image: cloudS3 + "technology/ckksite-technology-37.png"},
+            {image: cloudS3 + "technology/ckksite-technology-38.png"},
         ]
     ]
 
