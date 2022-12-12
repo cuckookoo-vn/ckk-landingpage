@@ -18,7 +18,7 @@ const en = {
             },
 
             formSearch: {
-                placeholder: "Search Cuckookoo.com",
+                placeholder: "Search Cuckookoo.vn",
                 buttons: {
                     button1: "Metaverse",
                     button2: "English",
