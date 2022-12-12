@@ -5,7 +5,7 @@ const ko = {
         products: '상품',
         technology: '테크놀로지',
         partners: '파트너',
-        aboutUs: '우리에 대해',
+        aboutUs: '팀원',
         careers: '채용',
         support: '지원',
         lang: '언어',
@@ -13,7 +13,7 @@ const ko = {
 
       language: {
         english: 'English',
-        korean: '일본어',
+        korean: '한국어',
         vietnam: "Tiếng Việt"
       },
 
@@ -71,7 +71,7 @@ const ko = {
 
     aboutUs: {
       cuckookooTeam: {
-        titleMain:"우리에 대해",
+        titleMain:"팀원",
         description: "CUCKOOKOO의 지향점은 건강, 교육, 게임, 패션 등의 분야에서 메타버스를 지향하는 커뮤니티 애플리케이션 제품을 개발하는 것입니다.                 "
       },
 
