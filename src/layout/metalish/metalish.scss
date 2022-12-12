@@ -10,6 +10,9 @@
   }
   .metalish{
     flex-direction: row;
+    @media #{$info-phone} {
+      flex-direction: column;
+    }
     .title-box{
       display: flex;
       flex-direction: column;
@@ -67,23 +70,35 @@
       display: flex;
       flex-direction: column;
       @media #{$info-phone} {
-        display: none !important;
+        max-width: 100%;
+        width: 500px;
+        margin: 100px auto 20px auto;
       }
+
       img{
         margin: auto;
         display: block;
         &.metalish-room1{
           width: 50%;
+          @media #{$info-phone} {
+            width: 55%;
+          }
         }
 
         &.metalish-room2{
           width: 75%;
           margin-top: -12%;
+          @media #{$info-phone} {
+            width: 80%;
+          }
         }
 
         &.metalish-room3{
           width: 90%;
           margin-top: -19%;
+          @media #{$info-phone} {
+            width: 100%;
+          }
         }
       }
     }

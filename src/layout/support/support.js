@@ -72,8 +72,13 @@ const Support = ({windowDimensions}) =>{
                             <span>*</span>:
                         </span>
                         <input className="input-form"
+                               type="email"
                             {...register("email", {
                                 required: true,
+                                pattern: {
+                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                    message: "invalid email address"
+                                }
                             })}
                         />
                         {errors?.email?.type === "required" &&
@@ -89,9 +94,6 @@ const Support = ({windowDimensions}) =>{
                                onInput={(event)=>changeFile(event)}
                                className="input-form"
                                type="file"
-                            {...register("file", {
-                                required: true,
-                            })}
                         />
                         <label htmlFor="support-file-upload" className="custom-file-upload">
                             <img src={images.iconUpload} alt="icon-upload"/>
