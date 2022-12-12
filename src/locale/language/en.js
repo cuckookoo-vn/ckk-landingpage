@@ -5,7 +5,7 @@ const en = {
                 products: "Products",
                 technology: "Technology",
                 partners: "Partners",
-                aboutUs: "About us",
+                aboutUs: "Teams",
                 careers: "Careers",
                 support: "Support",
                 lang: "Language",
@@ -13,7 +13,7 @@ const en = {
 
             language: {
                 english: "English",
-                korean: "일본어",
+                korean: "한국어",
                 vietnam: "Tiếng Việt"
             },
 
@@ -74,7 +74,7 @@ const en = {
 
         aboutUs: {
             cuckookooTeam: {
-                titleMain:"ABOUT US",
+                titleMain:"TEAMS",
                 description: "Cuckookoo's orientation is to develop community application products in the " +
                     "fields of: health, education, games, fashion in the direction of metaverse."
             },

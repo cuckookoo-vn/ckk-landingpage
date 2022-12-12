@@ -6,7 +6,7 @@ vn = {
                 products: "Sản phẩm",
                 technology: "Công nghệ",
                 partners: "Đối tác",
-                aboutUs: "Về chúng tôi",
+                aboutUs: "Đội ngũ",
                 careers: "Tuyển dụng",
                 support: "Hỗ trợ",
                 lang: "Ngôn ngữ",
@@ -14,7 +14,7 @@ vn = {
 
             language: {
                 english: "English",
-                korean: "일본어",
+                korean: "한국어",
                 vietnam: "Tiếng Việt"
             },
 
@@ -75,7 +75,7 @@ vn = {
 
         aboutUs: {
             cuckookooTeam: {
-                titleMain:"Về chúng tôi",
+                titleMain:"ĐỘI NGŨ",
                 description: "Định hướng của Cuckookoo là phát triển các sản phẩm ứng dụng cộng đồng trong các lĩnh vực: y tế, giáo dục, game, thời trang theo hướng metaverse."
             },
 
