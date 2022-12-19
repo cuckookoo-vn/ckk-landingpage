@@ -5,11 +5,110 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  padding-top: 240px;
+  padding-top: 200px;
   background: #f0f0f0;
   @media #{$info-phone} {
-    padding-top: 140px;
+    padding-top: 120px;
   }
+
+  .metalish{
+    padding-bottom: 200px;
+    flex-direction: row;
+    @media #{$info-phone} {
+      flex-direction: column;
+      padding-bottom: 120px;
+    }
+    .title-box{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 50%;
+      @media #{$info-phone} {
+        width: 500px;
+        max-width: 100%;
+      }
+      .title-main{
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: bold;
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      img{
+        width: 40%;
+        margin: 0 auto 0 auto;
+        @media #{$info-table-1068} {
+          width: 45%;
+        }
+
+        @media #{$info-phone} {
+          width: 100%;
+          margin: 80px 0;
+        }
+      }
+
+      .content-title{
+        margin: 15px auto 0 auto;
+        width: 56%;
+        display: flex;
+        flex-direction: column;
+        @media #{$info-phone} {
+          margin: auto;
+          width: 450px;
+          text-align: center;
+          max-width: 100%;
+        }
+        .title{
+          margin-top: 10px;
+          padding: 0 5px;
+        }
+
+        .learn-more{
+          margin: 15px auto 0 auto;
+        }
+      }
+    }
+
+    .image-box{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      @media #{$info-phone} {
+        max-width: 100%;
+        width: 500px;
+        margin: 100px auto 20px auto;
+      }
+
+      img{
+        margin: auto;
+        display: block;
+        &.metalish-room1{
+          width: 50%;
+          @media #{$info-phone} {
+            width: 55%;
+          }
+        }
+
+        &.metalish-room2{
+          width: 75%;
+          margin-top: -12%;
+          @media #{$info-phone} {
+            width: 80%;
+          }
+        }
+
+        &.metalish-room3{
+          width: 90%;
+          margin-top: -19%;
+          @media #{$info-phone} {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
   .container-child {
     flex-direction: row;
     @media #{$info-phone} {
@@ -276,6 +375,7 @@
               }
 
               @media #{$info-phone} {
+                width: auto;
                 height: 13vw;
                 margin: 4.5vw 4.5vw 2vw 4.5vw;
               }

@@ -2,7 +2,6 @@ import {useEffect, useState} from "react";
 import './home.scss';
 import {getWindowDimensions} from "../mixins/window-dimensions";
 import Header from "../layout/header/header";
-import Metalish from "../layout/metalish/metalish";
 import Products from "../layout/products/products";
 import Technology from "../layout/technology/technology";
 import AboutUs from "../layout/about-us/about-us";
@@ -29,7 +28,6 @@ const Home = () =>{
     return(
         <>
             <Header windowDimensions={windowDimensions}/>
-            <Metalish windowDimensions={windowDimensions}/>
             <Products windowDimensions={windowDimensions}/>
             <Technology windowDimensions={windowDimensions}/>
             <Partners windowDimensions={windowDimensions}/>
