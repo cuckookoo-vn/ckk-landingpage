@@ -54,6 +54,7 @@ const Technology = ({windowDimensions}) =>{
         [
             {image: cloudS3 + "technology/ckksite-technology-37.png"},
             {image: cloudS3 + "technology/ckksite-technology-38.png"},
+            {image: cloudS3 + "technology/ckksite-technology-39.png"},
         ]
     ]
 
@@ -110,6 +111,7 @@ const Technology = ({windowDimensions}) =>{
         [
             {image: cloudS3 + "technology/ckksite-technology-37.png"},
             {image: cloudS3 + "technology/ckksite-technology-38.png"},
+            {image: cloudS3 + "technology/ckksite-technology-39.png"},
         ]
     ]
 
