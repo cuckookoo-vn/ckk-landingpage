@@ -11,8 +11,8 @@
     background: #63636F;
   }
   .header-frame{
-    @media #{$info-phone} {
-      height: 55px;
+    @media #{$info-table-1068} {
+      height: fit-content;
     }
   }
 
@@ -47,13 +47,16 @@
       align-items: center;
       padding-left: 25px;
       @media #{$info-table-991} {
-        width: 130px;
+        width: fit-content;
       }
 
       img{
         height: 30px;
         @media #{$info-table-991} {
           height: 25px;
+        }
+        @media #{$info-phone-350} {
+          height: 20px;
         }
       }
     }
@@ -64,6 +67,10 @@
       margin: auto 25px auto 60px;
       display: flex;
       justify-content: space-between;
+      @media #{$info-table-1068} {
+        align-items: center;
+        margin: auto 25px auto 0px;
+      }
       @media #{$info-table-991} {
         width: fit-content;
       }
@@ -89,6 +96,12 @@
         display: flex;
         cursor: pointer;
         align-items: center;
+        @media #{$info-table-1068} {
+          margin-right: 20px;
+        }
+        @media #{$info-phone-350} {
+          margin-right: 14px;
+        }
         &.close{
           cursor: not-allowed;
           pointer-events: none;
@@ -98,8 +111,11 @@
           font-size: 14px;
           color: #FFFFFF;
           @media #{$info-table-1068} {
-            font-size: 14px;
+            font-size: 16px;
             line-height: inherit;
+          }
+          @media #{$info-phone-350} {
+            font-size: 13px;
           }
         }
 
@@ -109,6 +125,10 @@
           font-weight: lighter;
           transform: rotate(0deg);
           transition: transform 300ms ease-in-out;
+          @media #{$info-phone-350} {
+            width: 10px;
+            margin: 7px 0 0 6px;
+          }
           &.open{
             transform: rotate(-180deg);
           }
@@ -124,9 +144,18 @@
           opacity: 1;
           cursor: initial;
           transition: height 500ms ease-in-out , opacity 500ms ease-in-out;
+          @media #{$info-table-1068} {
+            top: 38px;
+            right: -45px;
+            left: inherit;
+          }
           &.open{
             opacity: 1;
             height: 142px;
+            @media #{$info-table-1068} {
+              width: fit-content;
+              height: fit-content;
+            }
           }
 
           .lang{
@@ -141,6 +170,9 @@
             opacity: 0;
             transition: transform 600ms ease-in-out , opacity 600ms ease-in-out, visibility 600ms ease-in-out;
             background: rgba(0,0,0,.5);
+            @media #{$info-table-1068} {
+              width: 130px;
+            }
             &.open{
               visibility: visible;
               transform: translateX(0%);
@@ -148,12 +180,18 @@
             }
             img{
               width: 55px;
+              @media #{$info-table-1068} {
+                width: 45px;
+              }
             }
 
             .flag-title{
               margin-left: 10px;
               font-size: 14px;
               color: #FFFFFF;
+              @media #{$info-table-1068} {
+                font-size: 12px;
+              }
             }
           }
         }
@@ -172,6 +210,10 @@
         width: 23px;
         height: 16px;
         cursor: pointer;
+        @media #{$info-phone-350} {
+          width: 17px;
+          height: 13px;
+        }
         span {
           width: 100%;
           height: 2px;
@@ -340,7 +382,6 @@
         }
       }
     }
-
   }
 
   .header-menu-mobile{
@@ -355,7 +396,7 @@
     transition: all 500ms ease-in-out;
     visibility: hidden;
     height: 0;
-    z-index: 2;
+    z-index: 4;
     &.open{
       height: calc(100vh - 55px);
       overflow-y: auto;;
@@ -433,55 +474,6 @@
           &.open{
             transform: translateX(0);
             opacity: 1;
-          }
-        }
-
-        .button-lang-mobile{
-          width: 100%;
-          cursor: pointer;
-          display: flex;
-          flex-direction: row;
-          height: 40px;
-          padding-left: 5px;
-          align-items: center;
-          .title-lang-mobile{
-            color: #FFFFFF;
-            font-size: 17px;
-          }
-
-          .icon-left-mobile{
-            width: 14px;
-            margin:4px 0 0 10px;
-            transform: rotate(-90deg);
-          }
-        }
-      }
-
-      .menu-lang-mobile{
-        position: relative;
-        margin-top: 35px;
-        z-index: 15;
-        .lang-mobile{
-          width: 100%;
-          display: flex;
-          margin-bottom: 10px;
-          align-items: center;
-          padding-left: 5px;
-          transform: translateX(130%);
-          opacity: 0;
-          transition: all 600ms ease-in-out;
-          &.open{
-            transform: translateX(0);
-            opacity: 1;
-          }
-          img{
-            width: 70px;
-          }
-          .flag-title-mobile{
-            font-size: 17px;
-            color: #FFFFFF;
-            margin-left: 10px;
-
           }
         }
       }

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: fix lang, logo, about us">
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: fix menu active, add logo technology">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/application-form/application-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/application-form/application-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/metalish/metalish.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/products/products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/support/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/support/support.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/support/support.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/src/ckk-ladingpage/ckk-landingpage",
+    "last_opened_file_path": "D:/src/metalish/metalish-landingpage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,7 +107,19 @@
       <workItem from="1670480339735" duration="4520000" />
       <workItem from="1670493423627" duration="3559000" />
       <workItem from="1670548451182" duration="11132000" />
-      <workItem from="1670826545136" duration="8723000" />
+      <workItem from="1670826545136" duration="9098000" />
+      <workItem from="1670893872649" duration="1949000" />
+      <workItem from="1670984072908" duration="706000" />
+      <workItem from="1670985928116" duration="63000" />
+      <workItem from="1671001393792" duration="712000" />
+      <workItem from="1671067114161" duration="1709000" />
+      <workItem from="1671090944028" duration="629000" />
+      <workItem from="1671098761427" duration="615000" />
+      <workItem from="1671153841233" duration="608000" />
+      <workItem from="1671165326829" duration="1200000" />
+      <workItem from="1671418942799" duration="5469000" />
+      <workItem from="1671776504118" duration="972000" />
+      <workItem from="1672284524837" duration="6572000" />
     </task>
     <task id="LOCAL-00001" summary="roots: start source">
       <created>1668401289760</created>
@@ -238,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670828144869</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="roots: fix product">
+      <created>1670836290214</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670836290214</updated>
+    </task>
+    <task id="LOCAL-00020" summary="roots: fix menu active, add logo technology">
+      <created>1671422072843</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1671422072843</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +296,8 @@
     <MESSAGE value="roots: fix link images" />
     <MESSAGE value="roots: add metalish lang ko" />
     <MESSAGE value="roots: fix lang, logo, about us" />
-    <option name="LAST_COMMIT_MESSAGE" value="roots: fix lang, logo, about us" />
+    <MESSAGE value="roots: fix product" />
+    <MESSAGE value="roots: fix menu active, add logo technology" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: fix menu active, add logo technology" />
   </component>
 </project>

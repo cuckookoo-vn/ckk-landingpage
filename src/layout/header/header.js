@@ -75,34 +75,13 @@ const Header = ({windowDimensions}) =>{
     const clickStatusLang = (lang) =>{
         i18next.changeLanguage(lang);
 
-        if(windowDimensions.width < 991.5){
-            clickStatusMenuMobile()
+        let statusTemp = !statusLang;
+        setStatusLang(statusTemp);
 
-            setStatusLangMobile(!statusMenuMobile);
-
-            hiddenLangMobile()
-
-            let headerBox = document.getElementById("header-box");
-            let headerMenuMobile = document.getElementById("header-menu-mobile");
-
-
-            setTimeout(()=>{
-                headerMenuMobile.classList.remove("open");
-                headerBox.style.display = "flex";
-            },450)
-
-            setTimeout(()=>{
-                headerBox.classList.remove("close");
-            },500)
+        if(statusTemp){
+            setLangTrue();
         }else {
-            let statusTemp = !statusLang;
-            setStatusLang(statusTemp);
-
-            if(statusTemp){
-                setLangTrue();
-            }else {
-                setLangFalse();
-            }
+            setLangFalse();
         }
     }
 
@@ -151,8 +130,6 @@ const Header = ({windowDimensions}) =>{
     // menu mobile
     const [statusMenuMobile, setStatusMenuMobile] = useState(false);
 
-    const [statusLangMobile, setStatusLangMobile] = useState(false);
-
     const showMenuMobile = () =>{
         let headerMenuMobile = document.getElementById("header-menu-mobile");
         let arrayLink = headerMenuMobile.getElementsByClassName("link-mobile");
@@ -190,126 +167,25 @@ const Header = ({windowDimensions}) =>{
             menuMobileSearch.classList.remove("open");
         },50);
 
-        setTimeout(()=>{
-            menuMobileContent.style.display = "none";
-            menuMobileSearch.style.display = "none";
-        }, 1000)
-
-    }
-
-    const showLangMobile = () =>{
-        let boxLang = document.getElementById("menu-lang-mobile");
-        let LangEN = document.getElementById("langEN-mobile");
-        let LangKO = document.getElementById("langKO-mobile");
-        let LangJA = document.getElementById("langJA-mobile");
-        let headerLang = document.getElementById("header-box-lang");
-
-        setTimeout(()=>{
-            boxLang.style.display = "block";
-        },750)
-
-
-        setTimeout(()=>{
-            boxLang.classList.add("open");
-        },750)
-
-        setTimeout(()=>{
-            LangEN.classList.add("open");
-        },800)
-
-        setTimeout(()=>{
-            LangKO.classList.add("open");
-            headerLang.style.display = "block";
-        },850)
-
-        setTimeout(()=>{
-            LangJA.classList.add("open");
-            headerLang.classList.add("open");
-        },900)
-    }
-
-    const hiddenLangMobile = () =>{
-        let boxLang = document.getElementById("menu-lang-mobile");
-        let LangEN = document.getElementById("langEN-mobile");
-        let LangKO = document.getElementById("langKO-mobile");
-        let LangJA = document.getElementById("langJA-mobile");
-        let headerLang = document.getElementById("header-box-lang");
-
-        headerLang.classList.remove("open");
-        setTimeout(()=>{
-            LangEN.classList.remove("open");
-        },100)
-
-        setTimeout(()=>{
-            LangKO.classList.remove("open");
-        },50)
-
-        setTimeout(()=>{
-            LangJA.classList.remove("open");
-        },0)
-
-        setTimeout(()=>{
-            boxLang.classList.remove("open");
-            headerLang.style.display = "none";
-        },550)
-
-        setTimeout(()=>{
-            boxLang.style.display = "none";
-        },650)
-
     }
 
     const animationMenuMobile = (statusMenu) =>{
         let headerMenuMobile = document.getElementById("header-menu-mobile");
-        let headerBox = document.getElementById("header-box");
-
 
         if(statusMenu === "open"){
             headerMenuMobile.classList.add("open");
             showMenuMobile()
 
-        }else if(statusMenu === "close"){
+        }else{
             hiddenMenuMobile()
             setTimeout(()=>{
                 headerMenuMobile.classList.remove("open");
             },450)
 
-        }else if(statusMenu === "showLang"){
-            hiddenMenuMobile()
-            headerBox.classList.add("close")
-            setTimeout(()=>{
-                headerBox.style.display = "none";
-            },1000)
-        }else {
-            setTimeout(()=>{
-                headerBox.style.display = "flex";
-            },500)
-
-            setTimeout(()=>{
-                headerBox.classList.remove("close");
-            },600)
-
-            setTimeout(()=>{
-                showMenuMobile();
-            },1000)
-
         }
 
     }
 
-
-    const clickLangMobile = () =>{
-        let tempStatus = !statusLangMobile;
-        setStatusLangMobile(tempStatus);
-
-        if(tempStatus){
-            animationMenuMobile("showLang");
-            showLangMobile()
-        }else {
-            hiddenLangMobile()
-            animationMenuMobile("hiddenLang");
-        }
-    }
 
     // scroll active
     const [listOffsetTop, setListOffsetTop] = useState([]);
@@ -421,9 +297,9 @@ const Header = ({windowDimensions}) =>{
 
                             <div className={"button-lang" + (statusLangButton ? "" : " close")}
                                  onClick={() => clickStatusLang()}>
-                        <span className="title-lang">
-                            {t("header.menu.lang")}
-                        </span>
+                                <span className="title-lang">
+                                    {t("header.menu.lang")}
+                                </span>
 
                                 <img className={"icon-down" + (statusLang ? " open" : "")}
                                      src={images.logoChevronDown}
@@ -476,22 +352,56 @@ const Header = ({windowDimensions}) =>{
                             <a className="logo-header" href="/#">
                                 <img src={images.logoCuckookoo} alt="logo-header"/>
                             </a>
-                            <div className="box-menu"
-                                 onClick={() => clickStatusMenuMobile()}>
-                                <div className={"icon-menu-mobile" + (statusMenuMobile ? " open" : "")}>
+                            <div className="box-menu">
+
+                                <div className={"button-lang" + (statusLangButton ? "" : " close")}
+                                     onClick={() => clickStatusLang()}>
+                                <span className="title-lang">
+                                    {t("header.menu.lang")}
+                                </span>
+
+                                    <img className={"icon-down" + (statusLang ? " open" : "")}
+                                         src={images.logoChevronDown}
+                                         alt="logo-chevron-down"/>
+
+                                    <div className="drop-lang" id="drop-lang">
+                                        <div className="lang"
+                                             id="langEN"
+                                             onClick={() => clickStatusLang("en")}>
+                                            <img src={images.flagEng}
+                                                 alt="flag-eng"/>
+                                            <span className="flag-title">
+                                    {t("header.language.english")}
+                                </span>
+                                        </div>
+
+                                        <div className="lang"
+                                             id="langKO"
+                                             onClick={() => clickStatusLang("ko")}>
+                                            <img src={images.flagKo}
+                                                 alt="flag-eng"/>
+                                            <span className="flag-title">
+                                    {t("header.language.korean")}
+                                </span>
+                                        </div>
+
+                                        <div className="lang"
+                                             id="langJA"
+                                             onClick={() => clickStatusLang("vn")}>
+                                            <img src={images.flagVn}
+                                                 alt="flag-eng"/>
+                                            <span className="flag-title">
+                                    {t("header.language.vietnam")}
+                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div onClick={() => clickStatusMenuMobile()} className={"icon-menu-mobile" + (statusMenuMobile ? " open" : "")}>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div className="header-box-lang" id="header-box-lang">
-                            <div className="box-menu-lang" onClick={()=>clickLangMobile()}>
-                                <img className="icon-right-mobile"
-                                     src={images.logoChevronDown}
-                                     alt="logo-chevron-down"/>
-                                Language
                             </div>
                         </div>
                     </div>
@@ -593,53 +503,6 @@ const Header = ({windowDimensions}) =>{
                                    onClick={() => clickStatusMenuMobile("support")}>
                                     {t("header.menu.support")}
                                 </a>
-
-                                <div className="link-mobile button-lang-mobile"
-                                     onClick={()=>clickLangMobile()}>
-                                    <span className="title-lang-mobile">
-                                        {t("header.menu.lang")}
-                                    </span>
-
-                                    <img className="icon-left-mobile"
-                                         src={images.logoChevronDown}
-                                         alt="logo-chevron-down"/>
-                                </div>
-                            </div>
-
-                            <div className="menu-lang-mobile"
-                                 id="menu-lang-mobile">
-                                <div className="lang-mobile"
-                                     id="langEN-mobile"
-                                     onClick={()=>clickStatusLang("en")}>
-                                    <img src={images.flagEng}
-                                         alt="flag-eng"/>
-
-                                    <span className="flag-title-mobile">
-                                        {t("header.language.english")}
-                                    </span>
-                                </div>
-
-                                <div className="lang-mobile"
-                                     id="langKO-mobile"
-                                     onClick={()=>clickStatusLang("ko")}>
-                                    <img src={images.flagKo}
-                                         alt="flag-eng"/>
-
-                                    <span className="flag-title-mobile">
-                                        {t("header.language.korean")}
-                                    </span>
-                                </div>
-
-                                <div className="lang-mobile"
-                                     id="langJA-mobile"
-                                     onClick={()=>clickStatusLang("vn")}>
-                                    <img src={images.flagVn}
-                                         alt="flag-eng"/>
-
-                                    <span className="flag-title-mobile">
-                                        {t("header.language.vietnam")}
-                                    </span>
-                                </div>
                             </div>
                         </div>
                     </div>
