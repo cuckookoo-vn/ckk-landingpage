@@ -4,11 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: fix menu active, add logo technology">
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: commit build folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.well-known/pki-validation/92CA19F59AF5BFF4AFF03F870A30C203.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.well-known/pki-validation/94908DAD9608CC761727632BF6DA8B86.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ckksite-logo-header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.f6dbcb40.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.f6dbcb40.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/787.8698669b.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/787.8698669b.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.0b07316f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.0b07316f.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.0b07316f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/getFetch.40f37ddea2378391108f.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/application-form/application-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/application-form/application-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/application-form/application-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/application-form/application-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/careers/careers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/careers/careers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/technology/technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/technology/technology.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locale/language/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locale/language/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locale/language/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ko.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +150,12 @@
       <workItem from="1671418942799" duration="5469000" />
       <workItem from="1671776504118" duration="972000" />
       <workItem from="1672284524837" duration="6572000" />
+      <workItem from="1672309076023" duration="236000" />
+      <workItem from="1672312143283" duration="471000" />
+      <workItem from="1672366804121" duration="23000" />
+      <workItem from="1672383722109" duration="55000" />
+      <workItem from="1672384198885" duration="11299000" />
+      <workItem from="1672708991207" duration="15492000" />
     </task>
     <task id="LOCAL-00001" summary="roots: start source">
       <created>1668401289760</created>
@@ -261,7 +297,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671422072843</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="roots: change language switch position">
+      <created>1672309294438</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672309294438</updated>
+    </task>
+    <task id="LOCAL-00022" summary="roots: commit build folder">
+      <created>1672312273722</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672312273722</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +348,8 @@
     <MESSAGE value="roots: fix lang, logo, about us" />
     <MESSAGE value="roots: fix product" />
     <MESSAGE value="roots: fix menu active, add logo technology" />
-    <option name="LAST_COMMIT_MESSAGE" value="roots: fix menu active, add logo technology" />
+    <MESSAGE value="roots: change language switch position" />
+    <MESSAGE value="roots: commit build folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: commit build folder" />
   </component>
 </project>

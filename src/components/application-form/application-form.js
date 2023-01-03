@@ -3,10 +3,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleXmark, faXmark} from "@fortawesome/free-solid-svg-icons";
 import {useState} from "react";
 import {useForm} from "react-hook-form";
-import {useTranslation} from "react-i18next";
+import {Trans, useTranslation} from "react-i18next";
 import {cloudS3} from "../../constant/global";
 
-const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
+const ApplicationForm = ({openPopup ,setOpenPopup,valueSelect,jobs}) =>{
 
     const {t} = useTranslation();
 
@@ -67,7 +67,7 @@ const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
         setStatusClose(false);
     }
     return(
-        <div className="career-information">
+        <div className={"career-information" + (openPopup ? " open" : "")}>
 
             {
                 statusNotification ?
@@ -80,98 +80,111 @@ const ApplicationForm = ({setOpenPopup,valueSelect,jobs}) =>{
                     </div>
                     :
                     <div className="career-information-box">
-                        <FontAwesomeIcon icon={faXmark}
-                                         onClick={()=>closePopup()}
-                                         className="close-application"/>
+                        <div className="career-information-box-bg">
+                            <FontAwesomeIcon icon={faXmark}
+                                             onClick={()=>closePopup()}
+                                             className="close-application"/>
 
-                        <div className="career-information-header">
-                            <span className="title-application">{t("careers.formCareers.titleMain")}</span>
-                        </div>
-
-                        <form className="application-form"
-                              onSubmit={handleSubmit(onSubmit)}>
-
-                            <div className="form-input">
-                            <span className="title-input">
-                                {t("careers.formCareers.position")}
-                                <span>*</span>:
-                            </span>
-                                <select className="input-form" defaultValue={valueSelect}>
-                                    {
-                                        jobs.map((element, index) =>
-                                            <option key={index} value={element.key}>{element.title}</option>
-                                        )
-                                    }
-                                </select>
+                            <div className="career-information-header">
+                                <span className="title-application">{jobs[valueSelect-1].titleApply}</span>
                             </div>
 
-                            <div className="form-input">
-                        <span className="title-input">
-                            {t("careers.formCareers.file")}<span>*</span>{t("careers.formCareers.file1")}
-                        </span>
-                                <input id="support-file-upload"
-                                       onInput={(event)=>changeFile(event)}
-                                       className="input-form"
-                                       type="file"
-                                       {...register("file", {
-                                           required: true,
-                                       })}
+                            <div className="career-information-job-requirements">
+                                <Trans
+                                    i18nKey="career-information-job-requirements"
+                                    defaults={jobs[valueSelect-1].jobRequirements}
+                                    components={{br: <br/>,li: <li></li>, ul:<ul></ul>, ol:<ol></ol>}}
                                 />
-                                <label htmlFor="support-file-upload" className="custom-file-upload">
-                                    <img src={images.iconUpload} alt="icon-upload"/>
-                                </label>
 
-
-                                <FontAwesomeIcon icon={faCircleXmark}
-                                                 onClick={()=> closeFile()}
-                                                 className={"support-close-file" + (statusClose ? " open" : "")}/>
-
-
-                                {
-                                    statusSize === false ?
-                                        <p className="text-error">{t("support.file.maxSize")}</p> :
-                                        (
-                                            errors?.file?.type === "required" &&
-                                            <p className="text-error">{t("support.file.required")}</p>
-
-                                        )
-                                }
                             </div>
 
-                            <div className="form-input">
-                        <span className="title-input">
-                            {t("careers.formCareers.message")}
-                            <span>*</span>:
-                        </span>
+                            <form className="application-form"
+                                  onSubmit={handleSubmit(onSubmit)}>
 
-                                <textarea className="input-form"
-                                          maxLength={lengthTextarea}
-                                          {...register("message", {
-                                              onChange:(e)=>changeValueTextarea(e),
-                                              required: true,
-                                              maxLength: 350
-                                          })}/>
-                                {errors?.message?.type === "required" &&
-                                    <p className="text-error">{t("support.message.required")}</p>
-                                }
-                                {errors?.message?.type === "maxLength" || valueTextarea.length > lengthTextarea ?
-                                    <p className="text-error">{t("support.message.maxLength")}</p>:
-                                    null
-                                }
+                                {/*<div className="form-input">*/}
+                                {/*    <span className="title-input">*/}
+                                {/*        {t("careers.formCareers.position")}*/}
+                                {/*        <span>*</span>:*/}
+                                {/*    </span>*/}
+                                {/*    <select className="input-form" defaultValue={valueSelect}>*/}
+                                {/*        {*/}
+                                {/*            jobs.map((element, index) =>*/}
+                                {/*                <option key={index} value={element.key}>{element.title}</option>*/}
+                                {/*            )*/}
+                                {/*        }*/}
+                                {/*    </select>*/}
+                                {/*</div>*/}
 
-                                <span className="count-text">{valueTextarea.length}/{lengthTextarea}</span>
-                            </div>
+                                <div className="form-input">
+                                    <span className="title-input">
+                                        {t("careers.formCareers.file")}<span>*</span>{t("careers.formCareers.file1")}
+                                    </span>
+                                    <input id="support-file-upload"
+                                           onInput={(event)=>changeFile(event)}
+                                           className="input-form"
+                                           type="file"
+                                           {...register("file", {
+                                               required: true,
+                                           })}
+                                    />
+                                    <label htmlFor="support-file-upload" className="custom-file-upload">
+                                        <img src={images.iconUpload} alt="icon-upload"/>
+                                    </label>
 
-                            <button type="submit"
-                                    onClick={()=>setStatusSize(true)}
-                                    style={{backgroundImage:`url(${images.bgButton})`}}
-                                    className="button-submit">
-                                {t("support.buttonTitle")}
-                            </button>
-                        </form>
+
+                                    <FontAwesomeIcon icon={faCircleXmark}
+                                                     onClick={()=> closeFile()}
+                                                     className={"support-close-file" + (statusClose ? " open" : "")}/>
+
+
+                                    {
+                                        statusSize === false ?
+                                            <p className="text-error">{t("support.file.maxSize")}</p> :
+                                            (
+                                                errors?.file?.type === "required" &&
+                                                <p className="text-error">{t("support.file.required")}</p>
+
+                                            )
+                                    }
+                                </div>
+
+                                <div className="form-input">
+                                    <span className="title-input">
+                                        {t("careers.formCareers.message")}
+                                        <span>*</span>:
+                                    </span>
+
+                                    <textarea className="input-form"
+                                              maxLength={lengthTextarea}
+                                              {...register("message", {
+                                                  onChange:(e)=>changeValueTextarea(e),
+                                                  required: true,
+                                                  maxLength: 350
+                                              })}/>
+                                    {errors?.message?.type === "required" &&
+                                        <p className="text-error">{t("support.message.required")}</p>
+                                    }
+                                    {errors?.message?.type === "maxLength" || valueTextarea.length > lengthTextarea ?
+                                        <p className="text-error">{t("support.message.maxLength")}</p>:
+                                        null
+                                    }
+
+                                    <span className="count-text">{valueTextarea.length}/{lengthTextarea}</span>
+                                </div>
+
+                                <button type="submit"
+                                        onClick={()=>setStatusSize(true)}
+                                        style={{backgroundImage:`url(${images.bgButton})`}}
+                                        className="button-submit">
+                                    {t("support.buttonTitle")}
+                                </button>
+                            </form>
+                        </div>
 
                     </div>
             }
+
+            <div className="career-information-overlay" onClick={closePopup}></div>
 
         </div>
     )

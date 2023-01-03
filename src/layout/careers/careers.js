@@ -16,33 +16,31 @@ const Careers = ({windowDimensions}) =>{
     const jobs = [
         {
             title: t("careers.job1.title"),
+            titleApply: t("careers.job1.titleApply"),
             time: t("careers.job1.time"),
+            jobRequirements: (t("careers.job1.jobRequirements")),
             key: 1
         },
         {
             title: t("careers.job2.title"),
+            titleApply: t("careers.job2.titleApply"),
             time: t("careers.job2.time"),
+            jobRequirements: (t("careers.job2.jobRequirements")),
             key: 2
         },
         {
             title: t("careers.job3.title"),
+            titleApply: t("careers.job3.titleApply"),
             time: t("careers.job3.time"),
+            jobRequirements: (t("careers.job3.jobRequirements")),
             key: 3
         },
         {
             title: t("careers.job4.title"),
+            titleApply: t("careers.job4.titleApply"),
             time: t("careers.job4.time"),
+            jobRequirements: (t("careers.job4.jobRequirements")),
             key: 4
-        },
-        {
-            title: t("careers.job5.title"),
-            time: t("careers.job5.time"),
-            key: 5
-        },
-        {
-            title: t("careers.job6.title"),
-            time: t("careers.job6.time"),
-            key: 6
         }
     ]
 
@@ -102,13 +100,8 @@ const Careers = ({windowDimensions}) =>{
                     }
                 </div>
             </div>
-            {
-                openPopup ?
-                    <ApplicationForm setOpenPopup={setOpenPopup} valueSelect={valueSelect} jobs={jobs} />
-                    :
-                    null
-            }
 
+            <ApplicationForm openPopup={openPopup} setOpenPopup={setOpenPopup} valueSelect={valueSelect} jobs={jobs} />
         </div>
     )
 }

@@ -130,7 +130,7 @@ const Products = ({ windowDimensions }) => {
                 <span className="title-main">{t("metalish.titleMain")}</span>
           }
 
-          <img src={images.logoMetalish}
+          <img className="lazyload" data-src={images.logoMetalish}
                alt="logo-metalish"/>
 
           <div className="content-title">
