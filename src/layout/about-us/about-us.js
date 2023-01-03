@@ -151,10 +151,8 @@ const AboutUs = ({windowDimensions}) =>{
                     </div>
                 </div>
             </div>
-            {
-                openPopup && <AboutUsMember setOpenPopup={setOpenPopup} slideIndex={slideIndex} datasSlide={memberTeam}/>
-            }
 
+            <AboutUsMember openPopup={openPopup} setOpenPopup={setOpenPopup} slideIndex={slideIndex} datasSlide={memberTeam}/>
         </>
     )
 }

@@ -6,7 +6,7 @@ import ContentAboutUsMember from "../content-about-us-member/content-about-us-me
 import {faAnglesRight, faAnglesLeft, faCircleXmark} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-const AboutUsMember = ({setOpenPopup, slideIndex, datasSlide}) =>{
+const AboutUsMember = ({openPopup, setOpenPopup, slideIndex, datasSlide}) =>{
 
     const swiperRef = useRef(null);
 
@@ -18,8 +18,12 @@ const AboutUsMember = ({setOpenPopup, slideIndex, datasSlide}) =>{
         swiperRef.current?.swiper.slideTo(slideIndex+1);
     },[slideIndex])
 
+    const setClosePopup = () =>{
+        setOpenPopup(false);
+    }
+
     return(
-        <div className="about-us-member">
+        <div className={"about-us-member" + (openPopup ? " open" : "")}>
             <div className="about-us-member-slide">
                 <Swiper
                     ref={swiperRef}
@@ -43,7 +47,7 @@ const AboutUsMember = ({setOpenPopup, slideIndex, datasSlide}) =>{
                     }}
                 >
                     <FontAwesomeIcon icon={faCircleXmark}
-                                     onClick={()=>setOpenPopup(false)}
+                                     onClick={()=>setClosePopup()}
                                      className="icon-close-popup-member"/>
 
                     <div className="swiper-member">
@@ -59,6 +63,7 @@ const AboutUsMember = ({setOpenPopup, slideIndex, datasSlide}) =>{
                     <FontAwesomeIcon ref={nextRef} icon={faAnglesRight} className="icon-slide icon-next" />
                 </Swiper>
             </div>
+            <div className="about-us-member-overlay" onClick={setClosePopup}></div>
         </div>
     )
 }

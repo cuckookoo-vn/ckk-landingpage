@@ -9,6 +9,10 @@ import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import './locale/locale';
 
+import 'lazysizes';
+// import a plugin
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 // import sagas
 // import {Provider} from "react-redux";
 // import store from "./redux/store";
