@@ -4,41 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: commit build folder">
+    <list default="true" id="93dbb25e-cedb-44de-bf59-c5fd0517d181" name="Changes" comment="roots: add jd in application form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.well-known/pki-validation/92CA19F59AF5BFF4AFF03F870A30C203.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.well-known/pki-validation/94908DAD9608CC761727632BF6DA8B86.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ckksite-logo-header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.f6dbcb40.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.f6dbcb40.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/787.8698669b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/787.8698669b.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.0b07316f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.0b07316f.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.0b07316f.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/getFetch.40f37ddea2378391108f.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about-us-member/about-us-member.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/application-form/application-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/application-form/application-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/application-form/application-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/application-form/application-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/about-us/about-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/about-us/about-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/careers/careers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/careers/careers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/technology/technology.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/technology/technology.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locale/language/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/locale/language/ko.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,21 +29,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/src/metalish/metalish-landingpage",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/src/metalish/metalish-landingpage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\src\ckk-ladingpage\ckk-landingpage\public" />
@@ -155,7 +123,8 @@
       <workItem from="1672366804121" duration="23000" />
       <workItem from="1672383722109" duration="55000" />
       <workItem from="1672384198885" duration="11299000" />
-      <workItem from="1672708991207" duration="15492000" />
+      <workItem from="1672708991207" duration="17545000" />
+      <workItem from="1672795735941" duration="996000" />
     </task>
     <task id="LOCAL-00001" summary="roots: start source">
       <created>1668401289760</created>
@@ -311,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672312273722</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="roots: add jd in application form">
+      <created>1672738022626</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1672738022626</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +326,7 @@
     <MESSAGE value="roots: fix menu active, add logo technology" />
     <MESSAGE value="roots: change language switch position" />
     <MESSAGE value="roots: commit build folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="roots: commit build folder" />
+    <MESSAGE value="roots: add jd in application form" />
+    <option name="LAST_COMMIT_MESSAGE" value="roots: add jd in application form" />
   </component>
 </project>
